@@ -1,33 +1,115 @@
+:root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+}
+
 body {
   font-family: "Source Code Pro", monospace;
   background: #38393f;
+
   color: #fff;
-  text-shadow: 2px 0 rgba(255, 0, 0, 0.9), -2px 0 rgba(0, 0, 255, 0.9);
   padding: 40px;
   background-size: 100% 100%;
   justify-content: center;
   align-items: center;
+  place-items: center;
 }
 
-.container {
+.grid-container {
   display: grid;
   font-family: "Source Code Pro", monospace;
   background: #000000;
   color: #fff;
-  text-shadow: 2px 0 rgba(255, 0, 0, 0.9), -2px 0 rgba(0, 0, 255, 0.9);
   padding: 40px;
   background-size: 100% 100%;
   justify-content: center;
   align-items: center;
-
-  grid-template-columns: 200px, 250px;
+  grid-template-columns: minmax(100px, max-content);
   grid-auto-rows: minmax(75px, auto);
+}
+
+#socials,
+a {
+  color: #00ffdc;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 12.5%;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  align-items: center;
+  margin-left: 12.5%;
+}
+
+#socials {
+  align-items: center;
+  justify-content: center;
+}
+
+#writingz,
+a {
+  color: #00ffdc;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-weight: bold;
+  font-family: "Source Code Pro", monospace;
+  color: #fff;
+  text-shadow: 2px 0 rgba(255, 0, 0, 0.9), -2px 0 rgba(0, 0, 255, 0.9);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header"
+    "projects"
+    "writing"
+    "socials"
+    "about-me"
+    "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.writing {
+  grid-area: writing;
+}
+
+.socials {
+  grid-area: socials;
+}
+
+.about-me {
+  grid-area: about-me;
+}
+
+.footer {
+  grid-area: footer;
 }
 
 h1 {
   font-size: 60px;
   font-weight: 200;
   text-shadow: 2px 0 rgba(255, 0, 0, 0.9), -2px 0 rgba(0, 0, 255, 0.9);
+  text-indent: 10%;
 }
 
 h2 {
@@ -37,7 +119,33 @@ h2 {
   text-indent: 10%;
 }
 
-hr {
+@keyframes example {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: hotpink;
+  }
+}
+
+a:hover {
+  color: #00ffdc;
+
+  font-size: 30px;
+
+  filter: blur(-2em);
+  opacity: 0.7;
+
+  cursor: pointer;
+  padding: 0.25em 1em;
+
+  background-color: hotpink;
+  animation-name: example;
+  animation-duration: 4s;
+  width: 80%;
+}
+
+/** hr {
   margin-left: auto;
   margin-right: auto;
   border: solid;
@@ -45,9 +153,13 @@ hr {
   width: 80%;
   border-color: #ffffff;
   border-radius: 5px;
-}
+  height: 5px;
+  color: #ff99ff;
 
-hr.hrh1 {
+
+
+
+  hr.row1 {
   margin-left: auto;
   margin-right: auto;
   border-style: solid;
@@ -58,44 +170,16 @@ hr.hrh1 {
   color: #ff99ff;
 }
 
-#socials,
-a {
-  color: #00ffdc;
-  font-size: 20px;
-  font-weight: 50;
-  position: auto;
-  margin-left: 12.5%;
+
+hr.row2 {
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+  border-width: 2.5px;
+  width: 80%;
+  border-color: #ffffff;
+  border-radius: 5px;
+  color: #ff99ff;
 }
 
-#socials {
-  color: #00ffdc;
-  font-size: 20px;
-  font-weight: 50;
-  margin-left: 12.5%;
-
-  position: auto;
-}
-
-a:hover {
-  color: #ffffff;
-  /* Below are how to center the links in the footer */
-  margin: 0;
-  padding: 5px;
-  font-size: 30px;
-  font-weight: 50;
-  text-shadow: 2px 0 rgba(255, 0, 0, 0.9), -2px 0 rgba(0, 0, 255, 0.9);
-}
-
-p {
-  margin-left: 10%;
-  margin-right: 10%;
-  font-weight: 50;
-  font-family: "Source Code Pro", monospace;
-  color: #9df7e5;
-}
-
-#mission {
-  margin-left: 10%;
-  margin-right: 10%;
-  color: #9df7e5;
-}
+*/
