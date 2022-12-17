@@ -10,9 +10,6 @@ body {
   color: #fff;
   padding: 40px;
   background-size: 100% 100%;
-  justify-content: center;
-  align-items: center;
-  place-items: center;
 }
 
 .grid-container {
@@ -22,13 +19,11 @@ body {
   color: #fff;
   padding: 40px;
   background-size: 100% 100%;
-  justify-content: center;
-  align-items: center;
   grid-template-columns: minmax(100px, max-content);
   grid-auto-rows: minmax(75px, auto);
 }
 
-#socials,
+.socials,
 a {
   color: #00ffdc;
   font-size: 20px;
@@ -43,12 +38,7 @@ a {
   margin-left: 12.5%;
 }
 
-#socials {
-  align-items: center;
-  justify-content: center;
-}
-
-#writingz,
+.writingz,
 a {
   color: #00ffdc;
   font-size: 20px;
@@ -83,6 +73,7 @@ p {
 
 .header {
   grid-area: header;
+  align-items: center;
 }
 
 .projects {
@@ -91,14 +82,18 @@ p {
 
 .writing {
   grid-area: writing;
+  align-content: center;
 }
 
-.socials {
+.socialz {
   grid-area: socials;
+  align-content: center;
 }
 
 .about-me {
   grid-area: about-me;
+  justify-content: center;
+  align-content: center;
 }
 
 .footer {
