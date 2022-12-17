@@ -98,6 +98,7 @@ p {
 
 .footer {
   grid-area: footer;
+  color: #00ffdc;
 }
 
 h1 {
