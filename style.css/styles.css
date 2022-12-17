@@ -33,19 +33,13 @@ a {
   justify-content: center;
 }
 
-a {
-  align-items: center;
-  margin-left: 12.5%;
-}
-
 .writingz,
 a {
   color: #00ffdc;
   font-size: 20px;
   font-weight: bolder;
-  margin-left: 10%;
   align-items: center;
-  justify-content: center;
+  text-shadow: 1px 0 rgba(35, 35, 35, 0.9), -1px 0 rgba(0, 225, 255, 0.9);
 }
 
 p {
@@ -62,13 +56,6 @@ p {
   grid-template-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas:
-    "header"
-    "projects"
-    "writing"
-    "socials"
-    "about-me"
-    "footer";
 }
 
 .header {
@@ -96,11 +83,19 @@ p {
   align-content: center;
 }
 
+.about-me,
+a {
+  text-decoration: none;
+}
+
 .footer {
   grid-area: footer;
   color: #00ffdc;
 }
 
+.projectz {
+  align-content: center;
+}
 h1 {
   font-size: 60px;
   font-weight: 200;
@@ -115,67 +110,129 @@ h2 {
   text-indent: 10%;
 }
 
+.electric {
+  animation: flicker 1.5s linear infinite, color 1s linear infinite;
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+
+.electric2 {
+  animation: flicker 4s linear infinite, color 1s linear infinite;
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 0, 9;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.electric3 {
+  animation: flicker 2s linear infinite, color 1s linear infinite;
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 1;
+  }
+}
+
+.electric4 {
+  animation: flicker 1s linear infinite, color 1s linear infinite;
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 0.4;
+  }
+}
+
+.electric5 {
+  animation: flicker 3s linear infinite, color 4s linear infinite;
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.2;
+  }
+}
+
 @keyframes example {
   from {
     background-color: black;
   }
   to {
-    background-color: hotpink;
+    background-color: #ff99ff;
   }
+}
+
+a {
+  align-items: center;
+  margin-left: 12.5%;
+  opacity: 1;
+  transition: opacity 230ms;
+  transform: scale(1.1);
 }
 
 a:hover {
   color: #00ffdc;
 
-  font-size: 30px;
-
   filter: blur(-2em);
-  opacity: 0.7;
 
   cursor: pointer;
   padding: 0.25em 1em;
 
-  background-color: hotpink;
+  background-color: #ff99ff;
+  border-radius: 30px;
+  border-style: solid;
   animation-name: example;
   animation-duration: 4s;
   width: 80%;
+
+  opacity: 0.8;
+  text-shadow: 2px 0 rgba(255, 0, 0, 0.9), -2px 0 rgba(0, 0, 255, 0.9);
 }
 
-/** hr {
-  margin-left: auto;
-  margin-right: auto;
-  border: solid;
-  border-width: 2.5px;
-  width: 80%;
-  border-color: #ffffff;
-  border-radius: 5px;
-  height: 5px;
-  color: #ff99ff;
-
-
-
-
-  hr.row1 {
-  margin-left: auto;
-  margin-right: auto;
-  border-style: solid;
-  border-width: 2.5px;
-  width: 100%;
-  border-color: #ffffff;
-  border-radius: 5px;
-  color: #ff99ff;
+.neon {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(10, 10, 10, 0.1)
+  );
+  box-shadow: 0 0 50px #ffffff;
+  animation: neon 1s linear infinite;
 }
 
-
-hr.row2 {
-  margin-left: auto;
-  margin-right: auto;
-  border: solid;
-  border-width: 2.5px;
-  width: 80%;
-  border-color: #ffffff;
-  border-radius: 5px;
-  color: #ff99ff;
+@keyframes neon {
+  from {
+    box-shadow: 0 0 15px #00ffdc;
+    background-position: 0% 50%;
+  }
+  to {
+    box-shadow: 0 0 30px #ff99ff;
+    background-position: 100% 50%;
+  }
 }
-
-*/
