@@ -1,6 +1,6 @@
 # My Portfolio Landing Page
 
-#### Video Demo: <URL HERE>
+#### Video Demo: <[URL HERE>](https://youtu.be/1eX45pBnjG0)
 
 # Project Description
 
