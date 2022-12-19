@@ -76,20 +76,21 @@ p {
   align-content: center;
 }
 
+.about-me,
+a {
+  text-decoration: none;
+}
+
 .about-me {
   grid-area: about-me;
   justify-content: center;
   align-content: center;
 }
 
-.about-me,
-a {
-  text-decoration: none;
-}
-
-.footer {
+footer {
   grid-area: footer;
   color: #00ffdc;
+  margin-left: 40%;
 }
 
 .projectz {
@@ -99,7 +100,7 @@ h1 {
   font-size: 60px;
   font-weight: 200;
   text-shadow: 2px 0 rgba(255, 0, 0, 0.9), -2px 0 rgba(0, 0, 255, 0.9);
-  text-indent: 10%;
+  text-indent: 12.5%;
 }
 
 h2 {
@@ -234,4 +235,77 @@ a:hover {
     box-shadow: 0 0 30px #ff99ff;
     background-position: 100% 50%;
   }
+}
+
+.cube {
+  transform-style: preserve-3d; /* Make the child elements of the cube 3D as well */
+  position: absolute; /* Position the cube */
+  left: 75%; /* Center the cube horizontally */
+  top: 107.5%; /* Center the cube vertically */
+  animation: spin 10s linear infinite; /* Spin the cube continuously */
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg); /* Start at 0 degrees */
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(360deg); /* Rotate to 360 degrees */
+  }
+}
+
+.cube__face {
+  position: absolute; /* Position the faces of the cube */
+  width: 100px;
+  height: 100px;
+  border: 2px solid #fff; /* Add a border to the faces */
+  font-weight: bolder;
+  display: flex;
+  align-items: center; /* align text to the center vertically */
+  text-align: center; /* align text to the center horizontally */
+  justify-content: center; /* align text to the center horizontally */
+
+  font-weight: 500px;
+
+  font-family: "Source Code Pro", monospace;
+
+  color: #3e84ed;
+  font-size: 20px;
+  font-weight: bolder;
+  align-items: center;
+  text-shadow: 2px 0 rgba(35, 35, 35, 0.9), -2px 0 rgba(0, 225, 255, 0.9);
+}
+
+/* Use vaporwave colors for the faces of the cube */
+.cube__face--front {
+  transform: rotateY(0deg) translateZ(50px); /* Rotate the front face */
+  background-color: #7a22aa; /* Pink */
+  font-size: 12px;
+}
+
+.cube__face--back {
+  transform: rotateY(180deg) translateZ(50px); /* Rotate the back face */
+  background-color: #00a6ff51; /* Blue */
+}
+
+.cube__face--left {
+  transform: rotateY(-90deg) translateZ(50px); /* Rotate the left face */
+  background-color: #ffffff; /* Yellow */
+}
+
+.cube__face--right {
+  transform: rotateY(90deg) translateZ(50px); /* Rotate the right face */
+  background-color: #00ffdc; /* Light blue */
+}
+
+.cube__face--top {
+  transform: rotateX(90deg) translateZ(50px); /* Rotate the top face */
+  background-color: #cbf0f8; /* Light blue */
+}
+
+.cube__face--bottom {
+  transform: rotateX(-90deg) translateZ(50px); /* Rotate the bottom face */
+  background-color: #ffcccb; /* Pink */
 }
