@@ -1,6 +1,6 @@
 # My Portfolio Landing Page
 
-#### Video Demo: <[URL HERE>](https://youtu.be/1eX45pBnjG0)
+#### Video Demo: https://youtu.be/1eX45pBnjG0
 
 # Project Description
 
@@ -16,7 +16,7 @@ The code also includes some animations, which are defined using the @keyframes r
 
 ## Dune Dashboard
 
-#### <(https://dune.com/sonnymonroe/fantom-tvl)>
+#### https://dune.com/sonnymonroe/fantom-tvl
 
 This is a SQL query that is used to calculate the Total Value Locked (TVL) on the Fantom blockchain. TVL is a measure of the value of all assets that are locked into a decentralized finance (DeFi) platform, such as a decentralized exchange or a yield farming protocol.
 
