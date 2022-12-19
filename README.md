@@ -1,20 +1,21 @@
 # My Portfolio Landing Page
 
-#### Video Demo:  <URL HERE>
+#### Video Demo: <URL HERE>
 
-# Project Description 
+# Project Description
 
 This project is a landing page for my personal website portfolio. This landing page includes links to my social media accounts on GitHub, Twitter, and Reddit, as well as links to my blockchain website portfolio, a Dune Dashboard I made for the Total Value Locked, and the In and out flows of value in the Fantom Blockchain. I used SQL to find this information. I also provide a review of my experience with yield farming cryptocurrency in 2022.
 
 This landing page is meant to serve as an introduction to my online presence and showcase some of my projects and interests. The inclusion of links to my social media accounts and blockchain website portfolio allows visitors to explore more of my work and will allow visitors to get to know me better. The review of my yield farming experience may also provide valuable insights or inspiration for other individuals interested in cryptocurrency yield farming.
 
-## Aesthetics 
+## Aesthetics
 
 Vaporwave themed, with various elements styled to have a neon effect. This website uses a range of bright, bold colors, including shades of pink, blue, and green. The color scheme is predominantly cool, with a focus on shades of blue and green.
 
-The code also includes some animations, which are defined using the @keyframes rule and applied to specific elements using the animation property. This allows for the website to feel like it is alive and sureal. I programmed the rotating cube and blinking neon lights using CSS animations. I enjoy programming in CSS so I decided not to use JavaScript for these features. 
+The code also includes some animations, which are defined using the @keyframes rule and applied to specific elements using the animation property. This allows for the website to feel like it is alive and sureal. I programmed the rotating cube and blinking neon lights using CSS animations. I enjoy programming in CSS so I decided not to use JavaScript for these features.
 
-## Dune Dashboard 
+## Dune Dashboard
+
 #### <(https://dune.com/sonnymonroe/fantom-tvl)>
 
 This is a SQL query that is used to calculate the Total Value Locked (TVL) on the Fantom blockchain. TVL is a measure of the value of all assets that are locked into a decentralized finance (DeFi) platform, such as a decentralized exchange or a yield farming protocol.
@@ -57,4 +58,4 @@ Thank you for all that you do.
 
 Sincerely,
 
-Michael Abramo 
+Michael Abramo
