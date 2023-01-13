@@ -5,6 +5,71 @@ body {
   font-family: "Source Code Pro", monospace;
   background-color: #212121 !important;
 }
+
+header {
+  background-color: #212121;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  align-items: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.5em;
+  padding: 10px 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+header nav ul li a:hover {
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(133, 53, 159, 0.993);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 2em;
+  color: var(--glow-color);
+  font-size: 1.2em;
+  font-weight: bolder;
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  position: relative;
+  transition: all 0.5s;
+  background-color: #00ffee;
+  color: #ff99ff;
+  text-shadow: 1px 0 rgba(255, 0, 0, 0.9), -1px 0 rgba(0, 0, 255, 0.1);
+
+  transform-style: preserve-3d;
+  transition: ease all 2.3s;
+  z-index: 3;
+  transform: translateZ(0px);
+}
+
+li:hover {
+  animation: pop 2s ease;
+}
+
+li {
+  display: inline-block;
+  border-radius: 15px;
+}
+ul {
+  text-align: center;
+}
+
 body section {
   width: 90%;
   max-width: 1200px;
@@ -22,7 +87,7 @@ body section .row {
   margin: 10px 0;
   transition: ease all 2.3s;
   perspective: 1200px;
-  font-family: "Fira Code";
+  font-family: "Source Code Pro", monospace;
 }
 .card:hover .cover {
   transform: rotateX(0deg) rotateY(-180deg);
@@ -55,8 +120,8 @@ body section .row {
 .card .cover:before {
   content: "";
   position: absolute;
-  border: 5px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  border: 5px solid #00ffdc;
+  box-shadow: 2px 0 rgba(35, 35, 35, 0.9), -1px 0 rgba(0, 225, 255, 0.9);
   top: 20px;
   left: 20px;
   right: 20px;
@@ -86,6 +151,7 @@ body section .row {
 .card .cover.item-c {
   background-image: url("https://images.unsplash.com/photo-1525945518069-b924046d1385?auto=format&fit=crop&w=600&q=80");
 }
+
 .card .cover h1 {
   font-weight: 600;
   position: absolute;
@@ -95,10 +161,11 @@ body section .row {
   transform-style: preserve-3d;
   transition: ease all 2.3s;
   z-index: 3;
-  font-size: 2em;
+  font-size: 1.5em;
   transform: translateZ(0px);
   text-shadow: 2px 0 rgba(255, 0, 0, 0.9), -2px 0 rgba(0, 0, 255, 0.9);
 }
+
 .card .cover .date {
   font-weight: 300;
   position: absolute;
@@ -139,8 +206,24 @@ body section .row {
 }
 .card .card-back a:hover {
   background-color: #00ffdc;
-  color: #0b0f08;
+  color: #ff99ff;
   text-shadow: 1px 0 rgba(255, 0, 0, 0.9), -1px 0 rgba(0, 0, 255, 0.1);
+}
+
+.card-back:hover {
+  animation: pop 2s ease;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 a {
@@ -151,7 +234,7 @@ a {
   padding: 1em 3em;
   color: var(--glow-color);
   font-size: 15px;
-  font-weight: bold;
+  font-weight: bolder;
   border-radius: 1em;
   outline: none;
   box-shadow: 0 0 1em 0.25em var(--glow-color),
@@ -191,8 +274,8 @@ a {
 #fade {
   opacity: 0.8;
   color: #ebffff;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #38eeff,
-    0 0 50px #38eeff;
+  text-shadow: 2px 2px 1px rgba(137, 218, 243, 0.3), 0 0px 15px #fff,
+    0 0 10px #38eeff, 0 0 50px #38eeff;
   -webkit-animation: fade 3s infinite alternate;
   -moz-animation: fade 3s infinite alternate;
   -o-animation: fade 3s infinite alternate;
@@ -206,7 +289,7 @@ a {
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #38eeff,
     0 0 50px #38eeff;
   font-size: 35px;
-  font-family: "Fira Code";
+  font-family: "Source Code Pro", monospace;
 }
 
 .neon-purple {
