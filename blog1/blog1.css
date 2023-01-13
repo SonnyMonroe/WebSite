@@ -167,7 +167,7 @@ body section .row {
 }
 
 .card .cover .date {
-  font-weight: 300;
+  font-weight: 1200;
   position: absolute;
   top: 55px;
   right: 50px;
@@ -208,6 +208,19 @@ body section .row {
   background-color: #00ffdc;
   color: #ff99ff;
   text-shadow: 1px 0 rgba(255, 0, 0, 0.9), -1px 0 rgba(0, 0, 255, 0.1);
+}
+
+.date {
+  background: transparent;
+  background-size: contain;
+  background-color: #00000000;
+  border-radius: 15px;
+  background-size: auto;
+  padding: 0;
+}
+
+.date {
+  animation: pop 4s ease;
 }
 
 .card-back:hover {
