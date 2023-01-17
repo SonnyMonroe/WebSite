@@ -1,0 +1,45 @@
+body {
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+  color: rgb(0, 0, 0);
+  background-size: 100% 100%;
+}
+
+.grid-container {
+  display: grid;
+  font-family: "Source Code Pro", monospace;
+  background: #000000;
+  color: #fff;
+  padding: 40px;
+  background-size: 100% 100%;
+  grid-template-columns: minmax(100px, max-content);
+  grid-auto-rows: minmax(75px, auto);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+p {
+  text-align: center;
+  color: aqua;
+  word-wrap: break-word;
+}
+
+img {
+  width: fit-content;
+  height: 350px;
+}
+
+h1,
+h2,
+h3 {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 0 rgba(255, 0, 0, 0.9), -2px 0 rgba(0, 0, 255, 0.9);
+}
