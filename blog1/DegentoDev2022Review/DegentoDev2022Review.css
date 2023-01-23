@@ -154,3 +154,28 @@ a {
   position: relative;
   transition: all 0.3s;
 }
+
+i {
+  color: #f9a1ff;
+  font-size: small;
+  font-weight: 500px;
+}
+
+li {
+  color: #fff;
+}
+
+li strong {
+  color: #ff00bf;
+}
+
+/*Ethan Bachman's quote*/
+#bf2b4ed4-bc2c-497b-9b61-c717261a0561 {
+  font-style: italic;
+  color: #ff99ff;
+  text-shadow: 1px 0 rgba(255, 0, 0, 0.9), -1px 0 rgba(0, 0, 255, 0.1);
+}
+
+span strong {
+  color: #ff00bf;
+}
