@@ -37,7 +37,8 @@ img {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   padding: 1rem;
   font-weight: bold;
   color: #fff;
@@ -163,10 +164,19 @@ i {
 
 li {
   color: #fff;
+  text-align: center;
 }
 
 li strong {
   color: #ff00bf;
+}
+
+ul,
+li {
+  margin: auto;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
 }
 
 /*Ethan Bachman's quote*/
@@ -178,4 +188,10 @@ li strong {
 
 span strong {
   color: #ff00bf;
+}
+
+.advice,
+li,
+ol {
+  text-align: left;
 }
