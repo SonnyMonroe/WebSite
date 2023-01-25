@@ -2,7 +2,8 @@
 
 <header>
 
-<nav>* [Home](https://icy-sunset-6501.on.fleek.co/) * [Medium](https://medium.com/@mabramo11) * [Twitter](https://twitter.com/SonnyTheDegen) * [Reddit](https://www.reddit.com/user/MyKeyGTrades) * [Github](https://github.com/SonnyMonroe)</nav>
+<nav>* [Home](https://icy-sunset-6501.on.fleek.co/) * [Medium](https://medium.com/@mabramo11) * [Twitter](https://twitter.com/SonnyTheDegen) * [Reddit](https://www.reddit.com/user/MyKeyGTrades) * [Github](https://github.com/SonnyMonroe)
+</nav>
 
 </header>
 
