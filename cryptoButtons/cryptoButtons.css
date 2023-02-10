@@ -102,3 +102,34 @@ button:hover {
   background-color: #29deb9;
   border-radius: 15px;
 }
+
+#lido-btn {
+  color: white;
+  background-color: #7bccfb;
+  border-radius: 15px;
+}
+#ada-btn {
+  color: white;
+  background-color: #21477c;
+  border-radius: 15px;
+}
+#okb-btn {
+  color: white;
+  background-color: #000;
+  border-radius: 15px;
+}
+#dot-btn {
+  color: white;
+  background-color: #de0076;
+  border-radius: 15px;
+}
+#ltc-btn {
+  color: white;
+  background-color: #838383;
+  border-radius: 15px;
+}
+#tron-btn {
+  color: white;
+  background-color: #8f2620;
+  border-radius: 15px;
+}
