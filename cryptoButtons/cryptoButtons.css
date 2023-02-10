@@ -1,3 +1,11 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 15px;
+  color: aliceblue;
+  background-color: rgba(27, 24, 24);
+  border-color: aliceblue;
+}
+
 .container {
   text-align: center;
   margin-top: 50px;
@@ -14,7 +22,36 @@ button {
   font-size: 20px;
 }
 
+#bitcoin-btn {
+  color: #4d4d4e;
+  background-color: #f2a900;
+  border-radius: 15px;
+}
+#ethereum-btn {
+  color: white;
+  background-color: #497493;
+  border-radius: 15px;
+}
+#tether-btn {
+  color: white;
+  background-color: #2ea07b;
+  border-radius: 15px;
+}
+
+#bnb-btn {
+  color: white;
+  background-color: #edb70c;
+  border-radius: 15px;
+}
+
+#usdc-btn {
+  color: white;
+  background-color: #2775ca;
+  border-radius: 15px;
+}
+
 #matic-btn {
   color: white;
   background-color: blueviolet;
+  border-radius: 15px;
 }
