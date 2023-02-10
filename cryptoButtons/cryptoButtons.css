@@ -17,6 +17,11 @@ button {
   font-size: 20px;
 }
 
+button:hover {
+  font-size: 21px;
+  animation: forwards;
+}
+
 #result {
   margin-top: 20px;
   font-size: 20px;
@@ -27,6 +32,14 @@ button {
   background-color: #f2a900;
   border-radius: 15px;
 }
+
+#bitcoin-btn:hover {
+  color: #ffffffd0;
+  background-color: #fca903;
+  border-radius: 15px;
+  opacity: -1rem;
+}
+
 #ethereum-btn {
   color: white;
   background-color: #497493;
