@@ -28,7 +28,7 @@ button:hover {
 }
 
 #bitcoin-btn {
-  color: #4d4d4e;
+  color: #ffffff;
   background-color: #f2a900;
   border-radius: 15px;
 }
@@ -66,5 +66,39 @@ button:hover {
 #matic-btn {
   color: white;
   background-color: blueviolet;
+  border-radius: 15px;
+}
+
+#ripple-btn {
+  color: white;
+  background-color: rgb(35, 34, 36);
+  border-radius: 15px;
+}
+
+#binanceUSD-btn {
+  color: white;
+  background-color: #edb70c;
+  border-radius: 15px;
+}
+#avax-btn {
+  color: white;
+  background-color: #e84142;
+  border-radius: 15px;
+}
+
+#doge-btn {
+  color: white;
+  background-color: #bba033;
+  border-radius: 15px;
+}
+#shiba-btn {
+  color: white;
+  background-color: #b43318;
+  border-radius: 15px;
+}
+
+#solana-btn {
+  color: white;
+  background-color: #29deb9;
   border-radius: 15px;
 }
