@@ -18,7 +18,7 @@ button {
 }
 
 button:hover {
-  font-size: 21px;
+  font-size: 22px;
   animation: forwards;
 }
 
@@ -71,7 +71,7 @@ button:hover {
 
 #ripple-btn {
   color: white;
-  background-color: rgb(35, 34, 36);
+  background-color: #1b95ca;
   border-radius: 15px;
 }
 
