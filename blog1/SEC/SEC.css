@@ -1,0 +1,194 @@
+body {
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+  background-size: 100% 100%;
+}
+
+.grid-container {
+  display: grid;
+
+  font-family: "Source Code Pro", monospace;
+  background: #000000;
+  color: #fff;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  background-size: 100% 100%;
+  grid-template-columns: minmax(100px, max-content);
+  grid-auto-rows: minmax(75px, auto);
+}
+
+p {
+  color: #00ffdc;
+  word-wrap: break-word;
+  padding: 0.5rem;
+  text-shadow: 1px 0 rgba(35, 35, 35, 0.9), -1px 0 rgba(0, 225, 255, 0.9);
+}
+
+img {
+  width: 550px;
+  height: 350px;
+  align-items: center;
+  margin: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 1rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 0 rgba(255, 0, 0, 0.9), -2px 0 rgba(0, 0, 255, 0.9);
+  text-align: center;
+}
+
+/* Scrollbar styling */
+.scrollbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 100%;
+  background-color: #f9a1ff;
+  z-index: 9999;
+}
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #444;
+}
+
+center img {
+  border: 10px;
+  border-color: #ff99ff;
+  text-shadow: 1px 0 rgba(255, 0, 0, 0.9), -2px 0 rgba(0, 0, 255, 0.9);
+  border-style: groove;
+}
+
+li {
+  color: rgb(246, 246, 246);
+  font-weight: 500;
+  font-size: medium;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+  align-items: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1em;
+  padding: 5px, 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+header nav ul li a:hover {
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(133, 53, 159, 0.993);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 2em;
+  color: var(--glow-color);
+  font-size: 1.2em;
+  font-weight: bolder;
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  position: relative;
+  transition: all 0.5s;
+  background-color: #00ffee;
+  color: #ff99ff;
+  text-shadow: 1px 0 rgba(255, 0, 0, 0.9), -1px 0 rgba(0, 0, 255, 0.1);
+
+  transform-style: preserve-3d;
+  transition: ease all 2.3s;
+  z-index: 3;
+  transform: translateZ(0px);
+}
+
+li:hover {
+  animation: pop 2s ease;
+}
+
+a {
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(133, 53, 159, 0.993);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  border: 0.25em solid var(--glow-color);
+  padding: 0.3em 0.9em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bolder;
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+}
+
+i {
+  color: #f9a1ff;
+  font-size: small;
+  font-weight: 500px;
+}
+
+li {
+  color: #fff;
+  text-align: center;
+}
+
+li strong {
+  color: #ff00bf;
+}
+
+ul,
+li {
+  margin: auto;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+/*Ethan Bachman's quote*/
+#bf2b4ed4-bc2c-497b-9b61-c717261a0561 {
+  font-style: italic;
+  color: #ffffff;
+  text-shadow: 1px 0 rgba(255, 255, 255, 0.9), -1px 0 rgba(0, 0, 255, 0.1);
+  margin-bottom: 3rem;
+}
+
+span strong {
+  color: #ff00bf;
+}
+
+.advice,
+li,
+ol {
+  text-align: left;
+}
+
+
+/* add back to the top button styling */
