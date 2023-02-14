@@ -431,3 +431,24 @@ const showResponse = (responses) => {
   let response = responses[Math.floor(Math.random() * responses.length)];
   result.innerHTML = response;
 };
+
+
+
+
+
+
+// Select all buttons on the page
+const buttons = document.querySelectorAll("button");
+
+// Loop through each button
+buttons.forEach((button) => {
+  // Add the class on mouseover
+  button.addEventListener("mouseover", () => {
+    button.classList.add("glow");
+  });
+
+  // Remove the class on mouseout
+  button.addEventListener("mouseout", () => {
+    button.classList.remove("glow");
+  });
+});

@@ -18,13 +18,27 @@ button {
 }
 
 button:hover {
-  font-size: 22px;
+  font-size: 23px;
   animation: forwards;
 }
 
 #result {
   margin-top: 20px;
   font-size: 20px;
+}
+/* Hover glow effect*/
+.glow {
+  box-shadow: 0 0 10px #fff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #fff;
+  }
+  to {
+    box-shadow: 0 0 20px #fff;
+  }
 }
 
 #bitcoin-btn {
@@ -34,7 +48,7 @@ button:hover {
 }
 
 #bitcoin-btn:hover {
-  color: #ffffffd0;
+  color: #ffffff;
   background-color: #fca903;
   border-radius: 15px;
   opacity: -1rem;
@@ -136,14 +150,16 @@ button:hover {
 
 #dai-btn {
   color: white;
-  background-color: #fcd27a;
+  background-color: #b89c61;
   border-radius: 15px;
 }
+
 #uniswap-btn {
   color: white;
   background-color: #fd63ad;
   border-radius: 15px;
 }
+
 #cosmos-btn {
   color: white;
   background-color: #434661;
@@ -154,11 +170,13 @@ button:hover {
   background-color: #f2b371;
   border-radius: 15px;
 }
+
 #link-btn {
   color: white;
   background-color: #2a5ad8;
   border-radius: 15px;
 }
+
 #ton-btn {
   color: white;
   background-color: #0088cc;
