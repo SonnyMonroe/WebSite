@@ -22,6 +22,12 @@ const cosmosBtn = document.getElementById("cosmos-btn");
 const wbtcBtn = document.getElementById("wbtc-btn");
 const linkBtn = document.getElementById("link-btn");
 const tonBtn = document.getElementById("ton-btn");
+const leoBtn = document.getElementById("leo-btn");
+const ethcBtn = document.getElementById("ethc-btn");
+const moneroBtn = document.getElementById("monero-btn");
+const btccashBtn = document.getElementById("btccash-btn");
+const aptosBtn = document.getElementById("aptos-btn");
+const stellarBtn = document.getElementById("stellar-btn");
 
 const result = document.querySelector("#result");
 
@@ -223,6 +229,59 @@ const tonResponses = [
   "TON is designed to be accessible and user-friendly, making it a great choice for people new to cryptocurrency.",
 ];
 
+const leoResponses = [
+  "LEO Token is a cryptocurrency created by Bitfinex, one of the largest cryptocurrency exchanges.",
+  "LEO is designed to be used as a utility token on the Bitfinex platform, offering benefits such as reduced trading fees and increased liquidity.",
+  "Bitfinex has committed to buying back and burning LEO tokens, reducing the total supply over time and increasing the value of the remaining tokens.",
+  "The value of LEO is tied to the success and growth of Bitfinex, making it a unique investment opportunity in the crypto space.",
+  "LEO is supported by a number of exchanges, making it easy to buy, sell, and store.",
+];
+
+const ethcResponses = [
+  "The Ethereum Classic (ETC) blockchain is an important piece of cryptocurrency and blockchain history, as it serves as a reminder of the importance of decentralization and the impact of major events on the development of new technologies.",
+  "ETC has a strong focus on community governance, where the community is able to make decisions on the future direction and development of the network.",
+  "The ETC network supports smart contracts, which are self-executing contracts with the terms of the agreement between buyer and seller being directly written into lines of code.",
+  "Ethereum Classic aims to provide an immutable and censorship-resistant platform, meaning that once transactions are recorded on the blockchain, they cannot be altered or deleted.",
+  "The ETC token is used to pay for transactions on the network and to reward validators for their contributions to the network.",
+  "The Ethereum we know today (ETH), was created when The hard fork occurred after the Ethereum community disagreed on how to handle a major hack that affected the Decentralized Autonomous Organization (DAO).",
+];
+
+const moneroResponses = [
+  "Monero is a privacy-focused cryptocurrency that was created in 2014.",
+  "Monero uses advanced cryptographic techniques, such as ring signatures and stealth addresses, to protect the privacy of its users.",
+  "Transactions on the Monero network are completely confidential, with no public record of the sender, receiver, or amount.",
+  "The Monero network is highly secure, with a strong track record of being resistant to hacking and other forms of cybercrime.",
+  "Monero has a number of use cases, including as a privacy-focused investment, a medium of exchange, and a store of value.",
+  "Monero is an open-source project, with its development guided by the principles of decentralization, privacy, and security.",
+  "Monero is fungible, meaning that all units of Monero are interchangeable and have equal value.",
+];
+
+const aptosResponses = [
+  "Aptos is developed by former Meta employees to solve the issues currently faced by decentralized systems.",
+  "Prior to full launch, Aptos had already gained much traction and is backed by prominent VCs and it is expected to compete with existing blockchain networks.",
+  "Aptos claims to offer “safe, scalable and upgradeable Web3 infrastructure.” It’s a contender in the race among Layer 1 blockchains to achieve the goal of a single ‘perfect’ blockchain.",
+  "Aptos can create and use multiple accounts that are controlled by a single account and are autonomous at the same time. The multiple wallets can’t be linked to the controller accounts and the owner can use the accounts without a trace of a single control point.",
+  "Aptos promises 100k TPS in its finalized version. However, the current Transactions Per Second (TPS) is somewhere around 4 transactions per second. This is among the slowest blockchains in existance.",
+];
+
+const btccashResponses = [
+  "Bitcoin Cash aims to offer faster and cheaper transactions compared to Bitcoin by increasing the block size limit.",
+  "The Bitcoin Cash community is focused on improving the scalability and accessibility of cryptocurrency.",
+  "Bitcoin Cash, is not pegged or related to Bitcoin in anyway.",
+  "Bitcoin Cash is a cryptocurrency that was created in 2017 as a fork of the original Bitcoin.",
+  "The supply of Bitcoin Cash is capped at 21 million, the same as Bitcoin.",
+  "Bitcoin Cash is a controversial asset, with some in the cryptocurrency community viewing it as a legitimate alternative to Bitcoin, while others see it as a misguided attempt to dilute the original vision of Bitcoin.",
+];
+
+const stellarResponses = [
+  "Stellar is an open-source project, guided by the principles of accessibility, sustainability, and social impact..",
+  "Stellar Lumens is the native cryptocurrency of the Stellar network, used to pay for transactions and as a store of value.",
+  "The Stellar network operates on a decentralized ledger, making it secure and transparent.",
+  "Stellar is fast, with transactions typically confirmed within 5 seconds.",
+  "Stellar is a decentralized platform that connects banks, payments systems, and people, making it easy to transfer money across borders.",
+  "Stellar Lumens (XLM) is a cryptocurrency that was created in 2014 by Jed McCaleb, one of the co-founders of Ripple.",
+];
+
 bitcoinBtn.addEventListener("click", () => {
   result.textContent =
     bitcoinResponses[Math.floor(Math.random() * bitcoinResponses.length)];
@@ -336,6 +395,36 @@ linkBtn.addEventListener("click", () => {
 tonBtn.addEventListener("click", () => {
   result.textContent =
     tonResponses[Math.floor(Math.random() * tonResponses.length)];
+});
+
+leoBtn.addEventListener("click", () => {
+  result.textContent =
+    leoResponses[Math.floor(Math.random() * leoResponses.length)];
+});
+
+ethcBtn.addEventListener("click", () => {
+  result.textContent =
+    ethcResponses[Math.floor(Math.random() * ethcResponses.length)];
+});
+
+moneroBtn.addEventListener("click", () => {
+  result.textContent =
+    moneroResponses[Math.floor(Math.random() * moneroResponses.length)];
+});
+
+aptosBtn.addEventListener("click", () => {
+  result.textContent =
+    aptosResponses[Math.floor(Math.random() * aptosResponses.length)];
+});
+
+btccashBtn.addEventListener("click", () => {
+  result.textContent =
+    btccashResponses[Math.floor(Math.random() * btccashResponses.length)];
+});
+
+stellarBtn.addEventListener("click", () => {
+  result.textContent =
+    stellarResponses[Math.floor(Math.random() * stellarResponses.length)];
 });
 
 const showResponse = (responses) => {

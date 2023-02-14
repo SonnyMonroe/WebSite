@@ -164,3 +164,39 @@ button:hover {
   background-color: #0088cc;
   border-radius: 15px;
 }
+
+#leo-btn {
+  color: white;
+  background-color: #6c5733;
+  border-radius: 15px;
+}
+
+#ethc-btn {
+  color: white;
+  background-color: #0b8311;
+  border-radius: 15px;
+}
+
+#monero-btn {
+  color: white;
+  background-color: #f26822;
+  border-radius: 15px;
+}
+
+#btccash-btn {
+  color: white;
+  background-color: #0fc290;
+  border-radius: 15px;
+}
+
+#aptos-btn {
+  color: white;
+  background-color: #808080;
+  border-radius: 15px;
+}
+
+#stellar-btn {
+  color: white;
+  background-color: #0c0c0c;
+  border-radius: 15px;
+}
