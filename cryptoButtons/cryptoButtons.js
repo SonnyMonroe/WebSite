@@ -15,7 +15,13 @@ const okbBtn = document.getElementById("okb-btn");
 const lidoBtn = document.getElementById("lido-btn");
 const ltcBtn = document.getElementById("ltc-btn");
 const dotBtn = document.getElementById("dot-btn");
+const daiBtn = document.getElementById("dai-btn");
 const tronBtn = document.getElementById("tron-btn");
+const uniswapBtn = document.getElementById("uniswap-btn");
+const cosmosBtn = document.getElementById("cosmos-btn");
+const wbtcBtn = document.getElementById("wbtc-btn");
+const linkBtn = document.getElementById("link-btn");
+const tonBtn = document.getElementById("ton-btn");
 
 const result = document.querySelector("#result");
 
@@ -164,6 +170,59 @@ const tronResponses = [
   "TRON aims to create a decentralized internet by enabling content creators to freely publish, store and own their data without the interference of intermediaries.",
 ];
 
+const daiResponses = [
+  "Dai is a decentralized stablecoin, meaning it is a cryptocurrency that is designed to maintain a stable value.",
+  "Dai is pegged to the US dollar, which means its value is meant to remain equal to $1.",
+  "The stability of Dai is maintained through a combination of smart contracts and a decentralized system of incentivized actors who help to keep its value stable.",
+  "Dai is created on the Ethereum blockchain, and is fully decentralized, meaning that it is not controlled by any central authority.",
+  "Dai is widely used in the decentralized finance (DeFi) space, where it is often used as a stable coin for lending, borrowing, and other financial applications.",
+];
+
+const uniswapResponses = [
+  "Uniswap users have full control over their funds and trades on the Uniswap exchange. On Uniswap there isn't a need for intermediaries like banks or brokers.",
+  "Uniswap is easy to use and does not require any special skills or technical knowledge to trade on the platform.",
+  "Uniswap has low fees compared to traditional centralized exchanges, making it a cost-effective option for trading.",
+  "Uniswap is a key player in the growing decentralized finance ecosystem, and has the potential to transform the way that cryptocurrency is traded and managed in the future",
+  "Uniswap is an innovative and disruptive technology that is changing the way that cryptocurrency is traded and exchanged, and has the potential to transform the financial industry.",
+  "Uniswap also allows for the creation and trading of custom token pairs, making it possible to trade any combination of supported cryptocurrencies.",
+  "Uniswap is becoming increasingly popular in the decentralized finance (DeFi) space, as it provides a secure and transparent way to trade cryptocurrencies and access other financial services.",
+];
+
+const cosmosResponses = [
+  "The goal of Cosmos is to enable communication and interoperability between different blockchain networks.",
+  "Cosmos is a decentralized network of independent blockchains.",
+  "By connecting different blockchains, Cosmos enables the transfer of assets and data between them, creating a multi-chain ecosystem.",
+  "Cosmos also provides the tools and infrastructure necessary for developers to build and launch their own independent blockchains.",
+  "Cosmos is designed to be secure, with built-in security features that protect against hacks and fraud.",
+  "Cosmos is designed to scale and handle a large volume of transactions, making it a fast and efficient platform for decentralized applications and services.",
+];
+
+const wbtcResponses = [
+  "WBTC is transparent and auditable, with its reserve holdings publicly visible on the Ethereum blockchain.",
+  "Wrapped Bitcoin is a great solution for those who want to take advantage of the security and stability of Bitcoin, while also benefiting from the compatibility and features of the Ethereum platform.",
+  "WBTC provides a bridge between the Bitcoin and Ethereum ecosystems, allowing users to use Bitcoin in Ethereum-based decentralized applications and services.",
+  "WBTC is an ERC-20 token, which means it is built on the Ethereum blockchain. Not the Bitcoin Blockchain",
+  "Wrapped Bitcoin (WBTC) is a type of cryptocurrency that is pegged 1:1 to the value of Bitcoin.",
+];
+
+const linkResponses = [
+  "Chainlink is a decentralized oracle network that connects smart contracts to real-world data and events.",
+  "Chainlink's real-world applications are virtually limitless, as the decentralized oracle network provides a secure and reliable bridge between the blockchain and the real world.",
+  "Chainlink provides a secure and reliable way for smart contracts to access data from external sources, like stock prices or weather data.",
+  "In the voting industry, Chainlink can be used to securely and transparently collect and verify voting data.",
+  "With its innovative and secure approach, Chainlink is playing a critical role in advancing the blockchain and decentralized technology space.",
+];
+
+const tonResponses = [
+  "TON is a blockchain platform created by Telegram, the popular messaging app.",
+  "The goal of TON is to provide fast and secure transactions for Telegram's users and beyond.",
+  "Telegram intends to integrate TON and the Gram into its messaging app, making it easy for users to send and receive payments.",
+  "TON's fast transaction speeds allow for near-instant transfers, making it ideal for micropayments and other real-time transactions.",
+  "Telegram's large user base of over 500 million people makes TON a promising and accessible entry point into the world of cryptocurrency.",
+  "The integration of TON into Telegram will make it easy for users to manage their crypto assets within the app, eliminating the need for separate wallets or exchanges.",
+  "TON is designed to be accessible and user-friendly, making it a great choice for people new to cryptocurrency.",
+];
+
 bitcoinBtn.addEventListener("click", () => {
   result.textContent =
     bitcoinResponses[Math.floor(Math.random() * bitcoinResponses.length)];
@@ -252,6 +311,31 @@ dotBtn.addEventListener("click", () => {
 tronBtn.addEventListener("click", () => {
   result.textContent =
     tronResponses[Math.floor(Math.random() * tronResponses.length)];
+});
+
+daiBtn.addEventListener("click", () => {
+  result.textContent =
+    daiResponses[Math.floor(Math.random() * daiResponses.length)];
+});
+uniswapBtn.addEventListener("click", () => {
+  result.textContent =
+    uniswapResponses[Math.floor(Math.random() * uniswapResponses.length)];
+});
+wbtcBtn.addEventListener("click", () => {
+  result.textContent =
+    wbtcResponses[Math.floor(Math.random() * wbtcResponses.length)];
+});
+cosmosBtn.addEventListener("click", () => {
+  result.textContent =
+    cosmosResponses[Math.floor(Math.random() * cosmosResponses.length)];
+});
+linkBtn.addEventListener("click", () => {
+  result.textContent =
+    linkResponses[Math.floor(Math.random() * linkResponses.length)];
+});
+tonBtn.addEventListener("click", () => {
+  result.textContent =
+    tonResponses[Math.floor(Math.random() * tonResponses.length)];
 });
 
 const showResponse = (responses) => {

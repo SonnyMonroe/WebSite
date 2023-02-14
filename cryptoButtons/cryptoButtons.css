@@ -133,3 +133,34 @@ button:hover {
   background-color: #8f2620;
   border-radius: 15px;
 }
+
+#dai-btn {
+  color: white;
+  background-color: #fcd27a;
+  border-radius: 15px;
+}
+#uniswap-btn {
+  color: white;
+  background-color: #fd63ad;
+  border-radius: 15px;
+}
+#cosmos-btn {
+  color: white;
+  background-color: #434661;
+  border-radius: 15px;
+}
+#wbtc-btn {
+  color: white;
+  background-color: #f2b371;
+  border-radius: 15px;
+}
+#link-btn {
+  color: white;
+  background-color: #2a5ad8;
+  border-radius: 15px;
+}
+#ton-btn {
+  color: white;
+  background-color: #0088cc;
+  border-radius: 15px;
+}
