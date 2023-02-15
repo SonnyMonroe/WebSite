@@ -28,6 +28,12 @@ const moneroBtn = document.getElementById("monero-btn");
 const btccashBtn = document.getElementById("btccash-btn");
 const aptosBtn = document.getElementById("aptos-btn");
 const stellarBtn = document.getElementById("stellar-btn");
+const hbarBtn = document.getElementById("hbar-btn");
+const lidoDaoBtn = document.getElementById("lidoDao-btn");
+const quantBtn = document.getElementById("quant-btn");
+const cronosBtn = document.getElementById("cronos-btn");
+const filecoinBtn = document.getElementById("filecoin-btn");
+const nearBtn = document.getElementById("near-btn");
 
 const result = document.querySelector("#result");
 
@@ -274,12 +280,68 @@ const btccashResponses = [
 ];
 
 const stellarResponses = [
-  "Stellar is an open-source project, guided by the principles of accessibility, sustainability, and social impact..",
+  "Stellar is an open-source project, guided by the principles of accessibility, sustainability, and social impact.",
   "Stellar Lumens is the native cryptocurrency of the Stellar network, used to pay for transactions and as a store of value.",
   "The Stellar network operates on a decentralized ledger, making it secure and transparent.",
   "Stellar is fast, with transactions typically confirmed within 5 seconds.",
   "Stellar is a decentralized platform that connects banks, payments systems, and people, making it easy to transfer money across borders.",
   "Stellar Lumens (XLM) is a cryptocurrency that was created in 2014 by Jed McCaleb, one of the co-founders of Ripple.",
+];
+
+const hbarResponses = [
+  "HBAR is a public, decentralized blockchain platform that uses a new consensus algorithm called Hashgraph.",
+  "HBAR tokens are used to pay for transactions on the network, and can also be used for staking and governance.",
+  "HBAR has partnerships with several large companies, including Google, IBM, and Boeing, and is used for a variety of use cases, including supply chain management and identity verification.",
+  "HBAR uses a 'proof of stake' consensus algorithm, where users can stake HBAR tokens to participate in block validation and earn rewards.",
+  "HBAR is designed to be fast, with the ability to handle up to 10,000 transactions per second (Take this with a grain of salt).",
+  "The Hedera Hashgraph algorithm is unique in that it uses a directed acyclic graph (DAG) to record transactions, rather than a traditional blockchain.",
+];
+
+const lidoDaoResponses = [
+  "Lido DAO is a decentralized autonomous organization that provides a liquid staking solution for Ethereum 2.0.",
+  "The Lido DAO was launched in December 2020, and it quickly became popular due to its user-friendly interface and high staking yields.",
+  "Lido DAO allows users to earn staking rewards without having to lock up their ETH, making it more accessible to users who want to participate in staking.",
+  "Lido DAO is a community-driven project, and its decision-making process is governed by LDO token holders.",
+  "Lido DAO is built on Ethereum, and it uses smart contracts to automate the staking process and distribute rewards to users.",
+  "Lido DAO has quickly become one of the most popular staking solutions in the Ethereum ecosystem, with over 6 billion in ETH currently staked on the platform.",
+  "Lido DAO has partnered with several leading DeFi platforms, including Aave and Curve, to provide users with additional ways to earn yield on their staked ETH.",
+];
+
+const cronosResponses = [
+  "Cronos (CRO) is the native token of the Cronos blockchain, which is built by Crypto.com.",
+  "Cronos was launched in 2021 as part of Crypto.com's mission to create a full ecosystem of crypto products and services.",
+  "Cronos is designed to be interoperable with other blockchains and is compatible with the Ethereum Virtual Machine (EVM).",
+  "Cronos is part of Crypto.com's broader mission to bring cryptocurrencies and blockchain technology to a wider audience and make them more accessible and useful in everyday life.",
+  "One of the key use cases of Cronos is to enable fast and cheap transactions for Crypto.com's growing range of financial services, including the Crypto.com App, Visa card, and DeFi products.",
+  "Crypto.com is committed to making Cronos a sustainable and environmentally friendly blockchain, and has pledged to offset the carbon footprint of its operations and promote green energy.",
+];
+
+const quantResponses = [
+  "Quant is a blockchain operating system that is designed to allow different blockchains to work together seamlessly.",
+  "The goal of Quant is to make it easier for developers and enterprises to build and use blockchain applications across multiple networks.",
+  "Quant also offers a suite of tools and services to help enterprises manage their blockchain infrastructure, including security, compliance, and monitoring.",
+  "The total supply of QNT tokens is fixed at 14.6 million, with a circulating supply of around 12 million.",
+  "Quant's QNT token is used to pay for transaction fees and access to the Overledger network, and also provides access to other services such as staking and governance.",
+  "Quant has partnerships with a number of major companies, including Oracle, SIA, and UniCredit, as well as with several blockchain projects such as Chainlink and IOTA.",
+];
+
+const filecoinResponses = [
+  "Filecoin is a decentralized storage network designed to store, secure, and exchange files. It was created by Protocol Labs, the same team behind IPFS (InterPlanetary File System).",
+  "Filecoin uses a unique proof-of-replication and proof-of-spacetime consensus mechanism to ensure data storage on the network.",
+  "The FIL token is the native cryptocurrency of the Filecoin network, used to pay for storage and retrieval services.",
+  "Filecoin is seen as a potential solution to the problem of data storage centralization and censorship.",
+  "Filecoin's decentralized storage network can be used for a variety of purposes, including website hosting, data archiving, and content distribution.",
+  "Filecoin's storage network is global and decentralized, with nodes located in different regions around the world.",
+  "Several notable projects, such as the Internet Archive and OpenZeppelin, have integrated Filecoin into their infrastructure for decentralized storage.",
+];
+
+const nearResponses = [
+  "Near Protocol has been working on developing its own NFT standard, called NEP-171, which aims to make it easier for developers to create and manage NFTs on the Near blockchain.",
+  "Near Protocol has a built-in sharding system called Nightshade, which allows the network to process transactions in parallel, increasing its scalability.",
+  "Near Protocol has partnerships with a number of companies, including Algorand and Oasis Labs, to enhance its ecosystem and support the development of new dApps.",
+  "Near Protocol supports multiple programming languages, including Rust, AssemblyScript, and Python, making it accessible to developers with different backgrounds.",
+  "Near Protocol offers fast and low-cost transactions, with fees as low as $0.001 per transaction.",
+  "Near Protocol is a decentralized blockchain platform designed to power high-performance decentralized applications (dApps).",
 ];
 
 bitcoinBtn.addEventListener("click", () => {
@@ -427,15 +489,40 @@ stellarBtn.addEventListener("click", () => {
     stellarResponses[Math.floor(Math.random() * stellarResponses.length)];
 });
 
+hbarBtn.addEventListener("click", () => {
+  result.textContent =
+    hbarResponses[Math.floor(Math.random() * hbarResponses.length)];
+});
+
+lidoDaoBtn.addEventListener("click", () => {
+  result.textContent =
+    lidoDaoResponses[Math.floor(Math.random() * lidoDaoResponses.length)];
+});
+
+quantBtn.addEventListener("click", () => {
+  result.textContent =
+    quantResponses[Math.floor(Math.random() * quantResponses.length)];
+});
+
+cronosBtn.addEventListener("click", () => {
+  result.textContent =
+    cronosResponses[Math.floor(Math.random() * cronosResponses.length)];
+});
+
+filecoinBtn.addEventListener("click", () => {
+  result.textContent =
+    filecoinResponses[Math.floor(Math.random() * filecoinResponses.length)];
+});
+
+nearBtn.addEventListener("click", () => {
+  result.textContent =
+    nearResponses[Math.floor(Math.random() * nearResponses.length)];
+});
+
 const showResponse = (responses) => {
   let response = responses[Math.floor(Math.random() * responses.length)];
   result.innerHTML = response;
 };
-
-
-
-
-
 
 // Select all buttons on the page
 const buttons = document.querySelectorAll("button");

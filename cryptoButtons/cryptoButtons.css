@@ -25,6 +25,11 @@ button:hover {
 #result {
   margin-top: 20px;
   font-size: 20px;
+  /* remove below when I know where to add results. below is just a guide*/
+  border: #0088cc;
+  border-style: dashed;
+  border-width: 10px;
+  background: #e9877f;
 }
 /* Hover glow effect*/
 .glow {
@@ -216,5 +221,39 @@ button:hover {
 #stellar-btn {
   color: white;
   background-color: #0c0c0c;
+  border-radius: 15px;
+}
+
+#hbar-btn {
+  color: white;
+  background-color: #0c0c0c;
+  border-radius: 15px;
+}
+
+#lidoDao-btn {
+  color: white;
+  background-color: #e9877f;
+  border-radius: 15px;
+}
+
+#cronos-btn {
+  color: white;
+  background-color: #264c88;
+  border-radius: 15px;
+}
+
+#quant-btn {
+  color: white;
+  background-color: #43403e;
+  border-radius: 15px;
+}
+#filecoin-btn {
+  color: white;
+  background-color: #1096ff;
+  border-radius: 15px;
+}
+#near-btn {
+  color: white;
+  background-color: #060606;
   border-radius: 15px;
 }
