@@ -1,3 +1,4 @@
 {
-  "editor.wordWrapColumn": 800
+  "editor.wordWrapColumn": 800,
+  "liveServer.settings.port": 5501
 }

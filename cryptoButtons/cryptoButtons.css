@@ -22,6 +22,15 @@ button:hover {
   animation: forwards;
 }
 
+/* For SVG Icons for Crypto Buttons*/
+
+img {
+  width: 12px;
+  height: 12px;
+  padding: 0px 5px 0px 0.5px;
+  margin: -2px;
+}
+
 #result {
   margin-top: 20px;
   font-size: 20px;
