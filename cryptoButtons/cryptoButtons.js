@@ -524,10 +524,8 @@ const showResponse = (responses) => {
   result.innerHTML = response;
 };
 
-// Select all buttons on the page
 const buttons = document.querySelectorAll("button");
 
-// Loop through each button
 buttons.forEach((button) => {
   // Add the class on mouseover
   button.addEventListener("mouseover", () => {
@@ -539,3 +537,39 @@ buttons.forEach((button) => {
     button.classList.remove("glow");
   });
 });
+
+/* These first 2 lines are a part of a wider code. I may need to use the first two pieces of code. 
+
+  const cryptoName = button.dataset.crypto;
+  addCryptoIconToButton(button, cryptoName);
+
+
+/* This was for the SVG icons to show up on the buttons. I had no success ^ the 2 lines of code above were part of this program/function
+
+function addCryptoIconToButton(button, cryptoName) {
+  const icon = document.createElement("span");
+  icon.style.backgroundImage = `url('./node_modules/cryptocurrency-icons/svg/color/${cryptoName}.svg')`;
+  icon.style.width = "20px";
+  icon.style.height = "20px";
+  icon.style.display = "inline-block";
+  icon.style.backgroundSize = "contain";
+  icon.style.backgroundRepeat = "no-repeat";
+  icon.style.backgroundPosition = "center";
+  button.appendChild(icon);
+}
+
+/* This was for the manifest.json fetch method for svg's
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("./node_modules/cryptocurrency-icons/manifest.json")
+    .then((response) => response.json())
+    .then((data) => {
+      data.icons.forEach((icon) => {
+        const img = document.createElement("img");
+        img.src = icon.path;
+        img.alt = icon.name;
+        document.body.appendChild(img);
+      });
+    });
+});
+
+ */

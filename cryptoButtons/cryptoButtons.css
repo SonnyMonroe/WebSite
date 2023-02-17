@@ -25,10 +25,12 @@ button:hover {
 /* For SVG Icons for Crypto Buttons Might need to change px to fit buttons */
 
 img {
-  width: 12px;
-  height: 12px;
-  padding: 0px 5px 0px 0.5px;
-  margin: -2px;
+  width: 15px;
+  height: 15px;
+  /*padding: 0px 0px 0px 0px;*/
+  margin-right: 5px;
+  margin-left: -5px;
+  outline-style: dotted;
 }
 
 #result {
