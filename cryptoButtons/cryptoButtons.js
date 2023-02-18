@@ -35,6 +35,13 @@ const cronosBtn = document.getElementById("cronos-btn");
 const filecoinBtn = document.getElementById("filecoin-btn");
 const nearBtn = document.getElementById("near-btn");
 
+const apeBtn = document.getElementById("ape-btn");
+const algoBtn = document.getElementById("algo-btn");
+const vechainBtn = document.getElementById("vechain-btn");
+const graphBtn = document.getElementById("graph-btn");
+const icpBtn = document.getElementById("icp-btn");
+const fantomBtn = document.getElementById("fantom-btn");
+
 const result = document.querySelector("#result");
 
 const bitcoinResponses = [
@@ -344,6 +351,59 @@ const nearResponses = [
   "Near Protocol is a decentralized blockchain platform designed to power high-performance decentralized applications (dApps).",
 ];
 
+const apeResponses = [
+  "ApeCoin (APE) is a cryptocurrency intended to support the development of a decentralized web3, inspired by one of the most famous and valuable NFT collections: the Bored Ape Yacht Club.",
+  "APE token holders take governance decisions collectively, casting their votes and deciding on issues like allocation of funds, framing of rules, partnerships, project selection and more.",
+  "The community holders of ApeCoin and various products/services using the cryptocurrency collectively make up the APE ecosystem. Yuga Labs, founded in 2021 and headquartered in Miami, Florida, is a prominent name in NFTs and digital collectibles.",
+  "Designed identically to any other Web3 coin, ApeCoin can be used for payments. ApeCoin is technically acceptable by most merchants because it is a pervasive ERC-20 token. The coin is also already in use as NFT rewards, and holders with the BAYC receive free APE that they can immediately cash.",
+  "ApeCoin is an ERC-20 governance and utility token used within the APE ecosystem to empower a decentralized community building at the forefront of web3.",
+];
+
+const algoResponses = [
+  "Algorand is a blockchain-based platform that was created to be a fast, secure, and decentralized solution for building scalable decentralized applications (dApps).",
+  "Algorand's PPoS consensus mechanism allows for a high degree of decentralization, enabling anyone to participate in the network as a validator.",
+  "Algorand's platform is highly flexible, enabling developers to build a wide range of dApps, including financial applications, gaming platforms, and supply chain management systems.",
+  "Algorand's platform supports smart contracts, which can be used to automate complex transactions and enforce business rules.",
+  "Algorand has a strong focus on security, with features like multisignature support and atomic swaps to prevent fraud and ensure the safety of user funds.",
+  "Algorand's ecosystem includes a variety of tools and resources for developers, including SDKs, APIs, and developer documentation.",
+];
+
+const vechainResponses = [
+  "VeChain is a blockchain-based platform that was created to help companies track and manage their supply chains.",
+  "VET is used as a store of value and can be used to participate in the VeChain ecosystem, while VTHO is used to pay for transaction fees and other services on the platform.",
+  "VeChain's technology enables companies to track and verify the authenticity of products throughout the supply chain, helping to prevent fraud and improve transparency.",
+  "VeChain's focus on transparency, traceability, and sustainability makes it a promising platform for companies looking to improve their supply chain operations and reduce their environmental impact.",
+  "VeChain's technology can be used in a wide range of industries, including agriculture, fashion, and logistics.",
+  "VeChain's platform uses a combination of blockchain technology, smart contracts, and Internet of Things (IoT) devices to track products and data in real-time.",
+];
+
+const graphResponses = [
+  "The Graph is a decentralized indexing and querying protocol for blockchain data.",
+  "The Graph allows developers to easily build applications that can query data from multiple blockchains in a standardized way.",
+  "The Graph's technology is highly scalable, with the ability to handle hundreds of thousands of queries per second.",
+  "The Graph's protocol is designed to be decentralized and censorship-resistant, ensuring that applications can continue to function even in the face of network disruptions or other challenges.",
+  "The Graph's focus on indexing and querying blockchain data makes it a critical piece of infrastructure for the decentralized web, enabling developers to build more complex and powerful applications on top of blockchain technology.",
+  "The Graph's ecosystem includes a variety of tools and resources for developers, including a web-based Graph Explorer and a hosted service for deploying and managing subgraphs.",
+];
+
+const icpResponses = [
+  "Internet Computer is a blockchain-based computing platform that aims to provide a decentralized alternative to traditional cloud computing services.",
+  "Internet Computer's ICP token is used to pay for transaction fees and other services on the platform.",
+  "Internet Computer has a governance system that allows token holders to vote on proposals and changes to the platform.",
+  "Internet Computer's open platform and developer-friendly approach make it easier for developers to build and deploy dApps without having to worry about infrastructure and scalability.",
+  "Internet Computer enables developers to build and deploy decentralized applications (dApps) that are fully integrated with the internet, allowing for a more seamless and user-friendly experience.",
+  "Internet Computer uses a unique consensus mechanism called Threshold Relay, which is designed to be more efficient and secure than traditional blockchain consensus mechanisms.",
+];
+
+const fantomResponses = [
+  "Fantom uses a unique consensus mechanism called Lachesis, which is designed to be more efficient and scalable than traditional proof-of-work (PoW) or proof-of-stake (PoS) consensus mechanisms.",
+  "Fantom's platform is highly flexible, enabling developers to build a wide range of dApps, including financial applications, gaming platforms, and supply chain management systems.",
+  "The initial token launch date for FTM is 15 Jun 2018. The maximum supply of this token is capped at 3,175,000,000, with an inflationary type emission rate since genesis. The supply of FTM is expected to be fully vested on 31 Dec 2025.",
+  "Fantom achieves decentralization and security through a permissionless and leaderless consensus protocol, in which anyone can join and leave the network at any time and all nodes are equal.",
+  "Fantom DeFi ecosystem is ripe with Halloween themed protocols such as Spooky Swap, BeethovenX, Scream, Tarot, Reaper Farm and Spirit Swap. This halloween trend was built organicly making Fantom quite is unique in that sense.",
+  "Fantom is a network of blockchains that provides ledger services to businesses and applications. Fantom is powered by Lachesis, an advanced DAG-based aBFT consensus algorithm. Blockchains built on Fantom are fast, secure, and highly scalable.These features allow organizations, businesses, and individuals to develop decentralized applications that can be used in the real world, across a wide range of industries.",
+];
+
 bitcoinBtn.addEventListener("click", () => {
   result.textContent =
     bitcoinResponses[Math.floor(Math.random() * bitcoinResponses.length)];
@@ -519,10 +579,46 @@ nearBtn.addEventListener("click", () => {
     nearResponses[Math.floor(Math.random() * nearResponses.length)];
 });
 
+//Results set # 7
+
+apeBtn.addEventListener("click", () => {
+  result.textContent =
+    apeResponses[Math.floor(Math.random() * apeResponses.length)];
+});
+
+algoBtn.addEventListener("click", () => {
+  result.textContent =
+    algoResponses[Math.floor(Math.random() * algoResponses.length)];
+});
+
+vechainBtn.addEventListener("click", () => {
+  result.textContent =
+    vechainResponses[Math.floor(Math.random() * vechainResponses.length)];
+});
+
+graphBtn.addEventListener("click", () => {
+  result.textContent =
+    graphResponses[Math.floor(Math.random() * graphResponses.length)];
+});
+
+icpBtn.addEventListener("click", () => {
+  result.textContent =
+    icpResponses[Math.floor(Math.random() * icpResponses.length)];
+});
+
+fantomBtn.addEventListener("click", () => {
+  result.textContent =
+    fantomResponses[Math.floor(Math.random() * fantomResponses.length)];
+});
+
+// reponses for crypto buttons below
+
 const showResponse = (responses) => {
   let response = responses[Math.floor(Math.random() * responses.length)];
   result.innerHTML = response;
 };
+
+// below is the mouse over hover effects
 
 const buttons = document.querySelectorAll("button");
 

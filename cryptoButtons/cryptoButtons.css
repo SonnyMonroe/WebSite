@@ -268,3 +268,39 @@ img {
   background-color: #060606;
   border-radius: 15px;
 }
+
+#ape-btn {
+  color: white;
+  background-color: #6b82c0;
+  border-radius: 15px;
+}
+
+#algo-btn {
+  color: white;
+  background-color: #696e70;
+  border-radius: 15px;
+}
+
+#vechain-btn {
+  color: white;
+  background-color: #8a8ada;
+  border-radius: 15px;
+}
+
+#graph-btn {
+  color: white;
+  background-color: #6a55b3;
+  border-radius: 15px;
+}
+
+#icp-btn {
+  color: white;
+  background-color: #763219;
+  border-radius: 15px;
+}
+
+#fantom-btn {
+  color: white;
+  background-color: #1969ff;
+  border-radius: 15px;
+}
