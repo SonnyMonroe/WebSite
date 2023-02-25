@@ -42,7 +42,24 @@ const graphBtn = document.getElementById("graph-btn");
 const icpBtn = document.getElementById("icp-btn");
 const fantomBtn = document.getElementById("fantom-btn");
 
-const result = document.querySelector("#result");
+const result = document.getElementById("result");
+
+//below ethereum result is a test. I'll likely delete it when edting
+const ethereumResult = document.getElementById("ethereumResult");
+
+//These Const Results I am not sure if it's needed. I dont have ripple button and it seems to work fine
+const binanceUSDResult = document.getElementById("binanceUSDResult");
+const avaxResult = document.getElementById("avaxResult");
+const dogeResult = document.getElementById("dogeResult");
+const shibaResult = document.getElementById("shibaResult");
+const solanaResult = document.getElementById("solanaResult");
+
+const adaResult = document.getElementById("adaResult");
+const okbResult = document.getElementById("okbResult");
+const ltcResult = document.getElementById("ltcResult");
+const dotResult = document.getElementById("dotResult");
+const lidoResult = document.getElementById("lidoResult");
+const tronResult = document.getElementById("tronResult");
 
 const bitcoinResponses = [
   "Bitcoin is a decentralized digital currency.",
@@ -410,7 +427,7 @@ bitcoinBtn.addEventListener("click", () => {
 });
 
 ethereumBtn.addEventListener("click", () => {
-  result.textContent =
+  ethereumResult.textContent =
     ethereumResponses[Math.floor(Math.random() * ethereumResponses.length)];
 });
 
@@ -434,64 +451,177 @@ maticBtn.addEventListener("click", () => {
     maticResponses[Math.floor(Math.random() * maticResponses.length)];
 });
 
+// rippleBtn.addEventListener("click", () => {
+//   result.textContent =
+//     rippleResponses[Math.floor(Math.random() * rippleResponses.length)];
+// });
+
 rippleBtn.addEventListener("click", () => {
-  result.textContent =
+  rippleResult.textContent =
     rippleResponses[Math.floor(Math.random() * rippleResponses.length)];
+  rippleResult.style.display = "block";
+  avaxResult.style.display = "none";
+  shibaResult.style.display = "none";
+  dogeResult.style.display = "none";
+  solanaResult.style.display = "none";
+  binanceUSDResult.style.display = "none";
 });
 
 binanceUSDBtn.addEventListener("click", () => {
-  result.textContent =
+  binanceUSDResult.textContent =
     binanceUSDResponses[Math.floor(Math.random() * binanceUSDResponses.length)];
+  avaxResult.style.display = "none";
+  shibaResult.style.display = "none";
+  dogeResult.style.display = "none";
+  solanaResult.style.display = "none";
+  binanceUSDResult.style.display = "block";
+  rippleResult.style.display = "none";
 });
+
+// binanceUSDBtn.addEventListener("click", () => {
+//   result.textContent =
+//     binanceUSDResponses[Math.floor(Math.random() * binanceUSDResponses.length)];
+// });
+
+// avaxBtn.addEventListener("click", () => {
+//   avaxResult.textContent =
+//     avaxResponses[Math.floor(Math.random() * avaxResponses.length)];
+// });
 
 avaxBtn.addEventListener("click", () => {
-  result.textContent =
+  avaxResult.textContent =
     avaxResponses[Math.floor(Math.random() * avaxResponses.length)];
+  avaxResult.style.display = "block";
+  shibaResult.style.display = "none";
+  dogeResult.style.display = "none";
+  solanaResult.style.display = "none";
+  binanceUSDResult.style.display = "none";
+  rippleResult.style.display = "none";
 });
+
+// dogeBtn.addEventListener("click", () => {
+//   result.textContent =
+//     dogeResponses[Math.floor(Math.random() * dogeResponses.length)];
+// });
 
 dogeBtn.addEventListener("click", () => {
-  result.textContent =
+  dogeResult.textContent =
     dogeResponses[Math.floor(Math.random() * dogeResponses.length)];
+  dogeResult.style.display = "block";
+  shibaResult.style.display = "none";
+  avaxResult.style.display = "none";
+  solanaResult.style.display = "none";
+  binanceUSDResult.style.display = "none";
+  rippleResult.style.display = "none";
 });
 
+// shibaBtn.addEventListener("click", () => {
+//   result.textContent =
+//     shibaResponses[Math.floor(Math.random() * shibaResponses.length)];
+// });
+
 shibaBtn.addEventListener("click", () => {
-  result.textContent =
+  shibaResult.textContent =
     shibaResponses[Math.floor(Math.random() * shibaResponses.length)];
+  shibaResult.style.display = "block";
+  dogeResult.style.display = "none";
+  avaxResult.style.display = "none";
+  solanaResult.style.display = "none";
+  binanceUSDResult.style.display = "none";
+  rippleResult.style.display = "none";
 });
 
 solanaBtn.addEventListener("click", () => {
-  result.textContent =
+  solanaResult.textContent =
     solanaResponses[Math.floor(Math.random() * solanaResponses.length)];
+  solanaResult.style.display = "block";
+  shibaResult.style.display = "none";
+  dogeResult.style.display = "none";
+  avaxResult.style.display = "none";
+  binanceUSDResult.style.display = "none";
+  rippleResult.style.display = "none";
 });
 
+// solanaBtn.addEventListener("click", () => {
+//   result.textContent =
+//     solanaResponses[Math.floor(Math.random() * solanaResponses.length)];
+// });
+
+// adaBtn.addEventListener("click", () => {
+//   result.textContent =
+//     adaResponses[Math.floor(Math.random() * adaResponses.length)];
+// });
+
 adaBtn.addEventListener("click", () => {
-  result.textContent =
+  adaResult.textContent =
     adaResponses[Math.floor(Math.random() * adaResponses.length)];
+  adaResult.style.display = "block";
+  okbResult.style.display = "none";
+  ltcResult.style.display = "none";
+  dotResult.style.display = "none";
+  lidoResult.style.display = "none";
+  tronResult.style.display = "none";
 });
 
 okbBtn.addEventListener("click", () => {
-  result.textContent =
+  okbResult.textContent =
     okbResponses[Math.floor(Math.random() * okbResponses.length)];
+  okbResult.style.display = "block";
+  adaResult.style.display = "none";
+  ltcResult.style.display = "none";
+  dotResult.style.display = "none";
+  lidoResult.style.display = "none";
+  tronResult.style.display = "none";
 });
 
+// lidoBtn.addEventListener("click", () => {
+//   result.textContent =
+//     lidoResponses[Math.floor(Math.random() * lidoResponses.length)];
+// });
+
 lidoBtn.addEventListener("click", () => {
-  result.textContent =
+  lidoResult.textContent =
     lidoResponses[Math.floor(Math.random() * lidoResponses.length)];
+  okbResult.style.display = "none";
+  adaResult.style.display = "none";
+  ltcResult.style.display = "none";
+  dotResult.style.display = "none";
+  lidoResult.style.display = "block";
+  tronResult.style.display = "none";
 });
 
 ltcBtn.addEventListener("click", () => {
-  result.textContent =
+  ltcResult.textContent =
     ltcResponses[Math.floor(Math.random() * ltcResponses.length)];
+  okbResult.style.display = "none";
+  adaResult.style.display = "none";
+  ltcResult.style.display = "block";
+  dotResult.style.display = "none";
+  lidoResult.style.display = "none";
+  tronResult.style.display = "none";
+  avaxResult.style.display = "none";
 });
 
 dotBtn.addEventListener("click", () => {
-  result.textContent =
+  dotResult.textContent =
     dotResponses[Math.floor(Math.random() * dotResponses.length)];
+  okbResult.style.display = "none";
+  adaResult.style.display = "none";
+  ltcResult.style.display = "none";
+  dotResult.style.display = "block";
+  lidoResult.style.display = "none";
+  tronResult.style.display = "none";
 });
 
 tronBtn.addEventListener("click", () => {
-  result.textContent =
+  tronResult.textContent =
     tronResponses[Math.floor(Math.random() * tronResponses.length)];
+  okbResult.style.display = "none";
+  adaResult.style.display = "none";
+  ltcResult.style.display = "none";
+  dotResult.style.display = "none";
+  lidoResult.style.display = "none";
+  tronResult.style.display = "block";
 });
 
 daiBtn.addEventListener("click", () => {

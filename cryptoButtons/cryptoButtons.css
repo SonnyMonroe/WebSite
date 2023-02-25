@@ -41,7 +41,10 @@ img {
   border-style: dashed;
   border-width: 10px;
   background: #e9877f;
+  display: inline-block;
+  vertical-align: top;
 }
+
 /* Hover glow effect*/
 .glow {
   box-shadow: 0 0 10px #fff;
@@ -110,6 +113,7 @@ img {
   background-color: #edb70c;
   border-radius: 15px;
 }
+
 #avax-btn {
   color: white;
   background-color: #e84142;
