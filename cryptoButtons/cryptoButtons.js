@@ -45,7 +45,9 @@ const fantomBtn = document.getElementById("fantom-btn");
 const result = document.getElementById("result");
 
 //below ethereum result is a test. I'll likely delete it when edting
+const bitcoinResult = document.getElementById("bitcoinResult");
 const ethereumResult = document.getElementById("ethereumResult");
+const tetherResult = document.getElementById("tetherResult");
 
 //These Const Results I am not sure if it's needed. I dont have ripple button and it seems to work fine
 const binanceUSDResult = document.getElementById("binanceUSDResult");
@@ -422,33 +424,69 @@ const fantomResponses = [
 ];
 
 bitcoinBtn.addEventListener("click", () => {
-  result.textContent =
+  bitcoinResult.textContent =
     bitcoinResponses[Math.floor(Math.random() * bitcoinResponses.length)];
+  bitcoinResult.style.display = "block";
+  ethereumResult.style.display = "none";
+  tetherResult.style.display = "none";
+  bnbResult.style.display = "none";
+  usdcResult.style.display = "none";
+  maticResult.style.display = "none";
 });
 
 ethereumBtn.addEventListener("click", () => {
   ethereumResult.textContent =
     ethereumResponses[Math.floor(Math.random() * ethereumResponses.length)];
+  bitcoinResult.style.display = "none";
+  ethereumResult.style.display = "block";
+  tetherResult.style.display = "none";
+  bnbResult.style.display = "none";
+  usdcResult.style.display = "none";
+  maticResult.style.display = "none";
 });
 
 tetherBtn.addEventListener("click", () => {
-  result.textContent =
+  tetherResult.textContent =
     tetherResponses[Math.floor(Math.random() * tetherResponses.length)];
+  tetherResult.style.display = "block";
+  bitcoinResult.style.display = "none";
+  ethereumResult.style.display = "none";
+  bnbResult.style.display = "none";
+  usdcResult.style.display = "none";
+  maticResult.style.display = "none";
 });
 
 bnbBtn.addEventListener("click", () => {
-  result.textContent =
+  bnbResult.textContent =
     bnbResponses[Math.floor(Math.random() * bnbResponses.length)];
+  tetherResult.style.display = "none";
+  bitcoinResult.style.display = "none";
+  ethereumResult.style.display = "none";
+  bnbResult.style.display = "block";
+  usdcResult.style.display = "none";
+  maticResult.style.display = "none";
 });
 
 usdcBtn.addEventListener("click", () => {
-  result.textContent =
+  usdcResult.textContent =
     usdcResponses[Math.floor(Math.random() * usdcResponses.length)];
+  tetherResult.style.display = "none";
+  bitcoinResult.style.display = "none";
+  ethereumResult.style.display = "none";
+  bnbResult.style.display = "none";
+  usdcResult.style.display = "block";
+  maticResult.style.display = "none";
 });
 
 maticBtn.addEventListener("click", () => {
-  result.textContent =
+  maticResult.textContent =
     maticResponses[Math.floor(Math.random() * maticResponses.length)];
+  tetherResult.style.display = "none";
+  bitcoinResult.style.display = "none";
+  ethereumResult.style.display = "none";
+  bnbResult.style.display = "none";
+  usdcResult.style.display = "none";
+  maticResult.style.display = "block";
 });
 
 // rippleBtn.addEventListener("click", () => {
