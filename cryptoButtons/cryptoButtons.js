@@ -46,6 +46,12 @@ const flowBtn = document.getElementById("flow-btn");
 const sandboxBtn = document.getElementById("sandbox-btn");
 const elrondBtn = document.getElementById("elrond-btn");
 
+const stacksBtn = document.getElementById("stacks-btn");
+const eosBtn = document.getElementById("eos-btn");
+const thetaBtn = document.getElementById("theta-btn");
+const manaBtn = document.getElementById("mana-btn");
+const aaveBtn = document.getElementById("aave-btn");
+
 const result = document.getElementById("result");
 
 const bitcoinResponses = [
@@ -432,6 +438,54 @@ const elrondResponses = [
   "The EGLD token is a unit of value that is native to the MultiversX network. It represents a medium of exchange between users & developers who pay to use the network, and validators who take the fees as payment for the services they provide.",
   "In 2021, Elrond rebranded as MultiverseX to reflect its vision of building a 'multi-chain metaverse' that can connect various blockchain networks and dApps.",
   "MultiversX has formed partnerships with several companies and organizations in the blockchain industry, including Binance, Chainlink, and Polygon.",
+];
+
+const stacksResponses = [
+  "Unlike other layer-1 blockchains that require a separate native token to pay for gas fees, Stacks uses Bitcoin as its native fee currency.",
+  "Stacks is designed to bring smart contracts and dApps to Bitcoin, allowing developers to leverage the security and stability of the Bitcoin network.",
+  "Stacks uses a consensus mechanism called Proof of Transfer (PoX), which enables miners to mine Bitcoin and Stacks simultaneously.",
+  "Stacks has a unique feature called Clarity, a programming language designed for smart contracts that is secure, predictable, and easy to read and write.",
+  "Stacks is a layer-1 blockchain that enables smart contracts and decentralized applications (dApps) on top of Bitcoin.",
+  "Stacks is the first blockchain to receive SEC approval for a token sale, with its $23 million Reg A+ offering in 2019.(Take this woith a huge grain of salt. The SEC is notorious for being the most incompetent and corrupt agencies throughout their discraced history.)",
+];
+
+const eosResponses = [
+  "EOS is a blockchain platform designed to support decentralized applications (dApps).",
+  "The EOS blockchain was created by Dan Larimer, who also co-founded Bitshares and Steemit.",
+  "EOS offers free transactions for users, which are funded by the network's inflation rate.",
+  "The EOS token is used as a means of accessing and using the EOS blockchain, and can also be used to vote for block producers.",
+  "EOS has faced criticism for its centralized governance model, in which a small number of block producers control the network.",
+];
+
+const thetaResponses = [
+  "Theta Network is a decentralized video delivery network that utilizes blockchain technology and a native cryptocurrency called Theta Token (THETA).",
+  "The network allows users to share their spare bandwidth and computing resources to help video streaming platforms deliver high-quality video content to users worldwide.",
+  "Theta Network aims to address the problems of video buffering, high delivery costs, and centralized video distribution through its decentralized network.",
+  "The Theta Token is used to incentivize users to share their resources and to reward content creators for providing high-quality video content.",
+  "Theta Network has partnered with major video streaming platforms such as Google, Samsung, and Sony to integrate its technology and improve video streaming performance.",
+  "The network utilizes a consensus mechanism called Proof-of-Engagement (PoE), which rewards users for participating in the network and engaging with video content.",
+  "Theta Network has a unique two-token model, where THETA is used to stake and secure the network, while Theta Fuel (TFUEL) is used for micropayments and transactions within the network.",
+  "Theta Network has recently announced partnerships with leading players in the gaming industry, including World Poker Tour and Enjin, to explore the potential of blockchain-based gaming and NFTs.",
+];
+
+const manaResponses = [
+  "Decentraland is a virtual reality platform built on the Ethereum blockchain where users can create, experience, and monetize content and applications.",
+  "MANA is the native cryptocurrency of Decentraland and is used for various purposes within the platform, such as purchasing virtual land, goods, and services.",
+  "Decentraland is a decentralized platform, which means that users have complete control over their virtual assets, and all transactions are secured using blockchain technology.",
+  "The Decentraland platform also includes virtual objects, known as Non-Fungible Tokens (NFTs), which are unique digital assets that can be bought, sold, and traded on various marketplaces.",
+  "The Decentraland platform has a thriving community, with regular events and gatherings hosted by users and developers from around the world.",
+  "Users can create and publish their own content, including games, experiences, and social applications, on their LAND using a variety of tools provided by Decentraland.",
+];
+
+const aaveResponses = [
+  "Aave is a decentralized finance (DeFi) protocol that allows users to lend, borrow, and earn interest on cryptocurrencies without the need for intermediaries.",
+  "Aave was originally launched in 2017 as ETHLend, but later rebranded to Aave, which means 'ghost' in Finnish.",
+  "Aave's native token is called AAVE, and it is used for governance and as collateral to borrow other cryptocurrencies.",
+  "Aave's protocol is built on the Ethereum blockchain, but it also supports cross-chain functionality with other blockchains like Polygon and Arbitrum.",
+  "Aave uses a unique type of smart contract called 'flash loans' which allow users to borrow funds without any collateral, as long as they pay it back within the same transaction block.",
+  "Aave was the first DeFi protocol to introduce a 'yield farming' feature, where users can earn additional tokens by staking their AAVE tokens in liquidity pools.",
+  "Aave has become one of the most popular DeFi protocols in the crypto space, with over $4.8 billion in total value locked (TVL) as of March 2023.",
+  "Aave has been audited multiple times by reputable firms like OpenZeppelin and ConsenSys Diligence to ensure the security and reliability of its smart contracts.",
 ];
 
 // bitcoinBtn.addEventListener("click", () => {
@@ -1068,6 +1122,11 @@ fantomBtn.addEventListener("click", () => {
   fantomResult.style.display = "block";
 });
 
+// fantomBtn.addEventListener("click", () => {
+//   result.textContent =
+//     fantomResponses[Math.floor(Math.random() * fantomResponses.length)];
+// });
+
 flowBtn.addEventListener("click", () => {
   const response =
     flowResponses[Math.floor(Math.random() * flowResponses.length)];
@@ -1104,10 +1163,65 @@ elrondBtn.addEventListener("click", () => {
   elrondResult.style.display = "block";
 });
 
-// fantomBtn.addEventListener("click", () => {
-//   result.textContent =
-//     fantomResponses[Math.floor(Math.random() * fantomResponses.length)];
-// });
+stacksBtn.addEventListener("click", () => {
+  const response =
+    stacksResponses[Math.floor(Math.random() * stacksResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  stacksResult.textContent = response;
+  stacksResult.style.display = "block";
+});
+
+eosBtn.addEventListener("click", () => {
+  const response =
+    eosResponses[Math.floor(Math.random() * eosResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  eosResult.textContent = response;
+  eosResult.style.display = "block";
+});
+
+thetaBtn.addEventListener("click", () => {
+  const response =
+    thetaResponses[Math.floor(Math.random() * thetaResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  thetaResult.textContent = response;
+  thetaResult.style.display = "block";
+});
+
+manaBtn.addEventListener("click", () => {
+  const response =
+    manaResponses[Math.floor(Math.random() * manaResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  manaResult.textContent = response;
+  manaResult.style.display = "block";
+});
+
+aaveBtn.addEventListener("click", () => {
+  const response =
+    aaveResponses[Math.floor(Math.random() * aaveResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  aaveResult.textContent = response;
+  aaveResult.style.display = "block";
+});
 
 // reponses for crypto buttons below
 

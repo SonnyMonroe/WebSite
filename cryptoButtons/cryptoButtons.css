@@ -326,3 +326,33 @@ img {
   background-color: #20e4cc;
   border-radius: 15px;
 }
+
+#stacks-btn {
+  color: white;
+  background-color: #7d72ff;
+  border-radius: 15px;
+}
+
+#eos-btn {
+  color: white;
+  background-color: #4b4b4b;
+  border-radius: 15px;
+}
+
+#theta-btn {
+  color: white;
+  background-color: #2ab8e6;
+  border-radius: 15px;
+}
+
+#mana-btn {
+  color: white;
+  background-color: #ff8759;
+  border-radius: 15px;
+}
+
+#aave-btn {
+  color: white;
+  background-color: #ac559e;
+  border-radius: 15px;
+}
