@@ -39,29 +39,14 @@ const apeBtn = document.getElementById("ape-btn");
 const algoBtn = document.getElementById("algo-btn");
 const vechainBtn = document.getElementById("vechain-btn");
 const graphBtn = document.getElementById("graph-btn");
+
 const icpBtn = document.getElementById("icp-btn");
 const fantomBtn = document.getElementById("fantom-btn");
+const flowBtn = document.getElementById("flow-btn");
+const sandboxBtn = document.getElementById("sandbox-btn");
+const elrondBtn = document.getElementById("elrond-btn");
 
 const result = document.getElementById("result");
-
-//below ethereum result is a test. I'll likely delete it when edting
-const bitcoinResult = document.getElementById("bitcoinResult");
-const ethereumResult = document.getElementById("ethereumResult");
-const tetherResult = document.getElementById("tetherResult");
-
-//These Const Results I am not sure if it's needed. I dont have ripple button and it seems to work fine
-const binanceUSDResult = document.getElementById("binanceUSDResult");
-const avaxResult = document.getElementById("avaxResult");
-const dogeResult = document.getElementById("dogeResult");
-const shibaResult = document.getElementById("shibaResult");
-const solanaResult = document.getElementById("solanaResult");
-
-const adaResult = document.getElementById("adaResult");
-const okbResult = document.getElementById("okbResult");
-const ltcResult = document.getElementById("ltcResult");
-const dotResult = document.getElementById("dotResult");
-const lidoResult = document.getElementById("lidoResult");
-const tronResult = document.getElementById("tronResult");
 
 const bitcoinResponses = [
   "Bitcoin is a decentralized digital currency.",
@@ -421,6 +406,32 @@ const fantomResponses = [
   "Fantom achieves decentralization and security through a permissionless and leaderless consensus protocol, in which anyone can join and leave the network at any time and all nodes are equal.",
   "Fantom DeFi ecosystem is ripe with Halloween themed protocols such as Spooky Swap, BeethovenX, Scream, Tarot, Reaper Farm and Spirit Swap. This halloween trend was built organicly making Fantom quite is unique in that sense.",
   "Fantom is a network of blockchains that provides ledger services to businesses and applications. Fantom is powered by Lachesis, an advanced DAG-based aBFT consensus algorithm. Blockchains built on Fantom are fast, secure, and highly scalable.These features allow organizations, businesses, and individuals to develop decentralized applications that can be used in the real world, across a wide range of industries.",
+];
+
+const flowResponses = [
+  "Flow is a blockchain developed by the team behind CryptoKitties, and it was specifically designed to handle high-throughput decentralized applications like NBA Top Shot.",
+  "NBA Top Shot is a blockchain-based marketplace where users can buy, sell, and trade officially licensed NBA collectibles in the form of non-fungible tokens (NFTs).",
+  "Each NBA Top Shot NFT represents a unique moment from an NBA game, such as a game-winning shot or a spectacular dunk.",
+  "Flow is designed to be highly scalable, which allows for a smooth and seamless user experience on NBA Top Shot even during periods of high traffic.",
+  "Unlike other blockchains that use gas fees to process transactions, Flow uses a fee model that allows developers to cover the costs of network usage for their users.",
+  "NBA Top Shot and Flow are paving the way for a new era of digital collectibles and NFTs, with many other industries and applications likely to follow suit in the coming years.",
+];
+
+const sandboxResponses = [
+  "The Sandbox is a blockchain-based virtual world where players can create, share, and monetize their gaming experiences.",
+  "The Sandbox uses non-fungible tokens (NFTs) to represent in-game assets such as land, buildings, and characters, allowing players to truly own and trade them on the blockchain.",
+  "The Sandbox's Game Maker tool allows players to create their own games and experiences within the virtual world, with the potential to earn SAND and other rewards for successful creations",
+  "The Sandbox has partnered with major brands and IPs, including Atari, Rollercoaster Tycoon, and The Walking Dead, to bring popular franchises into the blockchain gaming space.",
+  "The Sandbox has held multiple successful LAND sales, with some plots of virtual land selling for over $1 million worth of SAND.",
+  "The Sandbox's vision is to create a metaverse, a fully immersive virtual world that brings together players, creators, and communities in a decentralized ecosystem powered by blockchain technology.",
+];
+
+const elrondResponses = [
+  "The MultiversX team has developed several tools and frameworks to make it easier for developers to build on the platform, including the Elrond SDK, the Elrond API, and the ArwenJS library for building dApps.",
+  "MultiversX is a highly scalable, secure and decentralized blockchain network created to enable radically new applications, for users, businesses, society, and the new metaverse frontier.",
+  "The EGLD token is a unit of value that is native to the MultiversX network. It represents a medium of exchange between users & developers who pay to use the network, and validators who take the fees as payment for the services they provide.",
+  "In 2021, Elrond rebranded as MultiverseX to reflect its vision of building a 'multi-chain metaverse' that can connect various blockchain networks and dApps.",
+  "MultiversX has formed partnerships with several companies and organizations in the blockchain industry, including Binance, Chainlink, and Polygon.",
 ];
 
 // bitcoinBtn.addEventListener("click", () => {
@@ -1057,6 +1068,42 @@ fantomBtn.addEventListener("click", () => {
   fantomResult.style.display = "block";
 });
 
+flowBtn.addEventListener("click", () => {
+  const response =
+    flowResponses[Math.floor(Math.random() * flowResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  flowResult.textContent = response;
+  flowResult.style.display = "block";
+});
+
+sandboxBtn.addEventListener("click", () => {
+  const response =
+    sandboxResponses[Math.floor(Math.random() * sandboxResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  sandboxResult.textContent = response;
+  sandboxResult.style.display = "block";
+});
+
+elrondBtn.addEventListener("click", () => {
+  const response =
+    elrondResponses[Math.floor(Math.random() * elrondResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  elrondResult.textContent = response;
+  elrondResult.style.display = "block";
+});
+
 // fantomBtn.addEventListener("click", () => {
 //   result.textContent =
 //     fantomResponses[Math.floor(Math.random() * fantomResponses.length)];
@@ -1147,3 +1194,23 @@ document.addEventListener("DOMContentLoaded", function () {
 //   daiResult.textContent = response;
 //   daiResult.style.display = "block";
 // });
+
+// below ethereum result is a test. I'll likely delete it when edting
+
+// const bitcoinResult = document.getElementById("bitcoinResult");
+// const ethereumResult = document.getElementById("ethereumResult");
+// const tetherResult = document.getElementById("tetherResult");
+
+// //These Const Results I am not sure if it's needed. I dont have ripple button and it seems to work fine
+// const binanceUSDResult = document.getElementById("binanceUSDResult");
+// const avaxResult = document.getElementById("avaxResult");
+// const dogeResult = document.getElementById("dogeResult");
+// const shibaResult = document.getElementById("shibaResult");
+// const solanaResult = document.getElementById("solanaResult");
+
+// const adaResult = document.getElementById("adaResult");
+// const okbResult = document.getElementById("okbResult");
+// const ltcResult = document.getElementById("ltcResult");
+// const dotResult = document.getElementById("dotResult");
+// const lidoResult = document.getElementById("lidoResult");
+// const tronResult = document.getElementById("tronResult");

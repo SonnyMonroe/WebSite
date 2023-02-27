@@ -308,3 +308,21 @@ img {
   background-color: #1969ff;
   border-radius: 15px;
 }
+
+#flow-btn {
+  color: white;
+  background-color: #00ef8b;
+  border-radius: 15px;
+}
+
+#sandbox-btn {
+  color: white;
+  background-color: #22a1c9;
+  border-radius: 15px;
+}
+
+#elrond-btn {
+  color: white;
+  background-color: #20e4cc;
+  border-radius: 15px;
+}
