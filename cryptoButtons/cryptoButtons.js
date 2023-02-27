@@ -423,69 +423,147 @@ const fantomResponses = [
   "Fantom is a network of blockchains that provides ledger services to businesses and applications. Fantom is powered by Lachesis, an advanced DAG-based aBFT consensus algorithm. Blockchains built on Fantom are fast, secure, and highly scalable.These features allow organizations, businesses, and individuals to develop decentralized applications that can be used in the real world, across a wide range of industries.",
 ];
 
+// bitcoinBtn.addEventListener("click", () => {
+//   bitcoinResult.textContent =
+//     bitcoinResponses[Math.floor(Math.random() * bitcoinResponses.length)];
+//   bitcoinResult.style.display = "block";
+//   ethereumResult.style.display = "none";
+//   tetherResult.style.display = "none";
+//   bnbResult.style.display = "none";
+//   usdcResult.style.display = "none";
+//   maticResult.style.display = "none";
+// });
+
 bitcoinBtn.addEventListener("click", () => {
-  bitcoinResult.textContent =
+  // get a random response from the array
+  const response =
     bitcoinResponses[Math.floor(Math.random() * bitcoinResponses.length)];
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  // show the selected response element
+  bitcoinResult.textContent = response;
   bitcoinResult.style.display = "block";
-  ethereumResult.style.display = "none";
-  tetherResult.style.display = "none";
-  bnbResult.style.display = "none";
-  usdcResult.style.display = "none";
-  maticResult.style.display = "none";
 });
+
+// ethereumBtn.addEventListener("click", () => {
+//   ethereumResult.textContent =
+//     ethereumResponses[Math.floor(Math.random() * ethereumResponses.length)];
+//   bitcoinResult.style.display = "none";
+//   ethereumResult.style.display = "block";
+//   tetherResult.style.display = "none";
+//   bnbResult.style.display = "none";
+//   usdcResult.style.display = "none";
+//   maticResult.style.display = "none";
+// });
 
 ethereumBtn.addEventListener("click", () => {
-  ethereumResult.textContent =
+  // get a random response from the array
+  const response =
     ethereumResponses[Math.floor(Math.random() * ethereumResponses.length)];
-  bitcoinResult.style.display = "none";
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  // show the selected response element
+  ethereumResult.textContent = response;
   ethereumResult.style.display = "block";
-  tetherResult.style.display = "none";
-  bnbResult.style.display = "none";
-  usdcResult.style.display = "none";
-  maticResult.style.display = "none";
 });
 
+// tetherBtn.addEventListener("click", () => {
+//   tetherResult.textContent =
+//     tetherResponses[Math.floor(Math.random() * tetherResponses.length)];
+//   tetherResult.style.display = "block";
+//   bitcoinResult.style.display = "none";
+//   ethereumResult.style.display = "none";
+//   bnbResult.style.display = "none";
+//   usdcResult.style.display = "none";
+//   maticResult.style.display = "none";
+// });
+
 tetherBtn.addEventListener("click", () => {
-  tetherResult.textContent =
+  // get a random response from the array
+  const response =
     tetherResponses[Math.floor(Math.random() * tetherResponses.length)];
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  // show the selected response element
+  tetherResult.textContent = response;
   tetherResult.style.display = "block";
-  bitcoinResult.style.display = "none";
-  ethereumResult.style.display = "none";
-  bnbResult.style.display = "none";
-  usdcResult.style.display = "none";
-  maticResult.style.display = "none";
 });
 
 bnbBtn.addEventListener("click", () => {
-  bnbResult.textContent =
+  // get a random response from the array
+  const response =
     bnbResponses[Math.floor(Math.random() * bnbResponses.length)];
-  tetherResult.style.display = "none";
-  bitcoinResult.style.display = "none";
-  ethereumResult.style.display = "none";
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  // show the selected response element
+  bnbResult.textContent = response;
   bnbResult.style.display = "block";
-  usdcResult.style.display = "none";
-  maticResult.style.display = "none";
 });
+// usdcBtn.addEventListener("click", () => {
+//   usdcResult.textContent =
+//     usdcResponses[Math.floor(Math.random() * usdcResponses.length)];
+//   tetherResult.style.display = "none";
+//   bitcoinResult.style.display = "none";
+//   ethereumResult.style.display = "none";
+//   bnbResult.style.display = "none";
+//   usdcResult.style.display = "block";
+//   maticResult.style.display = "none";
+// });
 
 usdcBtn.addEventListener("click", () => {
-  usdcResult.textContent =
+  // get a random response from the array
+  const response =
     usdcResponses[Math.floor(Math.random() * usdcResponses.length)];
-  tetherResult.style.display = "none";
-  bitcoinResult.style.display = "none";
-  ethereumResult.style.display = "none";
-  bnbResult.style.display = "none";
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  // show the selected response element
+  usdcResult.textContent = response;
   usdcResult.style.display = "block";
-  maticResult.style.display = "none";
 });
 
+// maticBtn.addEventListener("click", () => {
+//   maticResult.textContent =
+//     maticResponses[Math.floor(Math.random() * maticResponses.length)];
+//   tetherResult.style.display = "none";
+//   bitcoinResult.style.display = "none";
+//   ethereumResult.style.display = "none";
+//   bnbResult.style.display = "none";
+//   usdcResult.style.display = "none";
+//   maticResult.style.display = "block";
+// });
+
 maticBtn.addEventListener("click", () => {
-  maticResult.textContent =
+  // get a random response from the array
+  const response =
     maticResponses[Math.floor(Math.random() * maticResponses.length)];
-  tetherResult.style.display = "none";
-  bitcoinResult.style.display = "none";
-  ethereumResult.style.display = "none";
-  bnbResult.style.display = "none";
-  usdcResult.style.display = "none";
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  // show the selected response element
+  maticResult.textContent = response;
   maticResult.style.display = "block";
 });
 
@@ -495,25 +573,31 @@ maticBtn.addEventListener("click", () => {
 // });
 
 rippleBtn.addEventListener("click", () => {
-  rippleResult.textContent =
+  // get a random response from the array
+  const response =
     rippleResponses[Math.floor(Math.random() * rippleResponses.length)];
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  rippleResult.textContent = response;
   rippleResult.style.display = "block";
-  avaxResult.style.display = "none";
-  shibaResult.style.display = "none";
-  dogeResult.style.display = "none";
-  solanaResult.style.display = "none";
-  binanceUSDResult.style.display = "none";
 });
 
 binanceUSDBtn.addEventListener("click", () => {
-  binanceUSDResult.textContent =
+  // get a random response from the array
+  const response =
     binanceUSDResponses[Math.floor(Math.random() * binanceUSDResponses.length)];
-  avaxResult.style.display = "none";
-  shibaResult.style.display = "none";
-  dogeResult.style.display = "none";
-  solanaResult.style.display = "none";
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  binanceUSDResult.textContent = response;
   binanceUSDResult.style.display = "block";
-  rippleResult.style.display = "none";
 });
 
 // binanceUSDBtn.addEventListener("click", () => {
@@ -527,14 +611,17 @@ binanceUSDBtn.addEventListener("click", () => {
 // });
 
 avaxBtn.addEventListener("click", () => {
-  avaxResult.textContent =
+  // get a random response from the array
+  const response =
     avaxResponses[Math.floor(Math.random() * avaxResponses.length)];
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  avaxResult.textContent = response;
   avaxResult.style.display = "block";
-  shibaResult.style.display = "none";
-  dogeResult.style.display = "none";
-  solanaResult.style.display = "none";
-  binanceUSDResult.style.display = "none";
-  rippleResult.style.display = "none";
 });
 
 // dogeBtn.addEventListener("click", () => {
@@ -543,14 +630,17 @@ avaxBtn.addEventListener("click", () => {
 // });
 
 dogeBtn.addEventListener("click", () => {
-  dogeResult.textContent =
+  // get a random response from the array
+  const response =
     dogeResponses[Math.floor(Math.random() * dogeResponses.length)];
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  dogeResult.textContent = response;
   dogeResult.style.display = "block";
-  shibaResult.style.display = "none";
-  avaxResult.style.display = "none";
-  solanaResult.style.display = "none";
-  binanceUSDResult.style.display = "none";
-  rippleResult.style.display = "none";
 });
 
 // shibaBtn.addEventListener("click", () => {
@@ -559,25 +649,31 @@ dogeBtn.addEventListener("click", () => {
 // });
 
 shibaBtn.addEventListener("click", () => {
-  shibaResult.textContent =
+  // get a random response from the array
+  const response =
     shibaResponses[Math.floor(Math.random() * shibaResponses.length)];
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  shibaResult.textContent = response;
   shibaResult.style.display = "block";
-  dogeResult.style.display = "none";
-  avaxResult.style.display = "none";
-  solanaResult.style.display = "none";
-  binanceUSDResult.style.display = "none";
-  rippleResult.style.display = "none";
 });
 
 solanaBtn.addEventListener("click", () => {
-  solanaResult.textContent =
+  // get a random response from the array
+  const response =
     solanaResponses[Math.floor(Math.random() * solanaResponses.length)];
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  solanaResult.textContent = response;
   solanaResult.style.display = "block";
-  shibaResult.style.display = "none";
-  dogeResult.style.display = "none";
-  avaxResult.style.display = "none";
-  binanceUSDResult.style.display = "none";
-  rippleResult.style.display = "none";
 });
 
 // solanaBtn.addEventListener("click", () => {
@@ -591,25 +687,31 @@ solanaBtn.addEventListener("click", () => {
 // });
 
 adaBtn.addEventListener("click", () => {
-  adaResult.textContent =
+  // get a random response from the array
+  const response =
     adaResponses[Math.floor(Math.random() * adaResponses.length)];
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  adaResult.textContent = response;
   adaResult.style.display = "block";
-  okbResult.style.display = "none";
-  ltcResult.style.display = "none";
-  dotResult.style.display = "none";
-  lidoResult.style.display = "none";
-  tronResult.style.display = "none";
 });
 
 okbBtn.addEventListener("click", () => {
-  okbResult.textContent =
+  // get a random response from the array
+  const response =
     okbResponses[Math.floor(Math.random() * okbResponses.length)];
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  okbResult.textContent = response;
   okbResult.style.display = "block";
-  adaResult.style.display = "none";
-  ltcResult.style.display = "none";
-  dotResult.style.display = "none";
-  lidoResult.style.display = "none";
-  tronResult.style.display = "none";
 });
 
 // lidoBtn.addEventListener("click", () => {
@@ -618,166 +720,347 @@ okbBtn.addEventListener("click", () => {
 // });
 
 lidoBtn.addEventListener("click", () => {
-  lidoResult.textContent =
+  // get a random response from the array
+  const response =
     lidoResponses[Math.floor(Math.random() * lidoResponses.length)];
-  okbResult.style.display = "none";
-  adaResult.style.display = "none";
-  ltcResult.style.display = "none";
-  dotResult.style.display = "none";
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  lidoResult.textContent = response;
   lidoResult.style.display = "block";
-  tronResult.style.display = "none";
 });
 
 ltcBtn.addEventListener("click", () => {
-  ltcResult.textContent =
+  // get a random response from the array
+  const response =
     ltcResponses[Math.floor(Math.random() * ltcResponses.length)];
-  okbResult.style.display = "none";
-  adaResult.style.display = "none";
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  ltcResult.textContent = response;
   ltcResult.style.display = "block";
-  dotResult.style.display = "none";
-  lidoResult.style.display = "none";
-  tronResult.style.display = "none";
-  avaxResult.style.display = "none";
 });
 
+// dotBtn.addEventListener("click", () => {
+//   dotResult.textContent =
+//     dotResponses[Math.floor(Math.random() * dotResponses.length)];
+//   okbResult.style.display = "none";
+//   adaResult.style.display = "none";
+//   ltcResult.style.display = "none";
+//   dotResult.style.display = "block";
+//   lidoResult.style.display = "none";
+//   tronResult.style.display = "none";
+// });
+
 dotBtn.addEventListener("click", () => {
-  dotResult.textContent =
+  // get a random response from the array
+  const response =
     dotResponses[Math.floor(Math.random() * dotResponses.length)];
-  okbResult.style.display = "none";
-  adaResult.style.display = "none";
-  ltcResult.style.display = "none";
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  dotResult.textContent = response;
   dotResult.style.display = "block";
-  lidoResult.style.display = "none";
-  tronResult.style.display = "none";
 });
 
 tronBtn.addEventListener("click", () => {
-  tronResult.textContent =
+  // get a random response from the array
+  const response =
     tronResponses[Math.floor(Math.random() * tronResponses.length)];
-  okbResult.style.display = "none";
-  adaResult.style.display = "none";
-  ltcResult.style.display = "none";
-  dotResult.style.display = "none";
-  lidoResult.style.display = "none";
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  tronResult.textContent = response;
   tronResult.style.display = "block";
 });
 
 daiBtn.addEventListener("click", () => {
-  result.textContent =
+  // get a random response from the array
+  const response =
     daiResponses[Math.floor(Math.random() * daiResponses.length)];
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  daiResult.textContent = response;
+  daiResult.style.display = "block";
 });
+
 uniswapBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     uniswapResponses[Math.floor(Math.random() * uniswapResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  uniswapResult.textContent = response;
+  uniswapResult.style.display = "block";
 });
 wbtcBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     wbtcResponses[Math.floor(Math.random() * wbtcResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+
+  wbtcResult.textContent = response;
+  wbtcResult.style.display = "block";
 });
+
 cosmosBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     cosmosResponses[Math.floor(Math.random() * cosmosResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  cosmosResult.textContent = response;
+  cosmosResult.style.display = "block";
 });
+
 linkBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     linkResponses[Math.floor(Math.random() * linkResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  linkResult.textContent = response;
+  linkResult.style.display = "block";
 });
+
 tonBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     tonResponses[Math.floor(Math.random() * tonResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  tonResult.textContent = response;
+  tonResult.style.display = "block";
 });
 
 leoBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     leoResponses[Math.floor(Math.random() * leoResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  leoResult.textContent = response;
+  leoResult.style.display = "block";
 });
 
 ethcBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     ethcResponses[Math.floor(Math.random() * ethcResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  ethcResult.textContent = response;
+  ethcResult.style.display = "block";
 });
 
 moneroBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     moneroResponses[Math.floor(Math.random() * moneroResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  moneroResult.textContent = response;
+  moneroResult.style.display = "block";
 });
 
 aptosBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     aptosResponses[Math.floor(Math.random() * aptosResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  aptosResult.textContent = response;
+  aptosResult.style.display = "block";
 });
 
 btccashBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     btccashResponses[Math.floor(Math.random() * btccashResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  btccashResult.textContent = response;
+  btccashResult.style.display = "block";
 });
 
 stellarBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     stellarResponses[Math.floor(Math.random() * stellarResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  stellarResult.textContent = response;
+  stellarResult.style.display = "block";
 });
 
 hbarBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     hbarResponses[Math.floor(Math.random() * hbarResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  hbarResult.textContent = response;
+  hbarResult.style.display = "block";
 });
 
 lidoDaoBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     lidoDaoResponses[Math.floor(Math.random() * lidoDaoResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  lidoDaoResult.textContent = response;
+  lidoDaoResult.style.display = "block";
 });
 
 quantBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     quantResponses[Math.floor(Math.random() * quantResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  quantResult.textContent = response;
+  quantResult.style.display = "block";
 });
 
 cronosBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     cronosResponses[Math.floor(Math.random() * cronosResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  cronosResult.textContent = response;
+  cronosResult.style.display = "block";
 });
 
 filecoinBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     filecoinResponses[Math.floor(Math.random() * filecoinResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  filecoinResult.textContent = response;
+  filecoinResult.style.display = "block";
 });
 
 nearBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     nearResponses[Math.floor(Math.random() * nearResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  nearResult.textContent = response;
+  nearResult.style.display = "block";
 });
 
 //Results set # 7
 
 apeBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     apeResponses[Math.floor(Math.random() * apeResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  apeResult.textContent = response;
+  apeResult.style.display = "block";
 });
 
 algoBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     algoResponses[Math.floor(Math.random() * algoResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  algoResult.textContent = response;
+  algoResult.style.display = "block";
 });
 
 vechainBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     vechainResponses[Math.floor(Math.random() * vechainResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  vechainResult.textContent = response;
+  vechainResult.style.display = "block";
 });
 
 graphBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     graphResponses[Math.floor(Math.random() * graphResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  graphResult.textContent = response;
+  graphResult.style.display = "block";
 });
 
 icpBtn.addEventListener("click", () => {
-  result.textContent =
+  const response =
     icpResponses[Math.floor(Math.random() * icpResponses.length)];
+
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  icpResult.textContent = response;
+  icpResult.style.display = "block";
 });
 
 fantomBtn.addEventListener("click", () => {
-  result.textContent =
+  // get a random response from the array
+  const response =
     fantomResponses[Math.floor(Math.random() * fantomResponses.length)];
+
+  // hide all response elements
+  document.querySelectorAll(".responseBox div").forEach((element) => {
+    element.style.display = "none";
+  });
+  fantomResult.textContent = response;
+  fantomResult.style.display = "block";
 });
+
+// fantomBtn.addEventListener("click", () => {
+//   result.textContent =
+//     fantomResponses[Math.floor(Math.random() * fantomResponses.length)];
+// });
 
 // reponses for crypto buttons below
 
@@ -837,3 +1120,30 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
  */
+
+//Old Way for reponses to disappear from each responseBox being a different class element
+
+// daiBtn.addEventListener("click", () => {
+//   // get a random response from the array
+//   const response =
+//     daiResponses[Math.floor(Math.random() * daiResponses.length)];
+
+//   // hide all response elements
+//   document.querySelectorAll(".responseBox1 div").forEach((element) => {
+//     element.style.display = "none";
+//   });
+//   document.querySelectorAll(".responseBox2 div").forEach((element) => {
+//     element.style.display = "none";
+//   });
+
+//   document.querySelectorAll(".responseBox3 div").forEach((element) => {
+//     element.style.display = "none";
+//   });
+//   document.querySelectorAll(".responseBox4 div").forEach((element) => {
+//     element.style.display = "none";
+//   });
+
+//   // show the selected response element
+//   daiResult.textContent = response;
+//   daiResult.style.display = "block";
+// });
