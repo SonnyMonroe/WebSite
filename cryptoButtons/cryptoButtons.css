@@ -6,20 +6,47 @@
   border-color: aliceblue;
 }
 
-.container {
+.button-container {
   text-align: center;
   margin-top: 50px;
+  /* height of 100vh might not matter*/
+  height: 100vh;
+  align-content: space-between;
+  justify-content: space-evenly;
+  column-gap: space-evenly;
+}
+
+.buttonRow {
+  align-items: stretch;
 }
 
 button {
   padding: 10px 20px;
   margin: 10px;
   font-size: 20px;
+  content: space-evenly;
+  align-items: center;
 }
 
 button:hover {
   font-size: 23px;
   animation: forwards;
+  margin: 10px;
+}
+
+/* Hover glow effect*/
+.glow {
+  box-shadow: 0 0 10px #fff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #fff;
+  }
+  to {
+    box-shadow: 0 0 20px #fff;
+  }
 }
 
 /* For SVG Icons for Crypto Buttons Might need to change px to fit buttons */
@@ -43,21 +70,6 @@ img {
   background: #e9877f;
   display: inline-block;
   vertical-align: top;
-}
-
-/* Hover glow effect*/
-.glow {
-  box-shadow: 0 0 10px #fff;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-  from {
-    box-shadow: 0 0 5px #fff;
-  }
-  to {
-    box-shadow: 0 0 20px #fff;
-  }
 }
 
 #bitcoin-btn {
@@ -356,3 +368,13 @@ img {
   background-color: #ac559e;
   border-radius: 15px;
 }
+
+/*
+
+I'll need to do something with my reponseBox, just not there yet
+
+.responseBox {
+  background-color: #0088cc !important;
+}
+
+*/

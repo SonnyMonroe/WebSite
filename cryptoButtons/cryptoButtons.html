@@ -6,180 +6,193 @@
         <link rel="stylesheet" type="text/css" href="cryptoButtons.css">
     </head>
     <body>
-        <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
-        <div id="coinmarketcap-widget-marquee"
-            coins="1,1027,825,4687,3408,10240,13244,1298,5426,5805,3890,3635,11396,52,2,8000,11840,3794,12220,20435,9608,11409,512,7083,6210,7278,2586,1966,11289,6538,2280,6535,6953,5632,328,1958,18399,5864,16842,6636,8200,18876,2010,3077,7186,2416,4558,16086,1518,9285,13246,1975,17081,19899,13855,14299,8536,18398,1321,4030,74,20314,10095,16519,8206,7046"
-            currency="USD" theme="dark" transparent="true" show-symbol-logo="true">
-        </div>
-
         <div class="container">
-
-            <h1>Crypto Buttons</h1>
-            <div>
-                <button id="bitcoin-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/btc.svg">Bitcoin
-                </button>
-                <button onclick="ethereumResponses" id="ethereum-btn"><img
-                        src="./node_modules/cryptocurrency-icons/svg/color/eth.svg"> Ethereum
-                </button>
-                <button id="tether-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/usdt.svg">
-                    Tether</button>
-                <button id="bnb-btn"><img src="./node_modules/cryptocurrency-icons/svg/icon/bnb.svg">Binance
-                    Coin</button>
-                <button id="usdc-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/usdc.svg">USD
-                    Coin</button>
-
-                <div class="responseBox">
-                    <div id="bitcoinResult"></div>
-                    <div id="ethereumResult"></div>
-                    <div id="tetherResult"></div>
-                    <div id="bnbResult"></div>
-                    <div id="usdcResult"></div>
-                </div>
-            </div>
-            <div>
-                <button id="matic-btn"><img
-                        src="./node_modules/cryptocurrency-icons/svg/color/matic.svg">Polygon</button>
-                <button id="ripple-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/xrp.svg">Ripple</button>
-                <button id="binanceUSD-btn"><img
-                        src="./node_modules/cryptocurrency-icons/svg/myCreations/BUSD.jpg">Binance
-                    USD</button>
-                <button id="avax-btn"><img
-                        src="./node_modules/cryptocurrency-icons/svg/color/avax.svg">Avalanche</button>
-                <button id="doge-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/doge.svg">Doge
-                    Coin</button>
-
-                <div class="responseBox">
-                    <div id="maticResult"></div>
-                    <div id="rippleResult"></div>
-                    <div id="binanceUSDResult"></div>
-                    <div id="avaxResult"></div>
-                    <div id="dogeResult"></div>
-
-                </div>
-            </div>
-            <div>
-                <button id="shiba-btn"><img src="./node_modules/cryptocurrency-icons/svg/myCreations/shiba.jpg">Shiba
-                    Inu</button>
-                <button id="solana-btn"><img src="./node_modules/cryptocurrency-icons/svg/icon/sol.svg">Solana</button>
-                <button id="ada-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/ada.svg">Cardano</button>
-                <button id="okb-btn"><img src="./node_modules/cryptocurrency-icons/svg/myCreations/okb.jpg">OKB</button>
-                <button id="lido-btn"><img src="./node_modules/cryptocurrency-icons/svg/myCreations/steth_logo.jpg">Lido
-                    (Staked Ether)</button>
-
-                <div class="responseBox">
-                    <div id="shibaResult"></div>
-                    <div id="solanaResult"></div>
-                    <div id="adaResult"></div>
-                    <div id="okbResult"></div>
-                    <div id="lidoResult"></div>
-
-                </div>
-            </div>
-            <div>
-                <button id="dot-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/dot.svg">PolkaDot</button>
-                <button id="ltc-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/ltc.svg">LiteCoin</button>
-                <button id="tron-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/trx.svg">Tron</button>
-                <button id="dai-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/dai.svg">Dai</button>
-                <button id="uniswap-btn"><img
-                        src="./node_modules/cryptocurrency-icons/svg/color/uni.svg">UniSwap</button>
-                <div class="responseBox">
-                    <div id="dotResult"></div>
-                    <div id="ltcResult"></div>
-                    <div id="tronResult"></div>
-                    <div id="daiResult"></div>
-                    <div id="uniswapResult"></div>
-
-                </div>
-            </div>
-            <div>
-                <button id="cosmos-btn"><img
-                        src="./node_modules/cryptocurrency-icons/svg/color/atom.svg">Cosmos</button>
-                <button id="wbtc-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/wbtc.svg">Wrapped
-                    Bitcoin</button>
-                <button id="link-btn"><img
-                        src="./node_modules/cryptocurrency-icons/svg/color/link.svg">Chainlink</button>
-                <button id="ton-btn"><img
-                        src="./node_modules/cryptocurrency-icons/svg/myCreations/ton_symbol.jpg">Toncoin</button>
-
-                <button id="leo-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/leo.svg">Leo
-                    Token</button>
-
-                <div class="responseBox">
-                    <div id="cosmosResult"></div>
-                    <div id="wbtcResult"></div>
-                    <div id="linkResult"></div>
-                    <div id="tonResult"></div>
-                    <div id="leoResult"></div>
-
-                </div>
+            <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
+            <div id="coinmarketcap-widget-marquee"
+                coins="1,1027,825,4687,3408,10240,13244,1298,5426,5805,3890,3635,11396,52,2,8000,11840,3794,12220,20435,9608,11409,512,7083,6210,7278,2586,1966,11289,6538,2280,6535,6953,5632,328,1958,18399,5864,16842,6636,8200,18876,2010,3077,7186,2416,4558,16086,1518,9285,13246,1975,17081,19899,13855,14299,8536,18398,1321,4030,74,20314,10095,16519,8206,7046"
+                currency="USD" theme="dark" transparent="true" show-symbol-logo="true">
             </div>
 
-            <div>
-                <button id="ethc-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/etc.svg">Ethereum
-                    Classic</button>
-                <button id="monero-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/xmr.svg">Monero</button>
-                <button id="aptos-btn"><img
-                        src="./node_modules/cryptocurrency-icons/svg/myCreations/aptos_round.jpg">Aptos</button>
-                <button id="btccash-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/bch.svg">Bitcoin
-                    Cash</button>
-                <button id="stellar-btn"><img
-                        src="./node_modules/cryptocurrency-icons/svg/color/xlm.svg">Stellar</button>
+            <div class="button-container">
 
+                <h1>Crypto Buttons</h1>
+                <div class="buttonRow">
+                    <button id="bitcoin-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/btc.svg">Bitcoin
+                    </button>
+                    <button onclick="ethereumResponses" id="ethereum-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/color/eth.svg"> Ethereum
+                    </button>
+                    <button id="tether-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/usdt.svg">
+                        Tether</button>
+                    <button id="bnb-btn"><img src="./node_modules/cryptocurrency-icons/svg/icon/bnb.svg">Binance
+                        Coin</button>
+                    <button id="usdc-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/usdc.svg">USD
+                        Coin</button>
 
-                <div class="responseBox">
-                    <div id="ethcResult"></div>
-                    <div id="moneroResult"></div>
-                    <div id="aptosResult"></div>
-                    <div id="btccashResult"></div>
-                    <div id="stellarResult"></div>
-
+                    <div class="responseBox">
+                        <div id="bitcoinResult"></div>
+                        <div id="ethereumResult"></div>
+                        <div id="tetherResult"></div>
+                        <div id="bnbResult"></div>
+                        <div id="usdcResult"></div>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <button id="hbar-btn"><img src="./node_modules/cryptocurrency-icons/svg/myCreations/hbar.svg"> Hedera
-                </button>
-                <button id="lidoDao-btn"><img
-                        src="./node_modules/cryptocurrency-icons/svg/myCreations/Lido_DAO.jpg">Lido Dao </button>
-                <button id="cronos-btn"><img
-                        src="./node_modules/cryptocurrency-icons/svg/myCreations/cro_token_logo.svg">Cronos</button>
-                <button id="quant-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/qnt.svg">Quant
-                </button>
-                <button id="filecoin-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/fil.svg">Filecoin
-                </button>
+                <div class="buttonRow">
+                    <button id="matic-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/color/matic.svg">Polygon</button>
+                    <button id="ripple-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/color/xrp.svg">Ripple</button>
+                    <button id="binanceUSD-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/myCreations/BUSD.jpg">Binance
+                        USD</button>
+                    <button id="avax-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/color/avax.svg">Avalanche</button>
+                    <button id="doge-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/doge.svg">Doge
+                        Coin</button>
 
-                <div class="responseBox">
-                    <div id="hbarResult"></div>
-                    <div id="lidoDaoResult"></div>
-                    <div id="cronosResult"></div>
-                    <div id="quantResult"></div>
-                    <div id="filecoinResult"></div>
+                    <div class="responseBox">
+                        <div id="maticResult"></div>
+                        <div id="rippleResult"></div>
+                        <div id="binanceUSDResult"></div>
+                        <div id="avaxResult"></div>
+                        <div id="dogeResult"></div>
 
+                    </div>
+                </div>
+                <div class="buttonRow">
+                    <button id="shiba-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/myCreations/shiba.jpg">Shiba
+                        Inu</button>
+                    <button id="solana-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/icon/sol.svg">Solana</button>
+                    <button id="ada-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/color/ada.svg">Cardano</button>
+                    <button id="okb-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/myCreations/okb.jpg">OKB</button>
+                    <button id="lido-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/myCreations/steth_logo.jpg">Lido
+                        (Staked Ether)</button>
+
+                    <div class="responseBox">
+                        <div id="shibaResult"></div>
+                        <div id="solanaResult"></div>
+                        <div id="adaResult"></div>
+                        <div id="okbResult"></div>
+                        <div id="lidoResult"></div>
+
+                    </div>
+                </div>
+                <div class="buttonRow">
+                    <button id="dot-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/color/dot.svg">PolkaDot</button>
+                    <button id="ltc-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/color/ltc.svg">LiteCoin</button>
+                    <button id="tron-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/trx.svg">Tron</button>
+                    <button id="dai-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/dai.svg">Dai</button>
+                    <button id="uniswap-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/color/uni.svg">UniSwap</button>
+                    <div class="responseBox">
+                        <div id="dotResult"></div>
+                        <div id="ltcResult"></div>
+                        <div id="tronResult"></div>
+                        <div id="daiResult"></div>
+                        <div id="uniswapResult"></div>
+
+                    </div>
+                </div>
+                <div class="buttonRow">
+                    <button id="cosmos-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/color/atom.svg">Cosmos</button>
+                    <button id="wbtc-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/wbtc.svg">Wrapped
+                        Bitcoin</button>
+                    <button id="link-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/color/link.svg">Chainlink</button>
+                    <button id="ton-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/myCreations/ton_symbol.jpg">Toncoin</button>
+
+                    <button id="leo-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/leo.svg">Leo
+                        Token</button>
+
+                    <div class="responseBox">
+                        <div id="cosmosResult"></div>
+                        <div id="wbtcResult"></div>
+                        <div id="linkResult"></div>
+                        <div id="tonResult"></div>
+                        <div id="leoResult"></div>
+
+                    </div>
                 </div>
 
-            </div>
-            <div>
-                <button id="near-btn"><img src="./node_modules/cryptocurrency-icons/svg/myCreations/near.jpg">Near
-                    Protocol</button>
+                <div class="buttonRow">
+                    <button id="ethc-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/etc.svg">Ethereum
+                        Classic</button>
+                    <button id="monero-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/color/xmr.svg">Monero</button>
+                    <button id="aptos-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/myCreations/aptos_round.jpg">Aptos</button>
+                    <button id="btccash-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/bch.svg">Bitcoin
+                        Cash</button>
+                    <button id="stellar-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/color/xlm.svg">Stellar</button>
 
-                <button id="ape-btn"><img src="./node_modules/cryptocurrency-icons/svg/myCreations/apecoin.jpg">ApeCoin
-                </button>
-                <button id="algo-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/algo.svg">Algorand
-                </button>
-                <button id="vechain-btn"><img
-                        src="./node_modules/cryptocurrency-icons/svg/color/vet.svg">VeChain</button>
-                <button id="graph-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/grt.svg">The Graph
-                </button>
 
-                <div class="responseBox">
+                    <div class="responseBox">
+                        <div id="ethcResult"></div>
+                        <div id="moneroResult"></div>
+                        <div id="aptosResult"></div>
+                        <div id="btccashResult"></div>
+                        <div id="stellarResult"></div>
 
-                    <div id="nearResult"></div>
-                    <div id="apeResult"></div>
-                    <div id="algoResult"></div>
-                    <div id="vechainResult"></div>
-                    <div id="graphResult"></div>
+                    </div>
                 </div>
-
                 <div>
+                    <button id="hbar-btn"><img src="./node_modules/cryptocurrency-icons/svg/myCreations/hbar.svg">
+                        Hedera
+                    </button>
+                    <button id="lidoDao-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/myCreations/Lido_DAO.jpg">Lido Dao </button>
+                    <button id="cronos-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/myCreations/cro_token_logo.svg">Cronos</button>
+                    <button id="quant-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/qnt.svg">Quant
+                    </button>
+                    <button id="filecoin-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/fil.svg">Filecoin
+                    </button>
+
+                    <div class="responseBox">
+                        <div id="hbarResult"></div>
+                        <div id="lidoDaoResult"></div>
+                        <div id="cronosResult"></div>
+                        <div id="quantResult"></div>
+                        <div id="filecoinResult"></div>
+
+                    </div>
+
+                </div>
+                <div class="buttonRow">
+                    <button id="near-btn"><img src="./node_modules/cryptocurrency-icons/svg/myCreations/near.jpg">Near
+                        Protocol</button>
+
+                    <button id="ape-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/myCreations/apecoin.jpg">ApeCoin
+                    </button>
+                    <button id="algo-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/algo.svg">Algorand
+                    </button>
+                    <button id="vechain-btn"><img
+                            src="./node_modules/cryptocurrency-icons/svg/color/vet.svg">VeChain</button>
+                    <button id="graph-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/grt.svg">The Graph
+                    </button>
+
+                    <div class="responseBox">
+
+                        <div id="nearResult"></div>
+                        <div id="apeResult"></div>
+                        <div id="algoResult"></div>
+                        <div id="vechainResult"></div>
+                        <div id="graphResult"></div>
+                    </div>
+                </div>
+
+                <div class="buttonRow">
                     <button id="icp-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/icp.svg">Internet
                         Computer
                     </button>
@@ -203,7 +216,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="buttonRow">
                     <button id="stacks-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/stx.svg">Stacks
                     </button>
                     <button id="eos-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/eos.svg">EOS</button>
@@ -226,5 +239,7 @@
                 <p id="result"></p>
                 <!-- @dev This is where the results go for the buttoins -->
                 <script src="cryptoButtons.js"></script>
+            </div>
+        </div>
     </body>
 </html>
