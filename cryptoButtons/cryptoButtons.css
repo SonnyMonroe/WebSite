@@ -26,7 +26,6 @@
   background-color: rgba(27, 24, 24);
   border-color: aliceblue;
   text-rendering: optimizeLegibility;
-  width: space-between;
 }
 
 .button-container {
@@ -46,7 +45,6 @@ button {
   padding: 10px 20px;
   margin: 10px;
   font-size: 20px;
-  content: space-evenly;
   align-items: center;
   font-weight: 900;
   text-rendering: optimizeLegibility;
