@@ -1,31 +1,9 @@
-/* CSS code to make the page responsive 
---when i minimize the page it doesn't look so good. I might need to delete the media queries
-*/
-@media only screen and (max-width: 768px) {
-  /* adjust the font size and spacing of the buttons for smaller screens */
-  Button {
-    font-size: 16px;
-    padding: 5px 10px;
-    max-width: calc(33.33% - 10px);
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  /* adjust the font size and spacing of the buttons for even smaller screens */
-  Button {
-    font-size: 14px;
-    padding: 3px 6px;
-    max-width: calc(50% - 10px);
-  }
-}
-
 * {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   border-radius: 15px;
   color: aliceblue;
   background-color: rgb(27, 24, 24);
   border-color: aliceblue;
-  text-rendering: optimizeLegibility;
 }
 
 .button-container {
@@ -46,7 +24,6 @@ button {
   font-size: 20px;
   align-items: center;
   font-weight: 900;
-  text-rendering: optimizeLegibility;
 }
 
 .responseBox {
@@ -97,6 +74,51 @@ img {
   margin-right: 5px;
   margin-left: -5px;
   outline-style: dotted;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+
+.box {
+  height: 100px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.box-1 {
+  background-color: red;
+  flex-grow: 0;
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 20px;
+  margin-right: 10px;
+}
+
+.box-1 img {
+  height: 50%;
+  width: auto;
+  margin-right: 10px;
+}
+
+.box-1 h5 {
+  margin: 0;
+}
+.box-2 {
+  background-color: green;
+  flex-basis: calc((100% - 33.33%) / 2);
+}
+
+.box-3 {
+  background-color: blue;
+  flex-basis: calc((100% - 33.33%) / 2);
 }
 
 #bitcoin-btn {
@@ -352,4 +374,25 @@ I'll need to do something with my reponseBox, just not there yet
   background-color: #0088cc !important;
 }
 
+
+/* CSS code to make the page responsive 
+--when i minimize the page it doesn't look so good. I might need to delete the media queries
+
+@media only screen and (max-width: 768px) {
+   adjust the font size and spacing of the buttons for smaller screens 
+  Button {
+    font-size: 16px;
+    padding: 5px 10px;
+    max-width: calc(33.33% - 10px);
+  }
+}
 */
+
+/* @media only screen and (max-width: 480px) {
+  /* adjust the font size and spacing of the buttons for even smaller screens 
+  Button {
+    font-size: 14px;
+    padding: 3px 6px;
+    max-width: calc(50% - 10px);
+  }
+} */
