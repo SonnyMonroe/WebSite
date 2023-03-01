@@ -26,6 +26,7 @@
   background-color: rgba(27, 24, 24);
   border-color: aliceblue;
   text-rendering: optimizeLegibility;
+  width: space-between;
 }
 
 .button-container {
@@ -66,6 +67,7 @@ button:hover {
   margin: 1px;
   animation: forwards;
   text-rendering: optimizeLegibility;
+  display: "BTC";
 }
 
 /* Hover glow effect*/
