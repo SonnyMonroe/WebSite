@@ -67,7 +67,6 @@ button:hover {
   margin: 1px;
   animation: forwards;
   text-rendering: optimizeLegibility;
-  display: "BTC";
 }
 
 /* Hover glow effect*/
