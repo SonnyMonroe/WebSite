@@ -1,23 +1,44 @@
+/* CSS code to make the page responsive 
+--when i minimize the page it doesn't look so good. I might need to delete the media queries
+*/
+@media only screen and (max-width: 768px) {
+  /* adjust the font size and spacing of the buttons for smaller screens */
+  Button {
+    font-size: 16px;
+    padding: 5px 10px;
+    max-width: calc(33.33% - 10px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* adjust the font size and spacing of the buttons for even smaller screens */
+  Button {
+    font-size: 14px;
+    padding: 3px 6px;
+    max-width: calc(50% - 10px);
+  }
+}
+
 * {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   border-radius: 15px;
   color: aliceblue;
   background-color: rgba(27, 24, 24);
   border-color: aliceblue;
+  text-rendering: optimizeLegibility;
 }
 
 .button-container {
   text-align: center;
-  margin-top: 50px;
-  /* height of 100vh might not matter*/
-  height: 100vh;
+  margin: 50px;
+
   align-content: space-between;
   justify-content: space-evenly;
-  column-gap: space-evenly;
-}
 
-.buttonRow {
-  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
@@ -26,12 +47,25 @@ button {
   font-size: 20px;
   content: space-evenly;
   align-items: center;
+  font-weight: 900;
+  text-rendering: optimizeLegibility;
 }
+
+.responseBox {
+  text-align: center;
+  margin: 5px;
+}
+
+/* .button-row {
+  margin: 1px;
+} */
 
 button:hover {
   font-size: 23px;
   animation: forwards;
-  margin: 10px;
+  margin: 1px;
+  animation: forwards;
+  text-rendering: optimizeLegibility;
 }
 
 /* Hover glow effect*/
@@ -45,8 +79,15 @@ button:hover {
     box-shadow: 0 0 5px #fff;
   }
   to {
-    box-shadow: 0 0 20px #fff;
+    box-shadow: 0 0 10px #fff;
   }
+}
+
+h1 {
+  text-align: center;
+  /* Might need to change the margin top to display evenly from top to bottom*/
+  margin-top: 50px;
+  background-color: #0088cc;
 }
 
 /* For SVG Icons for Crypto Buttons Might need to change px to fit buttons */
@@ -60,311 +101,247 @@ img {
   outline-style: dotted;
 }
 
-#result {
-  margin-top: 20px;
-  font-size: 20px;
-  /* remove below when I know where to add results. below is just a guide*/
-  border: #0088cc;
-  border-style: dashed;
-  border-width: 10px;
-  background: #e9877f;
-  display: inline-block;
-  vertical-align: top;
-}
-
 #bitcoin-btn {
-  color: #ffffff;
-  background-color: #f2a900;
+  background-color: #e5a308;
   border-radius: 15px;
 }
 
 #bitcoin-btn:hover {
-  color: #ffffff;
   background-color: #fca903;
   border-radius: 15px;
-  opacity: -1rem;
 }
 
 #ethereum-btn {
-  color: white;
   background-color: #497493;
   border-radius: 15px;
 }
 #tether-btn {
-  color: white;
   background-color: #2ea07b;
   border-radius: 15px;
 }
 
 #bnb-btn {
-  color: white;
   background-color: #edb70c;
   border-radius: 15px;
 }
 
 #usdc-btn {
-  color: white;
   background-color: #2775ca;
   border-radius: 15px;
 }
 
 #matic-btn {
-  color: white;
   background-color: blueviolet;
   border-radius: 15px;
 }
 
 #ripple-btn {
-  color: white;
   background-color: #1b95ca;
   border-radius: 15px;
 }
 
 #binanceUSD-btn {
-  color: white;
   background-color: #edb70c;
   border-radius: 15px;
 }
 
 #avax-btn {
-  color: white;
   background-color: #e84142;
   border-radius: 15px;
 }
 
 #doge-btn {
-  color: white;
   background-color: #bba033;
   border-radius: 15px;
 }
 #shiba-btn {
-  color: white;
   background-color: #b43318;
   border-radius: 15px;
 }
 
 #solana-btn {
-  color: white;
   background-color: #29deb9;
   border-radius: 15px;
 }
 
 #lido-btn {
-  color: white;
   background-color: #7bccfb;
   border-radius: 15px;
 }
 #ada-btn {
-  color: white;
   background-color: #21477c;
   border-radius: 15px;
 }
 #okb-btn {
-  color: white;
   background-color: #000;
   border-radius: 15px;
 }
 #dot-btn {
-  color: white;
   background-color: #de0076;
   border-radius: 15px;
 }
 #ltc-btn {
-  color: white;
   background-color: #838383;
   border-radius: 15px;
 }
 #tron-btn {
-  color: white;
   background-color: #8f2620;
   border-radius: 15px;
 }
 
 #dai-btn {
-  color: white;
   background-color: #b89c61;
   border-radius: 15px;
 }
 
 #uniswap-btn {
-  color: white;
   background-color: #fd63ad;
   border-radius: 15px;
 }
 
 #cosmos-btn {
-  color: white;
   background-color: #434661;
   border-radius: 15px;
 }
 #wbtc-btn {
-  color: white;
   background-color: #f2b371;
   border-radius: 15px;
 }
 
 #link-btn {
-  color: white;
   background-color: #2a5ad8;
   border-radius: 15px;
 }
 
 #ton-btn {
-  color: white;
   background-color: #0088cc;
   border-radius: 15px;
 }
 
 #leo-btn {
-  color: white;
   background-color: #6c5733;
   border-radius: 15px;
 }
 
 #ethc-btn {
-  color: white;
   background-color: #0b8311;
   border-radius: 15px;
 }
 
 #monero-btn {
-  color: white;
   background-color: #f26822;
   border-radius: 15px;
 }
 
 #btccash-btn {
-  color: white;
   background-color: #0fc290;
   border-radius: 15px;
 }
 
 #aptos-btn {
-  color: white;
   background-color: #808080;
   border-radius: 15px;
 }
 
 #stellar-btn {
-  color: white;
   background-color: #0c0c0c;
   border-radius: 15px;
 }
 
 #hbar-btn {
-  color: white;
   background-color: #0c0c0c;
   border-radius: 15px;
 }
 
 #lidoDao-btn {
-  color: white;
   background-color: #e9877f;
   border-radius: 15px;
 }
 
 #cronos-btn {
-  color: white;
   background-color: #264c88;
   border-radius: 15px;
 }
 
 #quant-btn {
-  color: white;
   background-color: #43403e;
   border-radius: 15px;
 }
 #filecoin-btn {
-  color: white;
   background-color: #1096ff;
   border-radius: 15px;
 }
 #near-btn {
-  color: white;
   background-color: #060606;
   border-radius: 15px;
 }
 
 #ape-btn {
-  color: white;
   background-color: #1156e1;
   border-radius: 15px;
 }
 
 #algo-btn {
-  color: white;
   background-color: #696e70;
   border-radius: 15px;
 }
 
 #vechain-btn {
-  color: white;
   background-color: #8a8ada;
   border-radius: 15px;
 }
 
 #graph-btn {
-  color: white;
   background-color: #6a55b3;
   border-radius: 15px;
 }
 
 #icp-btn {
-  color: white;
   background-color: #763219;
   border-radius: 15px;
 }
 
 #fantom-btn {
-  color: white;
   background-color: #1969ff;
   border-radius: 15px;
 }
 
 #flow-btn {
-  color: white;
   background-color: #00ef8b;
   border-radius: 15px;
 }
 
 #sandbox-btn {
-  color: white;
   background-color: #22a1c9;
   border-radius: 15px;
 }
 
 #elrond-btn {
-  color: white;
   background-color: #20e4cc;
   border-radius: 15px;
 }
 
 #stacks-btn {
-  color: white;
   background-color: #7d72ff;
   border-radius: 15px;
 }
 
 #eos-btn {
-  color: white;
   background-color: #4b4b4b;
   border-radius: 15px;
 }
 
 #theta-btn {
-  color: white;
   background-color: #2ab8e6;
   border-radius: 15px;
 }
 
 #mana-btn {
-  color: white;
   background-color: #ff8759;
   border-radius: 15px;
 }
 
 #aave-btn {
-  color: white;
   background-color: #ac559e;
   border-radius: 15px;
 }
