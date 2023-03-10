@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Henny+Penny&family=Press+Start+2P&family=Sedgwick+Ave+Display&family=Source+Code+Pro:wght@200&family=The+Girl+Next+Door&display=swap");
+
 * {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   border-radius: 15px;
@@ -77,6 +79,7 @@ h5 {
   background-color: #de0076;
   border-radius: 10px;
   padding: 0.5rem 1rem;
+  font-family: "Source Code Pro", monospace;
 }
 
 .box-wrapper {
