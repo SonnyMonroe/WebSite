@@ -1,0 +1,136 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 25px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #de0076;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-family: "Source Code Pro", monospace;
+}
+
+.box-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: orange;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  /*   justify-content: center; */
+  align-items: center;
+  background-color: #00ef8b;
+  border: 5px solid #ccc;
+  border-radius: 15px;
+  width: 20%;
+  min-height: 250px;
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.box-1 img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.box-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  border: 5px solid #ccc;
+  border-radius: 15px;
+  width: 50%;
+  min-height: 250px;
+  flex: 2;
+  margin-right: 1rem;
+}
+
+.box-2 button {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  background-color: slateblue;
+}
+
+footer button:hover {
+  font-size: 14px;
+  animation: none;
+  text-rendering: optimizeLegibility;
+  /* override the problematic hover animation */
+  transform: none;
+}
+
+.box-2 button {
+  color: blue;
+  border: 5px solid #ccc;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 900;
+
+  animation: forwards;
+  margin: 1px;
+  animation: ease-in-out;
+  text-rendering: optimizeLegibility;
+}
+
+.box-3 {
+  display: flex;
+  flex-direction: column;
+  /*   justify-content: center; */
+  align-items: center;
+  background-color: blue;
+  border: 5px solid #ccc;
+  border-radius: 15px;
+  width: 30%;
+  min-height: 250px;
+  flex: 1;
+}
+
+.catwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .box-wrapper {
+    flex-direction: column;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}

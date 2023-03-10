@@ -11,11 +11,12 @@
 .button-container {
   text-align: center;
   margin: 50px;
-
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
 
 button {
@@ -24,10 +25,26 @@ button {
   font-size: 20px;
   align-items: center;
   font-weight: 900;
+  justify-content: space-between;
+}
+
+.responseBox {
+  margin: 1px;
 }
 
 .button-row {
   margin: 1px;
+  /* 
+  /Yeah, so this just messes everything up. Because this is the text responses box 
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  */
 }
 
 /* Lost my Hover glow effect, I have the glow effect in my Notion*/
@@ -59,140 +76,129 @@ img {
   outline-style: dotted;
 }
 
-footer {
+/* Footer and Crypto Buttons below  */
+
+.footer-body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  border-radius: 15px;
-  padding: 2rem;
-  margin: 25px;
+  align-items: flex-end;
 }
 
-h5 {
-  margin-top: 0;
-  font-size: 1.5rem;
+.text-effect {
   font-weight: bold;
-  text-align: center;
-  color: white;
-  background-color: #de0076;
-  border-radius: 10px;
-  padding: 0.5rem 1rem;
   font-family: "Source Code Pro", monospace;
+  color: #fff;
+  text-shadow: 2px 0 rgb(255 0 0 / 90%), -2px 0 rgb(0 0 255 / 90%);
 }
 
-.box-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: orange;
-  padding: 2rem;
-  flex-wrap: wrap;
-}
-
-.box-1 {
-  display: flex;
-  flex-direction: column;
-  /*   justify-content: center; */
-  align-items: center;
-  background-color: #00ef8b;
-  border: 5px solid #ccc;
-  border-radius: 15px;
-  width: 20%;
-  min-height: 250px;
-  flex: 1;
-  margin-right: 1rem;
-}
-
-.box-1 img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 1rem;
-}
-
-.box-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: green;
-  border: 5px solid #ccc;
-  border-radius: 15px;
-  width: 50%;
-  min-height: 250px;
-  flex: 2;
-  margin-right: 1rem;
-}
-
-.box-2 button {
-  width: 100%;
-  max-width: 150px;
-  margin-bottom: 1rem;
-  justify-content: space-between;
-  background-color: slateblue;
-}
-
-footer button:hover {
-  font-size: 14px;
-  animation: none;
-  text-rendering: optimizeLegibility;
-  /* override the problematic hover animation */
-  transform: none;
-}
-
-.box-2 button {
-  color: blue;
-  border: 5px solid #ccc;
-  border-radius: 15px;
-  padding: 5px 10px;
-  margin: 10px;
+footer {
+  background-color: #121315;
+  color: #a7a7a7;
   font-size: 16px;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: 900;
-
-  animation: forwards;
-  margin: 1px;
-  animation: ease-in-out;
-  text-rendering: optimizeLegibility;
 }
+footer * {
+  font-family: "Source Code Pro", monospace;
 
-.box-3 {
+  /* font-family: "soure", sans-serif; */
+  font-weight: 900;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.row {
+  padding: 1em 1em;
+}
+.row.primary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  align-items: stretch;
+}
+.column {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  /*   justify-content: center; */
-  align-items: center;
-  background-color: blue;
-  border: 5px solid #ccc;
-  border-radius: 15px;
-  width: 30%;
-  min-height: 250px;
-  flex: 1;
+  padding: 0 2em;
+  min-height: 15em;
 }
-
-.catwrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
+h3 {
   width: 100%;
-  padding: 10px;
+  text-align: left;
+  color: white;
+  font-size: 1.4em;
+  white-space: nowrap;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+li:not(:first-child) {
+  margin-top: 0.8em;
+}
+ul li a {
+  color: #a7a7a7;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #2a8ded;
+}
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+input,
+.subscribe-button {
+  font-size: 1em;
+  padding: 1em;
+  width: 50%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.subscribe-button {
+  background-color: #c7940a;
+  color: #ffffff;
+}
+div.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+.social i {
+  color: #bac6d9;
 }
 
-@media screen and (max-width: 768px) {
-  .box-wrapper {
-    flex-direction: column;
-  }
+.copyright {
+  padding: 0.3em 1em;
+  background-color: #25262e;
+}
+.footer-menu {
+  float: left;
+  margin-top: 10px;
+}
 
-  .box-1,
-  .box-2,
-  .box-3 {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 1rem;
+.footer-menu a {
+  color: #cfd2d6;
+  padding: 6px;
+
+  text-decoration: none;
+}
+.footer-menu a:hover {
+  color: #27bcda;
+}
+.copyright p {
+  font-size: 0.9em;
+  text-align: right;
+}
+@media screen and (max-width: 850px) {
+  .row.primary {
+    grid-template-columns: 1fr;
   }
 }
 
