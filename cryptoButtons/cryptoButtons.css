@@ -43,6 +43,7 @@ h1 {
   /* Might need to change the margin top to display evenly from top to bottom*/
   margin-top: 50px;
   background-color: #0088cc;
+  align-items: center;
 }
 
 /* For SVG Icons for Crypto Buttons I Might need to change px to fit buttons */
@@ -56,58 +57,140 @@ img {
   outline-style: dotted;
 }
 
-.footer {
+footer {
   display: flex;
-  justify-content: flex-start;
-  align-items: left;
-  height: 200px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 25px;
 }
 
-.box {
-  height: 100px;
-  flex-grow: 1;
+h5 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #de0076;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.box-wrapper {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
+  background-color: orange;
+  padding: 2rem;
+  flex-wrap: wrap;
 }
 
 .box-1 {
-  background-color: red;
-  flex-grow: 0;
-  width: 33.33%;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: flex-start;
-  padding-left: 20px;
-  margin-right: 10px;
+  /*   justify-content: center; */
+  align-items: center;
+  background-color: #00ef8b;
+  border: 5px solid #ccc;
+  border-radius: 15px;
+  width: 20%;
+  min-height: 250px;
+  flex: 1;
+  margin-right: 1rem;
 }
 
 .box-1 img {
-  height: 50%;
-  width: auto;
-  margin-right: 10px;
-  margin: 0 0 -10em -6em;
-  display: flex;
-  justify-content: flex-start;
-  box-sizing: content-box;
-
-  float: left;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
 }
 
-.box-1 h5 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  float: start;
-}
 .box-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: green;
-  flex-basis: calc((100% - 33.33%) / 2);
+  border: 5px solid #ccc;
+  border-radius: 15px;
+  width: 50%;
+  min-height: 250px;
+  flex: 2;
+  margin-right: 1rem;
+}
+
+.box-2 button {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  background-color: slateblue;
+}
+
+footer button:hover {
+  font-size: 14px;
+  animation: none;
+  text-rendering: optimizeLegibility;
+  /* override the problematic hover animation */
+  transform: none;
+}
+
+.box-2 button {
+  color: blue;
+  border: 5px solid #ccc;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 900;
+
+  animation: forwards;
+  margin: 1px;
+  animation: ease-in-out;
+  text-rendering: optimizeLegibility;
 }
 
 .box-3 {
+  display: flex;
+  flex-direction: column;
+  /*   justify-content: center; */
+  align-items: center;
   background-color: blue;
-  flex-basis: calc((100% - 33.33%) / 2);
+  border: 5px solid #ccc;
+  border-radius: 15px;
+  width: 30%;
+  min-height: 250px;
+  flex: 1;
+}
+
+.catwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .box-wrapper {
+    flex-direction: column;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
 }
 
 #bitcoin-btn {
@@ -382,4 +465,96 @@ I'll need to do something with my reponseBox, just not there yet
     padding: 3px 6px;
     max-width: calc(50% - 10px);
   }
+} */
+
+/*------------This is all footer scraps*/
+/* footer {
+  width: auto;
+  height: auto;
+
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap-reverse;
+
+  justify-content: space-between;
+  margin: 25px;
+  align-items: flex-start;
+  background-color: navy;
+}
+
+.box-1 {
+  background-color: #00ef8b;
+}
+
+.box-1 h5 {
+  flex-grow: 1;
+  float: left;
+  box-sizing: border-box;
+  background-color: #de0076;
+  flex-basis: calc((100% - 33.33%) / 3);
+}
+
+.box-1 img {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  float: left;
+  image-rendering: url("/images/blogBytes.png");
+  margin: 15px;
+  border: 1px solid #ccc;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+} */
+
+/* .box {
+    height: 100px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  } */
+
+/* .box-1 {
+    display: flex;
+
+    background-color: red;
+    flex-grow: 0;
+    width: 33.33%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px;
+    margin-right: 10px;
+    flex-basis: calc((100% - 33.33%) / 1);
+  } */
+
+/* .box-1 img {
+    display: flex;
+    flex-direction: row;
+    grid-row-start: start;
+
+    height: 25%;
+    width: auto;
+    margin: 0 0 -10em -6em;
+    position: relative;
+    justify-content: inline-start;
+  }*/
+
+/* h5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: inline-start;
+  text-align: left;
+} */
+
+/* .box-2 {
+  background-color: green;
+  flex-basis: calc((100% - 33.33%) / 3);
+}
+
+.box-3 {
+  background-color: blue;
+  flex-basis: calc((100% - 33.33%) / 3);
 } */
