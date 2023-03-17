@@ -270,7 +270,35 @@
 
                             </li>
                             <li>
-                                <a href="">About This Project</a>
+                                <a href="#" id="aboutThisProject-link" onclick="showPopup1()">About This Project</a>
+                                <div class="popup-wrapper1" id="aboutThisProject-popup">
+                                    <div class="popup-content1">
+                                        <span class="text-effect">
+                                            <h2>About This Project</h2>
+                                        </span>
+
+                                        <p>kokokokokLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu
+                                            libero
+                                            tincidunt, fringilla nibh et, efficitur enim. Nulla facilisi. Nunc placerat
+                                            enim id odio euismod, at auctor purus efficitur. Fusce ut imperdiet nisi.
+                                            Fusce feugiat condimentum ante, vel sollicitudin mi. Sed eu lacus a nibh
+                                            malesuada blandit sed quis orci.</p>
+                                        <button id="close-btn1" onclick="hidePopup1()">Close</button>
+                                    </div>
+                                </div>
+
+                                <script>
+                                    function showPopup1() {
+                                        document.getElementById("aboutThisProject-popup").style.display = "block";
+                                    }
+
+                                    function hidePopup1() {
+                                        document.getElementById("aboutThisProject-popup").style.display = "none";
+                                    }
+                                </script>
+                            </li>
+
+                            <!-- <a href="">About This Project</a> -->
                             </li>
                             <li>
                                 <a href="#sideProjects">Side Projects</a>
