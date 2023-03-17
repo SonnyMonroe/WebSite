@@ -116,7 +116,7 @@
   z-index: 9999;
 }
 
-/* Pop-up window styles */
+/* Pop-up for About this Project */
 .popup-wrapper1 {
   display: none;
   position: fixed;
