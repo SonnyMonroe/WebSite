@@ -16,11 +16,13 @@ body {
   font-family: "Source Code Pro", monospace;
   background: #000000;
   color: #fff;
-  /* padding: 40px; -- got rif of this and the projectz buttons are no longer a block */
+  padding: 40px;
   background-size: 100% 100%;
-  grid-template-columns: minmax(
-    100px auto
+  grid-template-rows: minmax(
+    100px,
+    auto
   ); /* 3/21/23 changed it from grid-template-columns*/
+  grid-auto-rows: minmax(75px, auto);
 }
 
 .socials,
@@ -52,7 +54,7 @@ p {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 4fr;
+  grid-template-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
 }
@@ -64,16 +66,17 @@ p {
 
 .projects {
   grid-area: "projects";
-  align-content: center;
+  align-items: center;
 }
 
 .writing {
   grid-area: "writing";
+  align-items: center;
 }
 
 .socialz {
   grid-area: "socials";
-  align-content: center;
+  align-items: center;
 }
 
 .about-me,
@@ -90,16 +93,25 @@ footer {
 .projectz {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
-  /* align-content: center; */
+  justify-content: space-around;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
 }
+/* 
+.projectz {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+} */
 
-.projectz,
-a {
+.projectz a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* padding: 5px; */
   text-decoration: none;
-  align-items: center;
-  justify-content: center;
 }
 
 h1 {
@@ -328,4 +340,18 @@ a:hover {
 .cube__face--bottom {
   transform: rotateX(-90deg) translateZ(50px); /* Rotate the bottom face */
   background-color: #ffcccb; /* Pink */
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    width: 100%; /* Make the main content full-width on small screens */
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .grid-container {
+    width: 100%; /* Make the main content full-width on small screens */
+    margin: 0;
+  }
 }
