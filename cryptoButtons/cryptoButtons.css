@@ -8,11 +8,18 @@
   border-color: aliceblue;
 }
 
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .button-container {
   text-align: center;
-  margin: 50px;
+  margin: 0 auto;
+  /* min-width: 400px; */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -522,6 +529,44 @@ ul li a:hover {
 #aave-btn {
   background-color: #ac559e;
   border-radius: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .button-container {
+    flex-direction: column;
+  }
+
+  button {
+    flex: none;
+    width: 100%;
+  }
+
+  .response-box {
+    display: none;
+  }
+
+  button.active + .response-box {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .button-container {
+    flex-direction: column;
+  }
+
+  button {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .response-box {
+    display: none;
+  }
+
+  button.active + .response-box {
+    display: block;
+  }
 }
 
 /*
