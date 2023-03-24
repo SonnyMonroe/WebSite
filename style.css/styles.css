@@ -7,6 +7,9 @@ body {
   font-family: "Source Code Pro", monospace;
   background: #00a6ff51;
 
+  max-width: 1200px; /* Set maximum width */
+  margin: 0 auto; /* Center content */
+
   color: #fff;
   background-size: 100% 100%;
 }
