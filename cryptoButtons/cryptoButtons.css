@@ -24,24 +24,42 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  align-content: center;
+  align-content: center; /*Only works when flex wrap is used*/
 }
 
 button {
   padding: 10px 20px;
   margin: 10px;
-  font-size: 20px;
+  font-size: 16px;
+  /* display: flex; */
+  /* flex-shrink: initial; */
   align-items: center;
   font-weight: 900;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .responseBox {
   margin: 1px;
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  width: 75%;
 }
 
 .button-row {
   margin: 1px;
+  /* display: flex;
+  flex-direction: column;
+  column-count: 5; added this 3/28/23 9:38am */
+  /* column-gap: 0.5%; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  align-items: stretch;
+  align-content: center;
+  width: 90%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
   /* 
   /Yeah, so this just messes everything up. Because this is the text responses box 
@@ -59,7 +77,7 @@ button {
 /* Lost my Hover glow effect, I have the glow effect in my Notion*/
 
 button:hover {
-  font-size: 23px;
+  font-size: 20px;
   animation: forwards;
   margin: 1px;
   animation: ease-in-out;
@@ -534,7 +552,8 @@ ul li a:hover {
 
 @media screen and (max-width: 767px) {
   .button-container {
-    flex-direction: column;
+    flex-direction: row;
+    /* width: 100%; */
   }
 
   button {
@@ -557,16 +576,19 @@ ul li a:hover {
   }
 
   button {
-    flex: none;
+    flex: wrap;
     max-width: 100%;
+    margin: auto;
   }
 
   .response-box {
     display: none;
+    /* margin: 5px; */
   }
 
   button.active + .response-box {
     display: block;
+    margin: auto;
   }
 }
 
