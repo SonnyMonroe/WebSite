@@ -2,7 +2,6 @@
     <head>
         <meta charset="UTF-8" lang="en">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <title>Cryptocurrency Buttons</title>
         <link rel="stylesheet" type="text/css" href="cryptoButtons.css">
         <link rel="stylesheet" href="style.css">
@@ -11,8 +10,6 @@
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
         <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px)" href="shetland.css" />
         <script src="https://kit.fontawesome.com/8ef9760587.js" crossorigin="anonymous"></script>
-
-
     </head>
     <body>
         <div class="container">
@@ -22,14 +19,14 @@
                 currency="USD" theme="dark" transparent="true" show-symbol-logo="true">
             </div>
             <div class="button-container">
-                <h1>Crypto Buttons</h1>
-
+                <div class="headerDiv">
+                    <h1>Crypto Buttons</h1>
+                </div>
                 <div class="button-row">
-
                     <button id="bitcoin-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/btc.svg">Bitcoin
                     </button>
                     <button onclick="ethereumResponses" id="ethereum-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/color/eth.svg"> Ethereum
+                            src="./node_modules/cryptocurrency-icons/svg/color/eth.svg">Ethereum
                     </button>
                     <button id="tether-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/usdt.svg">
                         Tether</button>
@@ -40,7 +37,6 @@
                         Coin
                     </button>
                 </div>
-
                 <div class="responseBox">
                     <div id="bitcoinResult"></div>
                     <div id="ethereumResult"></div>
@@ -245,7 +241,6 @@
                 <footer>
                     <div class="row primary">
                         <div class="column about">
-
                             <h3>BlogBytes</h3>
                             <div class="footer-logo">
                                 <a href="https://blogbytes.eth.limo">
@@ -260,9 +255,7 @@
 
                         <div class="column links">
                             <h3>Some Links</h3>
-
                             <ul>
-
                                 <li>
                                     <!-- <a href="#" id="mission-link">The Misson</a> -->
                                     <a href="#" id="mission-link" onclick="showPopup()">The Misson</a>
@@ -507,8 +500,8 @@
                             <a href="">Home</a>
                             <a href="">About This Project</a>
                             <a href="">Contact</a>
-                            <a href="">Blog</a>
-                            <a href="">Side Projects</a>
+                            <!-- <a href="">Blog</a> -->
+                            <!-- <a href="">Side Projects</a> -->
                         </div>
                         <p>Copyright &copy; 2023 BlogBytes.eth.limo</p>
                     </div>
