@@ -31,7 +31,7 @@ body {
 .socials,
 a {
   color: #00ffdc;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bolder;
   align-items: center;
   justify-content: center;
@@ -40,9 +40,10 @@ a {
 .writingz,
 a {
   color: #00ffdc;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bolder;
   align-items: center;
+  justify-content: center;
   text-shadow: 1px 0 rgba(35, 35, 35, 0.9), -1px 0 rgba(0, 225, 255, 0.9);
 }
 
@@ -96,7 +97,7 @@ footer {
 .projectz {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
   justify-content: space-between;
   margin-left: 12.5%;
@@ -111,10 +112,12 @@ footer {
 
 .projectz a {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
   /* padding: 5px; */
   text-decoration: none;
+  font-size: medium;
+  justify-content: center;
 }
 
 h1 {
@@ -288,8 +291,8 @@ a:hover {
 }
 .cube-container {
   position: absolute;
-  top: 0.1%;
-  left: 65%;
+  top: -1%;
+  left: 63%;
   transform: translate(-50%, -50%);
 }
 
@@ -401,7 +404,10 @@ a:hover {
   .writingz,
   .socials,
   .socialz {
-    font-size: 15px;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 

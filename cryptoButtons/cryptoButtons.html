@@ -1,514 +1,505 @@
-<html>
-    <head>
-        <meta charset="UTF-8" lang="en">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Crypto Buttons</title>
-        <link rel="stylesheet" type="text/css" href="cryptoButtons.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="styleComponets/modal.css">
-        <!-- bootstrap not needed -->
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-        <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px)" href="shetland.css" />
-        <script src="https://kit.fontawesome.com/8ef9760587.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="container">
-            <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
-            <div id="coinmarketcap-widget-marquee"
-                coins="1,1027,825,4687,3408,10240,13244,1298,5426,5805,3890,3635,11396,52,2,8000,11840,3794,12220,20435,9608,11409,512,7083,6210,7278,2586,1966,11289,6538,2280,6535,6953,5632,328,1958,18399,5864,16842,6636,8200,18876,2010,3077,7186,2416,4558,16086,1518,9285,13246,1975,17081,19899,13855,14299,8536,18398,1321,4030,74,20314,10095,16519,8206,7046"
-                currency="USD" theme="dark" transparent="true" show-symbol-logo="true">
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cryptoButtons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleComponets/modal.css">
+    <!-- bootstrap not needed -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px)" href="shetland.css" />
+    <script src="https://kit.fontawesome.com/8ef9760587.js" crossorigin="anonymous"></script>
+    <title>Crypto Buttons</title>
+</head>
+<body>
+    <div class="container">
+        <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
+        <div id="coinmarketcap-widget-marquee"
+            coins="1,1027,825,4687,3408,10240,13244,1298,5426,5805,3890,3635,11396,52,2,8000,11840,3794,12220,20435,9608,11409,512,7083,6210,7278,2586,1966,11289,6538,2280,6535,6953,5632,328,1958,18399,5864,16842,6636,8200,18876,2010,3077,7186,2416,4558,16086,1518,9285,13246,1975,17081,19899,13855,14299,8536,18398,1321,4030,74,20314,10095,16519,8206,7046"
+            currency="USD" theme="dark" transparent="true" show-symbol-logo="true">
+        </div>
+        <div class="button-container">
+            <div class="headerDiv">
+                <h1>BlogBytes</h1>
             </div>
-            <div class="button-container">
-                <div class="headerDiv">
-                    <h1>Crypto Buttons</h1>
-                </div>
-                <div class="button-row">
-                    <button id="bitcoin-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/btc.svg">Bitcoin
-                    </button>
-                    <button onclick="ethereumResponses" id="ethereum-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/color/eth.svg">Ethereum
-                    </button>
-                    <button id="tether-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/usdt.svg">
-                        Tether</button>
-                    <button id="bnb-btn"><img src="./node_modules/cryptocurrency-icons/svg/icon/bnb.svg">Binance
-                        Coin
-                    </button>
-                    <button id="usdc-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/usdc.svg">USD
-                        Coin
-                    </button>
-                </div>
-                <div class="responseBox">
-                    <div id="bitcoinResult"></div>
-                    <div id="ethereumResult"></div>
-                    <div id="tetherResult"></div>
-                    <div id="bnbResult"></div>
-                    <div id="usdcResult"></div>
-                </div>
-                <div class="button-row">
-                    <button id="matic-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/color/matic.svg">Polygon</button>
-                    <button id="ripple-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/color/xrp.svg">Ripple</button>
-                    <button id="binanceUSD-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/myCreations/BUSD.jpg">Binance
-                        USD</button>
-                    <button id="avax-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/color/avax.svg">Avalanche</button>
-                    <button id="doge-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/doge.svg">Doge
-                        Coin</button>
-                </div>
-
-                <div class="responseBox">
-                    <div id="maticResult"></div>
-                    <div id="rippleResult"></div>
-                    <div id="binanceUSDResult"></div>
-                    <div id="avaxResult"></div>
-                    <div id="dogeResult"></div>
-                </div>
-                <div class="button-row">
-                    <button id="shiba-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/myCreations/shiba.jpg">Shiba
-                        Inu</button>
-                    <button id="solana-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/icon/sol.svg">Solana</button>
-                    <button id="ada-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/color/ada.svg">Cardano</button>
-                    <button id="okb-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/myCreations/okb.jpg">OKB</button>
-                    <button id="lido-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/myCreations/steth_logo.jpg">Lido
-                        (Staked Ether)</button>
-                </div>
-
-                <div class="responseBox">
-                    <div id="shibaResult"></div>
-                    <div id="solanaResult"></div>
-                    <div id="adaResult"></div>
-                    <div id="okbResult"></div>
-                    <div id="lidoResult"></div>
-                </div>
-                <div class="button-row">
-                    <button id="dot-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/color/dot.svg">PolkaDot</button>
-                    <button id="ltc-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/color/ltc.svg">LiteCoin</button>
-                    <button id="tron-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/trx.svg">Tron</button>
-                    <button id="dai-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/dai.svg">Dai</button>
-                    <button id="uniswap-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/uni.svg">UniSwap
-                    </button>
-                </div>
-
-                <div class="responseBox">
-                    <div id="dotResult"></div>
-                    <div id="ltcResult"></div>
-                    <div id="tronResult"></div>
-                    <div id="daiResult"></div>
-                    <div id="uniswapResult"></div>
-                </div>
-                <div class="button-row">
-                    <button id="cosmos-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/color/atom.svg">Cosmos</button>
-                    <button id="wbtc-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/wbtc.svg">Wrapped
-                        Bitcoin</button>
-                    <button id="link-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/link.svg">Chainlink
-                    </button>
-                    <button id="ton-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/myCreations/ton_symbol.jpg">Toncoin
-                    </button>
-                    <button id="leo-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/leo.svg">Leo
-                        Token
-                    </button>
-                </div>
-
-                <div class="responseBox">
-                    <div id="cosmosResult"></div>
-                    <div id="wbtcResult"></div>
-                    <div id="linkResult"></div>
-                    <div id="tonResult"></div>
-                    <div id="leoResult"></div>
-                </div>
-
-                <div class="button-row">
-                    <button id="ethc-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/etc.svg">Ethereum
-                        Classic</button>
-                    <button id="monero-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/myCreations/monero_logo.webp">Monero</button>
-                    <button id="aptos-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/myCreations/aptos_round.jpg">Aptos</button>
-                    <button id="btccash-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/bch.svg">Bitcoin
-                        Cash</button>
-                    <button id="stellar-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/xlm.svg">Stellar
-                    </button>
-                </div>
-
-                <div class="responseBox">
-                    <div id="ethcResult"></div>
-                    <div id="moneroResult"></div>
-                    <div id="aptosResult"></div>
-                    <div id="btccashResult"></div>
-                    <div id="stellarResult"></div>
-                </div>
-                <div class="button-row">
-                    <button id="hbar-btn"><img src="./node_modules/cryptocurrency-icons/svg/myCreations/hbar.svg">
-                        Hedera
-                    </button>
-                    <button id="lidoDao-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/myCreations/Lido_DAO.jpg">Lido Dao </button>
-                    <button id="cronos-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/myCreations/cro_token_logo.svg">Cronos</button>
-                    <button id="quant-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/qnt.svg">Quant
-                    </button>
-                    <button id="filecoin-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/fil.svg">Filecoin
-                    </button>
-                </div>
-
-                <div class="responseBox">
-                    <div id="hbarResult"></div>
-                    <div id="lidoDaoResult"></div>
-                    <div id="cronosResult"></div>
-                    <div id="quantResult"></div>
-                    <div id="filecoinResult"></div>
-                </div>
-                <div class="button-row">
-                    <button id="near-btn"><img src="./node_modules/cryptocurrency-icons/svg/myCreations/near.jpg">Near
-                        Protocol</button>
-
-                    <button id="ape-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/myCreations/apecoin.jpg">ApeCoin
-                    </button>
-                    <button id="algo-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/algo.svg">Algorand
-                    </button>
-                    <button id="vechain-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/color/vet.svg">VeChain</button>
-                    <button id="graph-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/grt.svg">The Graph
-                    </button>
-                </div>
-
-                <div class="responseBox">
-                    <div id="nearResult"></div>
-                    <div id="apeResult"></div>
-                    <div id="algoResult"></div>
-                    <div id="vechainResult"></div>
-                    <div id="graphResult"></div>
-                </div>
-                <div class="button-row">
-                    <button id="icp-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/icp.svg">Internet
-                        Computer
-                    </button>
-                    <button id="fantom-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/myCreations/fantom.jpg">Fantom</button>
-                    <button id="flow-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/myCreations/flow.jpg">Flow</button>
-                    <button id="sandbox-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/sand.svg">The
-                        Sandbox
-                    </button>
-                    <button id="elrond-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/myCreations/egld-token-logo.jpg">MultiversX</button>
-                </div>
-
-                <div class="responseBox">
-                    <div id="icpResult"></div>
-                    <div id="fantomResult"></div>
-                    <div id="flowResult"></div>
-                    <div id="sandboxResult"></div>
-                    <div id="elrondResult"></div>
-                </div>
-                <div class="button-row">
-                    <button id="stacks-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/stx.svg">Stacks
-                    </button>
-                    <button id="eos-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/eos.svg">EOS</button>
-                    <button id="theta-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/theta.svg">Theta
-                        Network</button>
-                    <button id="mana-btn"><img
-                            src="./node_modules/cryptocurrency-icons/svg/myCreations/mana.jpg">Decentraland</button>
-                    <button id="aave-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/aave.svg">Aave
-                    </button>
-                </div>
-
-                <div class="responseBox">
-                    <div id="stacksResult"></div>
-                    <div id="eosResult"></div>
-                    <div id="thetaResult"></div>
-                    <div id="manaResult"></div>
-                    <div id="aaveResult"></div>
-                </div>
-
-                <!-- @dev This is where the results go for the buttoins -->
-                <script src="cryptoButtons.js"></script>
-
+            <div class="button-row">
+                <button id="bitcoin-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/btc.svg">Bitcoin
+                </button>
+                <button onclick="ethereumResponses" id="ethereum-btn"><img
+                        src="./node_modules/cryptocurrency-icons/svg/color/eth.svg">Ethereum
+                </button>
+                <button id="tether-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/usdt.svg">
+                    Tether</button>
+                <button id="bnb-btn"><img src="./node_modules/cryptocurrency-icons/svg/icon/bnb.svg">Binance
+                    Coin
+                </button>
+                <button id="usdc-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/usdc.svg">USD
+                    Coin
+                </button>
             </div>
-            <div class="footer-body">
-                <footer>
-                    <div class="row primary">
-                        <div class="column about">
-                            <h3>BlogBytes</h3>
-                            <div class="footer-logo">
-                                <a href="https://blogbytes.eth.limo">
+            <div class="responseBox">
+                <div id="bitcoinResult"></div>
+                <div id="ethereumResult"></div>
+                <div id="tetherResult"></div>
+                <div id="bnbResult"></div>
+                <div id="usdcResult"></div>
+            </div>
+            <div class="button-row">
+                <button id="matic-btn"><img
+                        src="./node_modules/cryptocurrency-icons/svg/color/matic.svg">Polygon</button>
+                <button id="ripple-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/xrp.svg">Ripple</button>
+                <button id="binanceUSD-btn"><img
+                        src="./node_modules/cryptocurrency-icons/svg/myCreations/BUSD.jpg">Binance
+                    USD</button>
+                <button id="avax-btn"><img
+                        src="./node_modules/cryptocurrency-icons/svg/color/avax.svg">Avalanche</button>
+                <button id="doge-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/doge.svg">Doge
+                    Coin</button>
+            </div>
 
-                                    <img src="./images/blogBytes.png" alt="Home">
-                                </a>
-                            </div>
-                            <p>Empower your mind with <span class="text-effect">BlogBytes</span> and the future of
-                                finance
-                                you will find.</p>
+            <div class="responseBox">
+                <div id="maticResult"></div>
+                <div id="rippleResult"></div>
+                <div id="binanceUSDResult"></div>
+                <div id="avaxResult"></div>
+                <div id="dogeResult"></div>
+            </div>
+            <div class="button-row">
+                <button id="shiba-btn"><img src="./node_modules/cryptocurrency-icons/svg/myCreations/shiba.jpg">Shiba
+                    Inu</button>
+                <button id="solana-btn"><img src="./node_modules/cryptocurrency-icons/svg/icon/sol.svg">Solana</button>
+                <button id="ada-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/ada.svg">Cardano</button>
+                <button id="okb-btn"><img src="./node_modules/cryptocurrency-icons/svg/myCreations/okb.jpg">OKB</button>
+                <button id="lido-btn"><img src="./node_modules/cryptocurrency-icons/svg/myCreations/steth_logo.jpg">Lido
+                    (Staked Ether)</button>
+            </div>
+
+            <div class="responseBox">
+                <div id="shibaResult"></div>
+                <div id="solanaResult"></div>
+                <div id="adaResult"></div>
+                <div id="okbResult"></div>
+                <div id="lidoResult"></div>
+            </div>
+            <div class="button-row">
+                <button id="dot-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/dot.svg">PolkaDot</button>
+                <button id="ltc-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/ltc.svg">LiteCoin</button>
+                <button id="tron-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/trx.svg">Tron</button>
+                <button id="dai-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/dai.svg">Dai</button>
+                <button id="uniswap-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/uni.svg">UniSwap
+                </button>
+            </div>
+
+            <div class="responseBox">
+                <div id="dotResult"></div>
+                <div id="ltcResult"></div>
+                <div id="tronResult"></div>
+                <div id="daiResult"></div>
+                <div id="uniswapResult"></div>
+            </div>
+            <div class="button-row">
+                <button id="cosmos-btn"><img
+                        src="./node_modules/cryptocurrency-icons/svg/color/atom.svg">Cosmos</button>
+                <button id="wbtc-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/wbtc.svg">Wrapped
+                    Bitcoin</button>
+                <button id="link-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/link.svg">Chainlink
+                </button>
+                <button id="ton-btn"><img
+                        src="./node_modules/cryptocurrency-icons/svg/myCreations/ton_symbol.jpg">Toncoin
+                </button>
+                <button id="leo-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/leo.svg">Leo
+                    Token
+                </button>
+            </div>
+
+            <div class="responseBox">
+                <div id="cosmosResult"></div>
+                <div id="wbtcResult"></div>
+                <div id="linkResult"></div>
+                <div id="tonResult"></div>
+                <div id="leoResult"></div>
+            </div>
+
+            <div class="button-row">
+                <button id="ethc-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/etc.svg">Ethereum
+                    Classic</button>
+                <button id="monero-btn"><img
+                        src="./node_modules/cryptocurrency-icons/svg/myCreations/monero_logo.webp">Monero</button>
+                <button id="aptos-btn"><img
+                        src="./node_modules/cryptocurrency-icons/svg/myCreations/aptos_round.jpg">Aptos</button>
+                <button id="btccash-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/bch.svg">Bitcoin
+                    Cash</button>
+                <button id="stellar-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/xlm.svg">Stellar
+                </button>
+            </div>
+
+            <div class="responseBox">
+                <div id="ethcResult"></div>
+                <div id="moneroResult"></div>
+                <div id="aptosResult"></div>
+                <div id="btccashResult"></div>
+                <div id="stellarResult"></div>
+            </div>
+            <div class="button-row">
+                <button id="hbar-btn"><img src="./node_modules/cryptocurrency-icons/svg/myCreations/hbar.svg">
+                    Hedera
+                </button>
+                <button id="lidoDao-btn"><img
+                        src="./node_modules/cryptocurrency-icons/svg/myCreations/Lido_DAO.jpg">Lido Dao </button>
+                <button id="cronos-btn"><img
+                        src="./node_modules/cryptocurrency-icons/svg/myCreations/cro_token_logo.svg">Cronos</button>
+                <button id="quant-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/qnt.svg">Quant
+                </button>
+                <button id="filecoin-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/fil.svg">Filecoin
+                </button>
+            </div>
+
+            <div class="responseBox">
+                <div id="hbarResult"></div>
+                <div id="lidoDaoResult"></div>
+                <div id="cronosResult"></div>
+                <div id="quantResult"></div>
+                <div id="filecoinResult"></div>
+            </div>
+            <div class="button-row">
+                <button id="near-btn"><img src="./node_modules/cryptocurrency-icons/svg/myCreations/near.jpg">Near
+                    Protocol</button>
+
+                <button id="ape-btn"><img src="./node_modules/cryptocurrency-icons/svg/myCreations/apecoin.jpg">ApeCoin
+                </button>
+                <button id="algo-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/algo.svg">Algorand
+                </button>
+                <button id="vechain-btn"><img
+                        src="./node_modules/cryptocurrency-icons/svg/color/vet.svg">VeChain</button>
+                <button id="graph-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/grt.svg">The Graph
+                </button>
+            </div>
+
+            <div class="responseBox">
+                <div id="nearResult"></div>
+                <div id="apeResult"></div>
+                <div id="algoResult"></div>
+                <div id="vechainResult"></div>
+                <div id="graphResult"></div>
+            </div>
+            <div class="button-row">
+                <button id="icp-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/icp.svg">Internet
+                    Computer
+                </button>
+                <button id="fantom-btn"><img
+                        src="./node_modules/cryptocurrency-icons/svg/myCreations/fantom.jpg">Fantom</button>
+                <button id="flow-btn"><img
+                        src="./node_modules/cryptocurrency-icons/svg/myCreations/flow.jpg">Flow</button>
+                <button id="sandbox-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/sand.svg">The
+                    Sandbox
+                </button>
+                <button id="elrond-btn"><img
+                        src="./node_modules/cryptocurrency-icons/svg/myCreations/egld-token-logo.jpg">MultiversX</button>
+            </div>
+
+            <div class="responseBox">
+                <div id="icpResult"></div>
+                <div id="fantomResult"></div>
+                <div id="flowResult"></div>
+                <div id="sandboxResult"></div>
+                <div id="elrondResult"></div>
+            </div>
+            <div class="button-row">
+                <button id="stacks-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/stx.svg">Stacks
+                </button>
+                <button id="eos-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/eos.svg">EOS</button>
+                <button id="theta-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/theta.svg">Theta
+                    Network</button>
+                <button id="mana-btn"><img
+                        src="./node_modules/cryptocurrency-icons/svg/myCreations/mana.jpg">Decentraland</button>
+                <button id="aave-btn"><img src="./node_modules/cryptocurrency-icons/svg/color/aave.svg">Aave
+                </button>
+            </div>
+
+            <div class="responseBox">
+                <div id="stacksResult"></div>
+                <div id="eosResult"></div>
+                <div id="thetaResult"></div>
+                <div id="manaResult"></div>
+                <div id="aaveResult"></div>
+            </div>
+
+            <!-- @dev This is where the results go for the buttoins -->
+            <script src="cryptoButtons.js"></script>
+
+        </div>
+        <div class="footer-body">
+            <footer>
+                <div class="row primary">
+                    <div class="column about">
+                        <h3>BlogBytes</h3>
+                        <div class="footer-logo">
+                            <a href="https://blogbytes.eth.limo">
+
+                                <img src="./images/blogBytes.png" alt="Home">
+                            </a>
                         </div>
+                        <p>Empower your mind with <span class="text-effect">BlogBytes</span> and the future of
+                            finance
+                            you will find.</p>
+                    </div>
 
-                        <div class="column links">
-                            <h3>Some Links</h3>
-                            <ul>
-                                <li>
-                                    <!-- <a href="#" id="mission-link">The Misson</a> -->
-                                    <a href="#" id="mission-link" onclick="showPopup()">The Misson</a>
-                                    <div class="popup-wrapper" id="mission-popup">
-                                        <div class="popup-content">
-                                            <span class="text-effect">
-                                                <h2>The Mission</h2>
-                                            </span>
+                    <div class="column links">
+                        <h3>Some Links</h3>
+                        <ul>
+                            <li>
+                                <!-- <a href="#" id="mission-link">The Misson</a> -->
+                                <a href="#" id="mission-link" onclick="showPopup()">The Misson</a>
+                                <div class="popup-wrapper" id="mission-popup">
+                                    <div class="popup-content">
+                                        <span class="text-effect">
+                                            <h2>The Mission</h2>
+                                        </span>
 
-                                            <p><span class="text-effect">In 2023, the fight for independence and
-                                                    self-sovereignty is being waged
-                                                    through the use of blockchain technology and decentralization. This
-                                                    groundbreaking technology presents us with an opportunity to
-                                                    transform
-                                                    the
-                                                    world around us, creating a future where we are free from the
-                                                    suffocating
-                                                    grip of centralized authoritarians. We can aspire to achieve our
-                                                    dreams
-                                                    without the fear of being subjugated or controlled.
-
-                                                    As the pioneers of the decentralized future, we recognize that the
-                                                    fight
-                                                    for
-                                                    freedom and individual rights is a formidable challenge. It demands
-                                                    endurance, determination, and the responsibility to stand up for
-                                                    what is
-                                                    right, even in the face of opposition and uncertainty.
-
-                                                    Therefore, I urge us to seize the opportunity and take up the cause
-                                                    of
-                                                    blockchain technology, carrying it forward with enthusiasm and
-                                                    pride. We
-                                                    can
-                                                    use it to establish a more equitable and just society, where every
-                                                    individual has the power to control their financial destiny and
-                                                    pursue
-                                                    their
-                                                    vision of the American dream. Above all, let us always remember the
-                                                    revolutionary and liberating spirit that drove our founding fathers
-                                                    and
-                                                    that
-                                                    continues to inspire us today.</span></p>
-                                            <button id="close-btn" onclick="hidePopup()">Close</button>
-                                        </div>
-                                    </div>
-
-                                    <script>
-                                        function showPopup() {
-                                            document.getElementById("mission-popup").style.display = "block";
-                                        }
-
-                                        function hidePopup() {
-                                            document.getElementById("mission-popup").style.display = "none";
-                                        }
-                                    </script>
-                                </li>
-                                <li>
-                                    <!-- <a href="#terms-of-services">About Me</a> -->
-                                    <a href="#" id="aboutMe-link" onclick="showPopup2()">About Me</a>
-                                    <div class="popup-wrapper2" id="aboutMe-popup">
-                                        <div class="popup-content2">
-                                            <span class="text-effect">
-                                                <h2>About Me</h2>
-                                            </span>
-
-                                            <p>
-                                                Gm, I'm Sonny Monroe from Boston.
-                                                <br>
-                                                Growing up in a revolutionary city, I'm
-                                                constantly inspired by the spirit of self-sovereignty that our founding
-                                                fathers fought for. <br>
-                                                I'm an aspiring blockchain developer, passionate about
-                                                making access to money a human right.
-                                                <br>
-                                                Decentralized public blockchains can
-                                                transform our world by freeing us from centralized power structures.
-                                                <br>
-                                                I aim
-                                                to build a brighter future for ourselves and our communities by
-                                                embracing
-                                                this potential.
-                                                <br>
-                                                <span class="text-effect">My mission in life is to make the world more
-                                                    decentralized and ensure that
-                                                    our constitutional rights to life, liberty, and the pursuit of
-                                                    happiness
-                                                    are
-                                                    preserved for generations to come.</span>
-                                                <br> Let's take up the cause of blockchain
-                                                technology with enthusiasm and establish a more equitable and just
-                                                society,
-                                                where every individual has the power to pursue their vision of the
-                                                American
-                                                dream.
-                                                <br>
-                                                -Sonny Monroe 3/17/2023 7:27am
-                                            </p>
-                                            <button id="close-btn2" onclick="hidePopup2()">Close</button>
-                                        </div>
-                                    </div>
-
-                                    <script>
-                                        function showPopup2() {
-                                            document.getElementById("aboutMe-popup").style.display = "block";
-                                        }
-
-                                        function hidePopup2() {
-                                            document.getElementById("aboutMe-popup").style.display = "none";
-                                        }
-                                    </script>
-
-                                </li>
-                                <li>
-                                    <a href="#" id="aboutThisProject-link" onclick="showPopup1()">About This Project</a>
-                                    <div class="popup-wrapper1" id="aboutThisProject-popup">
-                                        <div class="popup-content1">
-                                            <span class="text-effect">
-                                                <h2>About This Project</h2>
-                                            </span>
-
-                                            <p>Welcome to <span class="text-effect">BlogBytes</span>, your gateway to a
-                                                decentralized future fueled by
-                                                education. We believe that crypto education goes beyond buying and
-                                                selling
-                                                cryptocurrencies. It's about understanding the power of decentralization
-                                                and
-                                                taking back control of your financial destiny.
-                                                <br>
-
-                                                <span class="text-effect">BlogBytes</span> is here to empower you with
+                                        <p><span class="text-effect">In 2023, the fight for independence and
+                                                self-sovereignty is being waged
+                                                through the use of blockchain technology and decentralization. This
+                                                groundbreaking technology presents us with an opportunity to
+                                                transform
                                                 the
-                                                tools and knowledge you need to
-                                                confidently travel the exciting and complex world of cryptocurrency.
-                                                <br>
-                                                Our mission at <span class="text-effect">BlogBytes</span> is to bring
-                                                the
-                                                power of crypto right to your
-                                                fingertips! We offer the most comprehensive resources available, so you
+                                                world around us, creating a future where we are free from the
+                                                suffocating
+                                                grip of centralized authoritarians. We can aspire to achieve our
+                                                dreams
+                                                without the fear of being subjugated or controlled.
+
+                                                As the pioneers of the decentralized future, we recognize that the
+                                                fight
+                                                for
+                                                freedom and individual rights is a formidable challenge. It demands
+                                                endurance, determination, and the responsibility to stand up for
+                                                what is
+                                                right, even in the face of opposition and uncertainty.
+
+                                                Therefore, I urge us to seize the opportunity and take up the cause
+                                                of
+                                                blockchain technology, carrying it forward with enthusiasm and
+                                                pride. We
                                                 can
-                                                tap into the revolutionary force that blockchain technology provides.
-                                                <br>
-                                                Whether you're new to cryptocurrencies or a seasoned pro, <span
-                                                    class="text-effect">BlogBytes</span> is here
-                                                to guide you on your journey towards a brighter, decentralized future.
-                                                <br>
-                                                With education as our compass and decentralization as our destination,
-                                                we're
-                                                pioneering a new frontier in finance that embodies the principles of
-                                                transparency, freedom, and self-custody.
-
-                                            </p>
-                                            <button id="close-btn1" onclick="hidePopup1()">Close</button>
-                                        </div>
+                                                use it to establish a more equitable and just society, where every
+                                                individual has the power to control their financial destiny and
+                                                pursue
+                                                their
+                                                vision of the American dream. Above all, let us always remember the
+                                                revolutionary and liberating spirit that drove our founding fathers
+                                                and
+                                                that
+                                                continues to inspire us today.</span></p>
+                                        <button id="close-btn" onclick="hidePopup()">Close</button>
                                     </div>
+                                </div>
 
-                                    <script>
-                                        function showPopup1() {
-                                            document.getElementById("aboutThisProject-popup").style.display = "block";
-                                        }
+                                <script>
+                                    function showPopup() {
+                                        document.getElementById("mission-popup").style.display = "block";
+                                    }
 
-                                        function hidePopup1() {
-                                            document.getElementById("aboutThisProject-popup").style.display = "none";
-                                        }
-                                    </script>
-                                </li>
+                                    function hidePopup() {
+                                        document.getElementById("mission-popup").style.display = "none";
+                                    }
+                                </script>
+                            </li>
+                            <li>
+                                <!-- <a href="#terms-of-services">About Me</a> -->
+                                <a href="#" id="aboutMe-link" onclick="showPopup2()">About Me</a>
+                                <div class="popup-wrapper2" id="aboutMe-popup">
+                                    <div class="popup-content2">
+                                        <span class="text-effect">
+                                            <h2>About Me</h2>
+                                        </span>
 
-                                <!-- <a href="">About This Project</a> -->
-                                </li>
-                                <li>
-                                    <a href="#sideProjects">Side Projects</a>
-                                </li>
-                                <li>
-                                    <a href="https://blogbytes.eth.limo/blog1/blog1.html">Decentralized Blog</a>
-                                </li>
-                            </ul>
+                                        <p>
+                                            Gm, I'm Sonny Monroe from Boston.
+                                            <br>
+                                            Growing up in a revolutionary city, I'm
+                                            constantly inspired by the spirit of self-sovereignty that our founding
+                                            fathers fought for. <br>
+                                            I'm an aspiring blockchain developer, passionate about
+                                            making access to money a human right.
+                                            <br>
+                                            Decentralized public blockchains can
+                                            transform our world by freeing us from centralized power structures.
+                                            <br>
+                                            I aim
+                                            to build a brighter future for ourselves and our communities by
+                                            embracing
+                                            this potential.
+                                            <br>
+                                            <span class="text-effect">My mission in life is to make the world more
+                                                decentralized and ensure that
+                                                our constitutional rights to life, liberty, and the pursuit of
+                                                happiness
+                                                are
+                                                preserved for generations to come.</span>
+                                            <br> Let's take up the cause of blockchain
+                                            technology with enthusiasm and establish a more equitable and just
+                                            society,
+                                            where every individual has the power to pursue their vision of the
+                                            American
+                                            dream.
+                                            <br>
+                                            -Sonny Monroe 3/17/2023 7:27am
+                                        </p>
+                                        <button id="close-btn2" onclick="hidePopup2()">Close</button>
+                                    </div>
+                                </div>
 
-                        </div>
+                                <script>
+                                    function showPopup2() {
+                                        document.getElementById("aboutMe-popup").style.display = "block";
+                                    }
 
-                        <div class="column links">
-                            <h3>Coding Corner</h3>
-                            <ul>
-                                <li>
-                                    <a href="#Learning Resources">Learning Resources</a>
-                                </li>
-                                <li>
-                                    <a href="#DeveloperTools">Developer Tools</a>
-                                </li>
-                                <li>
-                                    <a href="#AboutThisProject">Help Me Build This Project</a>
-                                </li>
-                                <li>
-                                    <a href="#Hack-With-Us">Hack-With-Us</a>
-                                </li>
-                            </ul>
-                        </div>
+                                    function hidePopup2() {
+                                        document.getElementById("aboutMe-popup").style.display = "none";
+                                    }
+                                </script>
 
-                        <div class="social-column">
-                            <h3>Follow Me</h3>
-                            <!-- <div>
+                            </li>
+                            <li>
+                                <a href="#" id="aboutThisProject-link" onclick="showPopup1()">About This Project</a>
+                                <div class="popup-wrapper1" id="aboutThisProject-popup">
+                                    <div class="popup-content1">
+                                        <span class="text-effect">
+                                            <h2>About This Project</h2>
+                                        </span>
+
+                                        <p>Welcome to <span class="text-effect">BlogBytes</span>, your gateway to a
+                                            decentralized future fueled by
+                                            education. We believe that crypto education goes beyond buying and
+                                            selling
+                                            cryptocurrencies. It's about understanding the power of decentralization
+                                            and
+                                            taking back control of your financial destiny.
+                                            <br>
+
+                                            <span class="text-effect">BlogBytes</span> is here to empower you with
+                                            the
+                                            tools and knowledge you need to
+                                            confidently travel the exciting and complex world of cryptocurrency.
+                                            <br>
+                                            Our mission at <span class="text-effect">BlogBytes</span> is to bring
+                                            the
+                                            power of crypto right to your
+                                            fingertips! We offer the most comprehensive resources available, so you
+                                            can
+                                            tap into the revolutionary force that blockchain technology provides.
+                                            <br>
+                                            Whether you're new to cryptocurrencies or a seasoned pro, <span
+                                                class="text-effect">BlogBytes</span> is here
+                                            to guide you on your journey towards a brighter, decentralized future.
+                                            <br>
+                                            With education as our compass and decentralization as our destination,
+                                            we're
+                                            pioneering a new frontier in finance that embodies the principles of
+                                            transparency, freedom, and self-custody.
+
+                                        </p>
+                                        <button id="close-btn1" onclick="hidePopup1()">Close</button>
+                                    </div>
+                                </div>
+
+                                <script>
+                                    function showPopup1() {
+                                        document.getElementById("aboutThisProject-popup").style.display = "block";
+                                    }
+
+                                    function hidePopup1() {
+                                        document.getElementById("aboutThisProject-popup").style.display = "none";
+                                    }
+                                </script>
+                            </li>
+
+                            <!-- <a href="">About This Project</a> -->
+                            </li>
+                            <li>
+                                <a href="#sideProjects">Side Projects</a>
+                            </li>
+                            <li>
+                                <a href="https://blogbytes.eth.limo/blog1/blog1.html">Decentralized Blog</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="column links">
+                        <h3>Coding Corner</h3>
+                        <ul>
+                            <li>
+                                <a href="#Learning Resources">Learning Resources</a>
+                            </li>
+                            <li>
+                                <a href="#DeveloperTools">Developer Tools</a>
+                            </li>
+                            <li>
+                                <a href="#AboutThisProject">Help Me Build This Project</a>
+                            </li>
+                            <li>
+                                <a href="#Hack-With-Us">Hack-With-Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="social-column">
+                        <h3>Follow Me</h3>
+                        <!-- <div>
                             <input type="email" placeholder="Your email id here" />
                             <button class="subscribe-button">Subscribe</button>
                         </div> -->
-                            <div class="social">
-                                <ul>
-                                    <!-- <i class="fa-brands fa-facebook-square"></i>
+                        <div class="social">
+                            <ul>
+                                <!-- <i class="fa-brands fa-facebook-square"></i>
                                 <i class="fa-brands fa-instagram-square"></i>
                                 <i class="fa-brands fa-twitter-square"></i>
                                 <   i class="fa-brands fa-youtube-square"></i>
                                  <i class="fa-brands fa-whatsapp-square"></i> -->
-                                    <li>
-                                        <a href="https://discord.gg/UQdbH2Tbnu" target="_blank">
+                                <li>
+                                    <a href="https://discord.gg/UQdbH2Tbnu" target="_blank">
 
-                                            <i class="fa-brands fa-discord" id="discord"> </i>
-                                        </a>
-                                        <a href="https://twitter.com/SonnyTheDegen" target="_blank">
-                                            <i class="fa fa-twitter" id="twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/SonnyMonroe" target="_blank">
+                                        <i class="fa-brands fa-discord" id="discord"> </i>
+                                    </a>
+                                    <a href="https://twitter.com/SonnyTheDegen" target="_blank">
+                                        <i class="fa fa-twitter" id="twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/SonnyMonroe" target="_blank">
 
-                                            <i class="fa fa-github-square github" id="github"></i>
-                                        </a>
-                                        <a href="https://medium.com/@mabramo11" target="_blank">
+                                        <i class="fa fa-github-square github" id="github"></i>
+                                    </a>
+                                    <a href="https://medium.com/@mabramo11" target="_blank">
 
-                                            <i class="fa fa-medium" id="medium"></i>
+                                        <i class="fa fa-medium" id="medium"></i>
 
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
 
                     </div>
 
-                    <div class="row copyright">
-                        <div class="footer-menu">
-                            <!-- I'll need to play around with bootsrtap icons to see of they fit. 
+                </div>
+
+                <div class="row copyright">
+                    <div class="footer-menu">
+                        <!-- I'll need to play around with bootsrtap icons to see of they fit. 
                             I can always relpace the email button/input  // Is it becuse I have bootstrap already installed with my blog cards? 3/11/23-->
-                            <a href="">Home</a>
-                            <a href="">About This Project</a>
-                            <a href="">Contact</a>
-                            <!-- <a href="">Blog</a> -->
-                            <!-- <a href="">Side Projects</a> -->
-                        </div>
-                        <p>Copyright &copy; 2023 BlogBytes.eth.limo</p>
+                        <a href="">Home</a>
+                        <a href="">About This Project</a>
+                        <a href="">Contact</a>
+                        <!-- <a href="">Blog</a> -->
+                        <!-- <a href="">Side Projects</a> -->
                     </div>
-                </footer>
-            </div>
+                    <p>Copyright &copy; 2023 BlogBytes.eth.limo</p>
+                </div>
+            </footer>
         </div>
-    </body>
+    </div>
+</body>
 </html>
 
 <!-- Things to do
