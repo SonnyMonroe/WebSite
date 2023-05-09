@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+@import "./node_modules/nes.css/css/nes.css";
+
+body {
+  font-family: "Press Start 2P", cursive;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 480px;
+  max-width: max-content;
+}
+
+.nes-btn-group {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 480px;
+}
+
+.btn-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 100%;
+}
+
+.nes-btn {
+  width: 100%;
+  max-width: 480px;
+  padding: 8px;
+  margin: 10px;
+  /* text-decoration: none; */
+}
+
+.nes-btn a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3em;
+  color: #ff00de;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+    0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+      0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #ff00de,
+      0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=SourceCodePro");
+@import url("https://fonts.googleapis.com/css?family=League+Script");
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.sign {
+  -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+#title {
+  font-size: 22px;
+}
+#trav {
+  -webkit-animation: blink 0.01s infinite alternate;
+  -moz-animation: blink 0.01s infinite alternate;
+  -o-animation: blink 0.01s infinite alternate;
+  animation: blink 0.01s infinite alternate;
+}
+#fade {
+  opacity: 0.8;
+  color: #ebffff;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #38eeff,
+    0 0 10px #38eeff;
+  -webkit-animation: fade 3s infinite alternate;
+  -moz-animation: fade 3s infinite alternate;
+  -o-animation: fade 3s infinite alternate;
+  animation: fade 3s infinite alternate;
+}
+.neon-blue {
+  margin: 0 auto;
+  text-align: center;
+  color: #00ffdc;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #38eeff,
+    0 0 10px #38eeff;
+  font-size: 11px;
+}
+.neon-purple {
+  font-family: "Source Code Pro", serif;
+
+  font-size: 16px;
+  margin: 0 auto;
+  margin-left: 1px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 0 rgba(255, 0, 0, 0.9), -2px 0 rgba(0, 0, 255, 0.9);
+}
+@-moz-keyframes blink {
+  70% {
+    opacity: 0.7;
+  }
+}
+@-webkit-keyframes blink {
+  45% {
+    opacity: 0.5;
+  }
+}
+@-o-keyframes blink {
+  70% {
+    opacity: 0.7;
+  }
+}
+@keyframes blink {
+  70% {
+    opacity: 0.7;
+  }
+}
+@-moz-keyframes fade {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes fade {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@-o-keyframes fade {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@keyframes fade {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
