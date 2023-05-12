@@ -73,7 +73,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .sign {
   -ms-transform: rotate(-3deg);
