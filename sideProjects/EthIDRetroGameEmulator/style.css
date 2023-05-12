@@ -46,22 +46,22 @@ body {
 .title {
   font-family: "Press Start 2P", cursive;
   font-size: 3em;
-  color: #ff00de;
+  color: #38eeff;
   text-align: center;
-  font-weight: bold;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
-    0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
-  animation: glow 1s ease-in-out infinite alternate;
+  /* font-weight: bold; */
+  text-shadow: 0 0 10px #fff, 0 0 20px #38eeff, 0 0 30px #38eeff,
+    0 0 40px #38eeff, 0 0 70px #38eeff;
+  animation: glow 0.5s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
-      0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    text-shadow: 0 0 10px #38eeff, 0 0 20px #38eeff, 0 0 30px #38eeff,
+      0 0 40px #38eeff, 0 0 70px #38eeff;
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #ff00de,
-      0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    text-shadow: 0 0 20px #38eeff, 0 0 30px #0fcafd, 0 0 40px #38eeff,
+      0 0 50px #38eeff, 0 0 80px #38eeff;
   }
 }
 
