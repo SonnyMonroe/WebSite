@@ -42,3 +42,36 @@ body {
   color: inherit !important;
   text-decoration: none !important;
 }
+
+@media (max-width: 768px) {
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .nes-btn {
+    width: 90%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .nes-btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .btn-container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 350px) {
+  .nes-btn {
+    padding: 5px;
+    width: 100%;
+  }
+}
