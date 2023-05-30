@@ -17,18 +17,26 @@
 ::selection {
   background-color: rgba(211, 211, 211, 0.774);
 }
+
 body {
   color: #ffff00;
   font-family: "Press Start 2P", cursive;
   font-size: 1em;
   line-height: 1.5em;
   max-width: 800px; /*I need to mess with this to get it all centered*/
-  margin: 0 0 0 2%;
+  /* margin: 0 0 0 2%; */
+  margin: 0 auto;
   /* background: #0000ac; */
-
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  background: none;
+  /* justify-content: center;
+  align-content: center; */
+  background-image: url("https://images.unsplash.com/photo-1534620780923-1ce0db377c3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 /* Structure */
@@ -53,8 +61,8 @@ h1 {
   text-transform: uppercase;
   font-weight: normal;
   font-family: "Press Start 2P", cursive;
-  font-size: 3em;
-  line-height: 1em;
+  font-size: 4em;
+  line-height: 1.2em;
 }
 
 /* Links */
@@ -106,21 +114,29 @@ a.link-codepen:hover {
     font-size: 0.6em;
   }
   h1 {
-    font-size: 2.5em;
+    font-size: 5em;
     line-height: 1.2em;
+  }
+
+  h3 {
+    font-size: 2em;
+    line-height: 9em;
+  }
+
+  h5 {
+    font-size: 1em;
+    line-height: 1em;
   }
 
   a.link-codepen {
     display: block;
   }
 }
-
 .container {
   padding: 0;
   margin: 0;
   height: 100vh;
   background: #2000a0;
-  overflow: hidden;
 }
 
 @keyframes sprite {
@@ -1646,11 +1662,21 @@ a.link-codepen:hover {
   position: absolute;
   width: 120vw;
   bottom: 126px;
-  left: 0;
+  /* left: 0; */
+  left: auto;
+  margin: auto;
 }
+
+.container {
+  position: relative;
+  overflow-x: hidden; /* Add this line */
+}
+
 .ground > .tile {
   float: left;
-  margin-right: 116px;
+  /* margin: auto; */
+  margin-right: 95.5px;
+  /* margin-right: 116px; */
   width: 2px;
   height: 2px;
   box-shadow: 26px 0 #40a000, 58px 0 #40a000, 60px 0 #40a000, 6px 2px #80e000,
