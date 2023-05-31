@@ -2,7 +2,9 @@
 @import "../node_modules/nes.css/css/nes.css"; */
 
 /* @charset "UTF-8"; */
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cinzel&family=Lato:wght@300&family=Press+Start+2P&display=swap");
+
 :root {
   --primary-color: #a00893;
   --secondary-color: #bfbfbf;
@@ -19,7 +21,7 @@
 }
 
 body {
-  color: #ffff00;
+  color: #0015ff;
   font-family: "Press Start 2P", cursive;
   font-size: 1em;
   line-height: 1.5em;
@@ -31,12 +33,12 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  background: none;
+  /* background: none; */
   /* justify-content: center;
   align-content: center; */
   background-image: url("https://images.unsplash.com/photo-1534620780923-1ce0db377c3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80");
-  background-repeat: no-repeat;
   background-size: 100%;
+  background-repeat: repeat-y;
 }
 
 /* Structure */
@@ -47,9 +49,9 @@ header .container {
 
 /* Typography */
 
-h1,
 h3,
 h5 {
+  font-family: "Press Start 2P", cursive;
   color: var(--accent-color);
   text-shadow: 3px 3px var(--alt-accent-color);
   text-transform: lowercase;
@@ -60,7 +62,11 @@ h5 {
 h1 {
   text-transform: uppercase;
   font-weight: normal;
-  font-family: "Press Start 2P", cursive;
+  font-family: "Bungee Shade", cursive;
+  color: var(--link-color);
+  text-shadow: 3px 3px var(--alt-dark-color);
+
+  /* font-family: "Press Start 2P", cursive; */
   font-size: 4em;
   line-height: 1.2em;
 }
@@ -82,7 +88,7 @@ a.link-codepen {
   font-family: "Press Start 2P", cursive;
   text-align: center;
   background-color: var(--secondary-color);
-  color: black;
+  color: #000000;
   padding: 10px;
   margin: 10px;
   top: auto;
@@ -91,11 +97,87 @@ a.link-codepen:hover {
   text-shadow: 5px 1px 0px var(--link-color);
 }
 
-#back-button {
+/* #back-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  border-radius: 15px;
+} */
+
+button {
+  font-family: "Press Start 2P", cursive;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+  position: relative;
+  font-size: 17px;
+  background: #333;
+  border: none;
+  color: #ffff00;
+}
+
+button:hover {
+  letter-spacing: 0.25em;
+  background: #ffffff;
+  color: #ffffff;
+  box-shadow: 0 0 45px #ffffff;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #0015ff;
+}
+
+button span {
+  position: relative;
+  z-index: 1;
+}
+
+button i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+button i::before {
+  content: "";
+  position: absolute;
+  border: 2px solid #ffff00;
+  width: 7px;
+  height: 4px;
+  top: -3.5px;
+  left: 80%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+button:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+
+button i::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #ffff00;
+  width: 7px;
+  height: 4px;
+  bottom: -3.5px;
+  left: 20%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+button:hover i::after {
+  width: 20px;
+  left: 80%;
 }
 
 .container a {
@@ -135,7 +217,7 @@ a.link-codepen:hover {
 .container {
   padding: 0;
   margin: 0;
-  height: 100vh;
+  height: 90vh;
   background: #2000a0;
 }
 
@@ -2656,4 +2738,54 @@ a.link-codepen:hover {
     102px 126px #c06000, 104px 126px #602000, 106px 126px #602000,
     108px 126px #602000, 110px 126px #602000, 112px 126px #c06000,
     114px 126px #c06000, 116px 126px #c06000;
+}
+
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
 }
