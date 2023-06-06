@@ -9,13 +9,13 @@
         <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap"
-            rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap"
+            rel="stylesheet"> -->
         <!--I Used 3 sources for greater decentralization & uptime-->
         <!--May hurt my load time and performance Evaluate after 7/1/23-->
-        <link rel="stylesheet" href="../node_modules/nes.css/css/nes.min.css">
-        <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://github.com/nostalgic-css/NES.css/blob/master/css/nes.css">
+        <!-- <link rel="stylesheet" href="../node_modules/nes.css/css/nes.min.css"> -->
+        <!-- <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" /> -->
+        <!-- <link rel="stylesheet" href="https://github.com/nostalgic-css/NES.css/blob/master/css/nes.css"> -->
         <!--My Fleek/IPFS Domains & Deployments-->
         <link href="https://icy-sunset-6501.on.fleek.co/sideProjects/EthIDRetroGameEmulator">
         <link href="https://icy-sunset-6501.on.fleek.co/sideProjects/EthIDRetroGameEmulator/arcade/arcade.html">
@@ -25,41 +25,55 @@
         <script rel="./arcade.js" defer></script>
         <title>Arcade</title>
     </head>
+
     <body>
-        <div class="nes-container is-dark with-title">
-            <!-- <p class="title">Ready Player-1</p> -->
-            <div class btn-container>
-                <button class="nes-btn is-primary"><a href="/arcade/arcade.html"></a>Arcade</button>
-                <button class="nes-btn is-primary"><a
-                        href="https://www.retrogames.cc/embed/42834-pokemon-fire-red-extended-v2-0-4.html">Marvel vs
-                        Capcom</a></button>
-                <button class="nes-btn is-success"><a
-                        href="https://www.retrogames.cc/embed/42834-pokemon-fire-red-extended-v2-0-4.html">Nintendo
-                        64</a></button>
-                <button class="nes-btn is-error"><a
-                        href="https://www.retrogames.cc/embed/26817-classic-nes-pacman-u-hyperion.html">Pacman</a></button>
-                <button class="nes-btn is-error">NES/SNES</button>
-                <button class="nes-btn is-warning">PlayStation</button>
-                <button class="nes-btn is-primary">SEGA</button>
-                <a href="https://www.retrogames.cc/embed/42834-pokemon-fire-red-extended-v2-0-4.html"
-                    class="nes-btn is-normal">Marvel vs Capcom1</a>
+        <canvas></canvas>
+        <div class="container">
+            <header>
+                <p class="glitch">
+                    <span aria-hidden="true">Classic Arcade </span>
+                    Classic Arcade
+                    <span aria-hidden="true">Classic Arcade </span>
+                </p>
+                <!-- <h1><em> Classic Arcade </em></h1> -->
+                <h5><i>A Mike Abramo Experiment</i></h5>
+                <h3><em>-Push-to-Play-</em></h3>
+                <button id="back-button">
+                    Main Menu
+                </button>
+            </header>
+            <div class="container">
 
-                <a href="https://www.retrogames.cc/embed/42834-pokemon-fire-red-extended-v2-0-4.html">
-                    <button class="nes-btn is-normal">Marvel vs Capcom2</button>
-                </a>
-                <a href="https://www.retrogames.cc/embed/42834-pokemon-fire-red-extended-v2-0-4.html">
-                    <button class="nes-btn is-normal">Marvel vs Capcom</button>
-                </a>
-                <a href="https://www.retrogames.cc/embed/42834-pokemon-fire-red-extended-v2-0-4.html">
-
-                    <div style="background-color:#212529; padding: 1rem 0;">
-                        <label>
-                            <input type="radio" class="nes-radio is-dark" name="answer-dark" checked />
-                            <span>Marvel vs CapcomrecM</span>
-                        </label>
-                    </div>
-                </a>
+                <ol>
+                    <li><span>1.</span><a href="https://www.retrogames.cc/arcade-games/diamond-run.html"
+                            class="arrow">Diamond Run</a></li>
+                    <li><span>2.</span><a href="https://www.retrogames.cc/arcade-games/dragonball-z-2-super-battle.html"
+                            class="arrow">Dragon Ball Z </a></li>
+                    <li><span>3.</span><a href="https://www.retrogames.cc/arcade-games/final-fight-900112-usa.html"
+                            class="arrow">Final Fight</a></li>
+                    <li><span>4.</span><a href="https://www.retrogames.cc/arcade-games/frogger.html"
+                            class="arrow">Frogger</a></li>
+                    <li><span>5.</span><a href="https://www.retrogames.cc/arcade-games/galaga-namco.html"
+                            class="arrow">Galaga</a></li>
+                    <li><span>6.</span><a
+                            href="https://www.retrogames.cc/arcade-games/jojos-bizarre-adventure:-heritage-for-the-future-jojo-no-kimyou-na-bouken:-mirai-e-no-isan-japan-990927-no-cd.html"
+                            class="arrow">Jojos Bizarre Adventure</a></li>
+                    <li><span>7.</span><a
+                            href="https://www.retrogames.cc/arcade-games/marvel-super-heroes-951024-usa.html"
+                            class="arrow">Marvel Super Heros</a></li>
+                    <li><span>8.</span><a
+                            href="https://www.retrogames.cc/arcade-games/mortal-kombat-rev-5-0-t-unit-03-19-93.html"
+                            class="arrow">Mortal Combat</a></li>
+                    <li><span>9.</span><a
+                            href="https://www.retrogames.cc/arcade-games/namco-classic-collection-vol-2.html"
+                            class="arrow">Namco Classic Collection</a></li>
+                    <li><span>10.</span><a href="https://www.retrogames.cc/arcade-games/space-invaders-dx-us-v2-1.html"
+                            class="arrow">Space Invaders DX</a></li>
+                </ol>
             </div>
-            <script src="arcade.js" defer></script>
+        </div>
+
+        <script src="arcade.js" defer></script>
+
     </body>
 </html>
