@@ -103,17 +103,33 @@ body {
   --webkit-transform: scale(1, 0.5);
   color: #d3d3d3;
   text-shadow: 4px 4px #000;
-  font-size: 50px;
+  font-size: 100px;
   line-height: 4px;
-  margin-left: 10px;
-  margin-bottom: 0.5rem;
-  margin-top: 0;
+  /* margin-left: 10px; */
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 p {
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 1rem 0;
   margin: 0;
   line-height: 80%;
   text-shadow: 2px 2px #000;
+}
+
+img {
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.subtitle span {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /*Back Button*/
