@@ -36,7 +36,8 @@ body {
   /* background: none; */
   /* justify-content: center;
   align-content: center; */
-  background-image: url("https://images.unsplash.com/photo-1534620780923-1ce0db377c3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80");
+  background-image: url("https://images.unsplash.com/photo-1623910270913-3e0294a1c765?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80");
+  /* background-image: url("https://images.unsplash.com/photo-1534620780923-1ce0db377c3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"); */
   background-size: 100%;
   background-repeat: repeat-y;
 }
@@ -97,13 +98,13 @@ a.link-codepen:hover {
   text-shadow: 5px 1px 0px var(--link-color);
 }
 
-/* #back-button {
+#back-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  border-radius: 15px;
-} */
+  /* border-radius: 15px; */
+}
 
 button {
   font-family: "Press Start 2P", cursive;
@@ -114,7 +115,7 @@ button {
   transition: 0.5s;
   position: relative;
   font-size: 17px;
-  background: #333;
+  background: #fffafa;
   border: none;
   color: #ffff00;
 }
@@ -192,7 +193,7 @@ button:hover i::after {
 @media screen AND (max-width: 500px) {
   body {
     margin: 0 auto;
-    padding: 0 2%;
+    padding: 0;
     font-size: 0.6em;
   }
   h1 {
@@ -201,13 +202,20 @@ button:hover i::after {
   }
 
   h3 {
-    font-size: 2em;
-    line-height: 9em;
+    font-size: 2.5em;
+    line-height: 3em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: "Bungee Shade", cursive;
+    /* color: var(--link-color); */
+    color: white;
+    text-shadow: 3px 3px var(--alt-dark-color);
   }
 
   h5 {
-    font-size: 1em;
-    line-height: 1em;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 2.9em;
   }
 
   a.link-codepen {
@@ -218,7 +226,8 @@ button:hover i::after {
   padding: 0;
   margin: 0;
   height: 90vh;
-  background: #2000a0;
+  background-blend-mode: lighten;
+  /* background: #2000a0; */
 }
 
 @keyframes sprite {
@@ -1744,8 +1753,8 @@ button:hover i::after {
   position: absolute;
   width: 120vw;
   bottom: 126px;
-  /* left: 0; */
-  left: auto;
+  left: 0;
+  /* left: auto; */
   margin: auto;
 }
 
