@@ -479,6 +479,10 @@ a:hover {
   }
 }
 
+header {
+  max-width: 800px;
+}
+
 /*
 * LICENSE - style only: CC BY-NC-SA
 * @link https://creativecommons.org/licenses/by-nc-sa/3.0/
