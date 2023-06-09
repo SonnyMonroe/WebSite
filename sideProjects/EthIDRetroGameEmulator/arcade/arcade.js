@@ -1,6 +1,11 @@
-document.getElementById("back-button").addEventListener("click", function () {
-  window.history.back();
-});
+// document.getElementById("back-button").addEventListener("click", function () {
+//   window.history.back();
+// });
+
+function goToMainMenu() {
+  window.location.href =
+    "https://sonnymonroe.github.io/WebSite/sideProjects/EthIDRetroGameEmulator/eth.html";
+}
 
 let canvas = document.querySelector("canvas");
 let c = canvas.getContext("2d");
